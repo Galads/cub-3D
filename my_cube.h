@@ -30,6 +30,7 @@
 # include "math.h"
 # include "stdlib.h"
 # include "get_next_line/get_next_line.h"
+# include "libft/libft.h"
 
 typedef struct	s_vector
 {
@@ -136,6 +137,8 @@ typedef struct 	s_game
 	unsigned int	flags;
 	unsigned int	flag_parser;
 	unsigned int	flag_control;
+	long long int	map_width;
+	long long int	map_height;
 }				t_game;
 
 void	my_mlx_pixel_put(t_data *data, int x, int y, int color);

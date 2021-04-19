@@ -142,6 +142,33 @@ ft_parser/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_parser.dir/build.make CMakeFiles/ft_parser.dir/build
 .PHONY : ft_parser/fast
 
+ft_isascii_content.o: ft_isascii_content.c.o
+
+.PHONY : ft_isascii_content.o
+
+# target to build an object file
+ft_isascii_content.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_parser.dir/build.make CMakeFiles/ft_parser.dir/ft_isascii_content.c.o
+.PHONY : ft_isascii_content.c.o
+
+ft_isascii_content.i: ft_isascii_content.c.i
+
+.PHONY : ft_isascii_content.i
+
+# target to preprocess a source file
+ft_isascii_content.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_parser.dir/build.make CMakeFiles/ft_parser.dir/ft_isascii_content.c.i
+.PHONY : ft_isascii_content.c.i
+
+ft_isascii_content.s: ft_isascii_content.c.s
+
+.PHONY : ft_isascii_content.s
+
+# target to generate assembly for a file
+ft_isascii_content.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_parser.dir/build.make CMakeFiles/ft_parser.dir/ft_isascii_content.c.s
+.PHONY : ft_isascii_content.c.s
+
 ft_parser.o: ft_parser.c.o
 
 .PHONY : ft_parser.o
@@ -277,6 +304,33 @@ libft/ft_isaint.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_parser.dir/build.make CMakeFiles/ft_parser.dir/libft/ft_isaint.c.s
 .PHONY : libft/ft_isaint.c.s
 
+libft/ft_isascii.o: libft/ft_isascii.c.o
+
+.PHONY : libft/ft_isascii.o
+
+# target to build an object file
+libft/ft_isascii.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_parser.dir/build.make CMakeFiles/ft_parser.dir/libft/ft_isascii.c.o
+.PHONY : libft/ft_isascii.c.o
+
+libft/ft_isascii.i: libft/ft_isascii.c.i
+
+.PHONY : libft/ft_isascii.i
+
+# target to preprocess a source file
+libft/ft_isascii.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_parser.dir/build.make CMakeFiles/ft_parser.dir/libft/ft_isascii.c.i
+.PHONY : libft/ft_isascii.c.i
+
+libft/ft_isascii.s: libft/ft_isascii.c.s
+
+.PHONY : libft/ft_isascii.s
+
+# target to generate assembly for a file
+libft/ft_isascii.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_parser.dir/build.make CMakeFiles/ft_parser.dir/libft/ft_isascii.c.s
+.PHONY : libft/ft_isascii.c.s
+
 libft/ft_isdigit.o: libft/ft_isdigit.c.o
 
 .PHONY : libft/ft_isdigit.o
@@ -303,6 +357,114 @@ libft/ft_isdigit.s: libft/ft_isdigit.c.s
 libft/ft_isdigit.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_parser.dir/build.make CMakeFiles/ft_parser.dir/libft/ft_isdigit.c.s
 .PHONY : libft/ft_isdigit.c.s
+
+libft/ft_lstadd_back.o: libft/ft_lstadd_back.c.o
+
+.PHONY : libft/ft_lstadd_back.o
+
+# target to build an object file
+libft/ft_lstadd_back.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_parser.dir/build.make CMakeFiles/ft_parser.dir/libft/ft_lstadd_back.c.o
+.PHONY : libft/ft_lstadd_back.c.o
+
+libft/ft_lstadd_back.i: libft/ft_lstadd_back.c.i
+
+.PHONY : libft/ft_lstadd_back.i
+
+# target to preprocess a source file
+libft/ft_lstadd_back.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_parser.dir/build.make CMakeFiles/ft_parser.dir/libft/ft_lstadd_back.c.i
+.PHONY : libft/ft_lstadd_back.c.i
+
+libft/ft_lstadd_back.s: libft/ft_lstadd_back.c.s
+
+.PHONY : libft/ft_lstadd_back.s
+
+# target to generate assembly for a file
+libft/ft_lstadd_back.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_parser.dir/build.make CMakeFiles/ft_parser.dir/libft/ft_lstadd_back.c.s
+.PHONY : libft/ft_lstadd_back.c.s
+
+libft/ft_lstlast.o: libft/ft_lstlast.c.o
+
+.PHONY : libft/ft_lstlast.o
+
+# target to build an object file
+libft/ft_lstlast.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_parser.dir/build.make CMakeFiles/ft_parser.dir/libft/ft_lstlast.c.o
+.PHONY : libft/ft_lstlast.c.o
+
+libft/ft_lstlast.i: libft/ft_lstlast.c.i
+
+.PHONY : libft/ft_lstlast.i
+
+# target to preprocess a source file
+libft/ft_lstlast.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_parser.dir/build.make CMakeFiles/ft_parser.dir/libft/ft_lstlast.c.i
+.PHONY : libft/ft_lstlast.c.i
+
+libft/ft_lstlast.s: libft/ft_lstlast.c.s
+
+.PHONY : libft/ft_lstlast.s
+
+# target to generate assembly for a file
+libft/ft_lstlast.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_parser.dir/build.make CMakeFiles/ft_parser.dir/libft/ft_lstlast.c.s
+.PHONY : libft/ft_lstlast.c.s
+
+libft/ft_lstnew.o: libft/ft_lstnew.c.o
+
+.PHONY : libft/ft_lstnew.o
+
+# target to build an object file
+libft/ft_lstnew.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_parser.dir/build.make CMakeFiles/ft_parser.dir/libft/ft_lstnew.c.o
+.PHONY : libft/ft_lstnew.c.o
+
+libft/ft_lstnew.i: libft/ft_lstnew.c.i
+
+.PHONY : libft/ft_lstnew.i
+
+# target to preprocess a source file
+libft/ft_lstnew.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_parser.dir/build.make CMakeFiles/ft_parser.dir/libft/ft_lstnew.c.i
+.PHONY : libft/ft_lstnew.c.i
+
+libft/ft_lstnew.s: libft/ft_lstnew.c.s
+
+.PHONY : libft/ft_lstnew.s
+
+# target to generate assembly for a file
+libft/ft_lstnew.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_parser.dir/build.make CMakeFiles/ft_parser.dir/libft/ft_lstnew.c.s
+.PHONY : libft/ft_lstnew.c.s
+
+libft/ft_lstsize.o: libft/ft_lstsize.c.o
+
+.PHONY : libft/ft_lstsize.o
+
+# target to build an object file
+libft/ft_lstsize.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_parser.dir/build.make CMakeFiles/ft_parser.dir/libft/ft_lstsize.c.o
+.PHONY : libft/ft_lstsize.c.o
+
+libft/ft_lstsize.i: libft/ft_lstsize.c.i
+
+.PHONY : libft/ft_lstsize.i
+
+# target to preprocess a source file
+libft/ft_lstsize.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_parser.dir/build.make CMakeFiles/ft_parser.dir/libft/ft_lstsize.c.i
+.PHONY : libft/ft_lstsize.c.i
+
+libft/ft_lstsize.s: libft/ft_lstsize.c.s
+
+.PHONY : libft/ft_lstsize.s
+
+# target to generate assembly for a file
+libft/ft_lstsize.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ft_parser.dir/build.make CMakeFiles/ft_parser.dir/libft/ft_lstsize.c.s
+.PHONY : libft/ft_lstsize.c.s
 
 libft/ft_split.o: libft/ft_split.c.o
 
@@ -421,6 +583,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ft_parser"
+	@echo "... ft_isascii_content.o"
+	@echo "... ft_isascii_content.i"
+	@echo "... ft_isascii_content.s"
 	@echo "... ft_parser.o"
 	@echo "... ft_parser.i"
 	@echo "... ft_parser.s"
@@ -436,9 +601,24 @@ help:
 	@echo "... libft/ft_isaint.o"
 	@echo "... libft/ft_isaint.i"
 	@echo "... libft/ft_isaint.s"
+	@echo "... libft/ft_isascii.o"
+	@echo "... libft/ft_isascii.i"
+	@echo "... libft/ft_isascii.s"
 	@echo "... libft/ft_isdigit.o"
 	@echo "... libft/ft_isdigit.i"
 	@echo "... libft/ft_isdigit.s"
+	@echo "... libft/ft_lstadd_back.o"
+	@echo "... libft/ft_lstadd_back.i"
+	@echo "... libft/ft_lstadd_back.s"
+	@echo "... libft/ft_lstlast.o"
+	@echo "... libft/ft_lstlast.i"
+	@echo "... libft/ft_lstlast.s"
+	@echo "... libft/ft_lstnew.o"
+	@echo "... libft/ft_lstnew.i"
+	@echo "... libft/ft_lstnew.s"
+	@echo "... libft/ft_lstsize.o"
+	@echo "... libft/ft_lstsize.i"
+	@echo "... libft/ft_lstsize.s"
 	@echo "... libft/ft_split.o"
 	@echo "... libft/ft_split.i"
 	@echo "... libft/ft_split.s"

@@ -78,6 +78,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/galads/Рабочий стол/ft_parser/ft_isascii_content.c">
+			<Option target="ft_parser"/>
+		</Unit>
 		<Unit filename="/home/galads/Рабочий стол/ft_parser/ft_parser.c">
 			<Option target="ft_parser"/>
 		</Unit>
@@ -96,7 +99,22 @@
 		<Unit filename="/home/galads/Рабочий стол/ft_parser/libft/ft_isaint.c">
 			<Option target="ft_parser"/>
 		</Unit>
+		<Unit filename="/home/galads/Рабочий стол/ft_parser/libft/ft_isascii.c">
+			<Option target="ft_parser"/>
+		</Unit>
 		<Unit filename="/home/galads/Рабочий стол/ft_parser/libft/ft_isdigit.c">
+			<Option target="ft_parser"/>
+		</Unit>
+		<Unit filename="/home/galads/Рабочий стол/ft_parser/libft/ft_lstadd_back.c">
+			<Option target="ft_parser"/>
+		</Unit>
+		<Unit filename="/home/galads/Рабочий стол/ft_parser/libft/ft_lstlast.c">
+			<Option target="ft_parser"/>
+		</Unit>
+		<Unit filename="/home/galads/Рабочий стол/ft_parser/libft/ft_lstnew.c">
+			<Option target="ft_parser"/>
+		</Unit>
+		<Unit filename="/home/galads/Рабочий стол/ft_parser/libft/ft_lstsize.c">
 			<Option target="ft_parser"/>
 		</Unit>
 		<Unit filename="/home/galads/Рабочий стол/ft_parser/libft/ft_split.c">

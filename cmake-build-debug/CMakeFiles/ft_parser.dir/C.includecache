@@ -21,8 +21,6 @@ errno.h
 /home/galads/Рабочий стол/ft_parser/errno.h
 get_next_line/get_next_line.h
 /home/galads/Рабочий стол/ft_parser/get_next_line/get_next_line.h
-libft/libft.h
-/home/galads/Рабочий стол/ft_parser/libft/libft.h
 my_cube.h
 /home/galads/Рабочий стол/ft_parser/my_cube.h
 
@@ -51,4 +49,6 @@ stdlib.h
 /home/galads/Рабочий стол/ft_parser/stdlib.h
 get_next_line/get_next_line.h
 /home/galads/Рабочий стол/ft_parser/get_next_line/get_next_line.h
+libft/libft.h
+/home/galads/Рабочий стол/ft_parser/libft/libft.h
 

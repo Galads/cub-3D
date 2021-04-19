@@ -4,12 +4,18 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/home/galads/Рабочий стол/ft_parser/ft_isascii_content.c" "/home/galads/Рабочий стол/ft_parser/cmake-build-debug/CMakeFiles/ft_parser.dir/ft_isascii_content.c.o"
   "/home/galads/Рабочий стол/ft_parser/ft_parser.c" "/home/galads/Рабочий стол/ft_parser/cmake-build-debug/CMakeFiles/ft_parser.dir/ft_parser.c.o"
   "/home/galads/Рабочий стол/ft_parser/get_next_line/get_next_line.c" "/home/galads/Рабочий стол/ft_parser/cmake-build-debug/CMakeFiles/ft_parser.dir/get_next_line/get_next_line.c.o"
   "/home/galads/Рабочий стол/ft_parser/get_next_line/get_next_line_utils.c" "/home/galads/Рабочий стол/ft_parser/cmake-build-debug/CMakeFiles/ft_parser.dir/get_next_line/get_next_line_utils.c.o"
   "/home/galads/Рабочий стол/ft_parser/libft/ft_atoi.c" "/home/galads/Рабочий стол/ft_parser/cmake-build-debug/CMakeFiles/ft_parser.dir/libft/ft_atoi.c.o"
   "/home/galads/Рабочий стол/ft_parser/libft/ft_isaint.c" "/home/galads/Рабочий стол/ft_parser/cmake-build-debug/CMakeFiles/ft_parser.dir/libft/ft_isaint.c.o"
+  "/home/galads/Рабочий стол/ft_parser/libft/ft_isascii.c" "/home/galads/Рабочий стол/ft_parser/cmake-build-debug/CMakeFiles/ft_parser.dir/libft/ft_isascii.c.o"
   "/home/galads/Рабочий стол/ft_parser/libft/ft_isdigit.c" "/home/galads/Рабочий стол/ft_parser/cmake-build-debug/CMakeFiles/ft_parser.dir/libft/ft_isdigit.c.o"
+  "/home/galads/Рабочий стол/ft_parser/libft/ft_lstadd_back.c" "/home/galads/Рабочий стол/ft_parser/cmake-build-debug/CMakeFiles/ft_parser.dir/libft/ft_lstadd_back.c.o"
+  "/home/galads/Рабочий стол/ft_parser/libft/ft_lstlast.c" "/home/galads/Рабочий стол/ft_parser/cmake-build-debug/CMakeFiles/ft_parser.dir/libft/ft_lstlast.c.o"
+  "/home/galads/Рабочий стол/ft_parser/libft/ft_lstnew.c" "/home/galads/Рабочий стол/ft_parser/cmake-build-debug/CMakeFiles/ft_parser.dir/libft/ft_lstnew.c.o"
+  "/home/galads/Рабочий стол/ft_parser/libft/ft_lstsize.c" "/home/galads/Рабочий стол/ft_parser/cmake-build-debug/CMakeFiles/ft_parser.dir/libft/ft_lstsize.c.o"
   "/home/galads/Рабочий стол/ft_parser/libft/ft_split.c" "/home/galads/Рабочий стол/ft_parser/cmake-build-debug/CMakeFiles/ft_parser.dir/libft/ft_split.c.o"
   "/home/galads/Рабочий стол/ft_parser/libft/ft_strlen.c" "/home/galads/Рабочий стол/ft_parser/cmake-build-debug/CMakeFiles/ft_parser.dir/libft/ft_strlen.c.o"
   "/home/galads/Рабочий стол/ft_parser/libft/ft_strncmp.c" "/home/galads/Рабочий стол/ft_parser/cmake-build-debug/CMakeFiles/ft_parser.dir/libft/ft_strncmp.c.o"

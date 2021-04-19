@@ -5,7 +5,6 @@
 #include <error.h>
 #include "errno.h"
 #include "get_next_line/get_next_line.h"
-#include "libft/libft.h"
 #include "my_cube.h"
 
 int	ft_create_trgb(int t, int r, int g, int b)
@@ -16,24 +15,24 @@ int	ft_create_trgb(int t, int r, int g, int b)
 void ft_parse_t_a_s(const char **result, t_game *img)
 {
 //	printf("res: %d, sprite: %d\n", (img->flag_parser & RES), (img->flag_parser & S));
-	if (!ft_strncmp(*result, "R", 50))
+	if (!ft_strncmp(*result, "R", INT_MAX))
 	{
 		img->flag_parser |= RES;
 		printf("set R\n");
 	}
-	else if (**result == 'S' && !(*result)[1])
+	else if (!ft_strncmp(*result, "S", INT_MAX))
 		img->flag_parser |= S;
-	else if (**result == 'N' && (*result)[1] == 'O')
+	else if (!ft_strncmp(*result, "NO", INT_MAX))
 		img->flag_parser |= NO;
-	else if (**result == 'S' && (*result)[1] == 'O')
+	else if (!ft_strncmp(*result, "SO", INT_MAX))
 		img->flag_parser |= SO;
-	else if (**result == 'W' && (*result)[1] == 'E')
+	else if (!ft_strncmp(*result, "WE", INT_MAX))
 		img->flag_parser |= WE;
-	else if (**result == 'E' && (*result)[1] == 'A')
+	else if (!ft_strncmp(*result, "EA", INT_MAX))
 		img->flag_parser |= EA;
-	else if (**result == 'F' && !(*result)[1])
+	else if (!ft_strncmp(*result, "F", INT_MAX))
 		img->flag_parser |= F;
-	else if (**result == 'C' && !(*result)[1])
+	else if (!ft_strncmp(*result, "C", INT_MAX))
 		img->flag_parser |= C;
 //	else
 //		printf("Error: no find res or texture with sprite\n");
@@ -91,6 +90,7 @@ int	ft_check_flag(t_game *img)
 	}
 	else
 	{
+		printf("hello");
 		exit(1);
 	}
 }
@@ -151,7 +151,77 @@ void	ft_init_parser(t_game *img)
 	img->texture_w.relative_path = 0;
 }
 
-void ft_parser(int argc, char **argv)
+void ft_fill_map(t_game *img, t_list **list_head)
+{
+	t_list	*list;
+	char	world_map[(int)img->map_width][(int)img->map_height];
+	int 	i;
+	int 	j;
+
+	i = 0;
+	j = 0;
+	list = *list_head;
+
+//	printf("|%c|\n", world_map[i][j]);
+	while (list) //print list
+	{
+		printf("list_map: |%s|\n", (char *)list->content);
+		list = list->next;
+	}
+}
+
+void	ft_parse_tail(t_game *img, char **line, const int *fd)
+{
+	int i;
+	int j;
+	t_list	*list_head = NULL;
+	t_list	*list;
+
+	j = 0;
+	while ((i = get_next_line(*fd, line)) > 0)
+	{
+		if (!list_head && ft_isascii_content(*line))
+			list_head = ft_lstnew(*line);
+		list = ft_lstnew(*line);
+		if(ft_isascii_content(list->content))
+		{
+			ft_lstadd_back(&list_head, list);
+			printf("i = %d |%s|\n", i, *line);
+			j++;
+		}
+		else
+			free(list);
+	}
+
+	printf("i = %d |%s|\n", i, *line);
+	list = ft_lstnew(*line);
+	ft_lstadd_back(&list_head, list);
+
+//	free(list);
+	list = list_head;
+	while (list) //print list
+	{
+		printf("list: |%s|\n", (char *)list->content);
+		list = list->next;
+	}
+//	exit(1);
+	img->map_height = ft_lstsize(list_head);
+
+	list = list_head;
+	while (list) //print list
+	{
+		if (img->map_width < ft_strlen(list->content))
+			img->map_width = (int)ft_strlen(list->content);
+		list = list->next;
+	}
+	printf("size height: |%d|\n", img->map_height);
+	printf("size width: |%d|\n", img->map_width);
+	list = list_head;
+	printf("content: |%s| ascii?: %d\n", list->content, ft_isascii_content(list->content));
+	ft_fill_map(img, &list_head);
+}
+
+void	ft_parser(int argc, char **argv)
 {
 	t_game img;
 	int i;
@@ -184,10 +254,11 @@ void ft_parser(int argc, char **argv)
 			free(line);
 			ft_check_flag(&img);
 		}
-//		ft_parse_tail();
-		printf("|%s|\n", line);
-		printf("%d\n", i);
-		free(line);
+//		printf("after while |%s|\n", line);
+		ft_parse_tail(&img, &line, &fd);
+//		printf("after while |%s|\n", line);
+//		printf("%d\n", i);
+//		free(line);
 //		printf("F: %x, C: %x\n", img.rc.col_f, img.rc.col_c);
 //		printf("color %d\n", ft_atoi("255"));
 	}

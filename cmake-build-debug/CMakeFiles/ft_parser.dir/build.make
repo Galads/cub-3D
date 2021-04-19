@@ -206,6 +206,84 @@ CMakeFiles/ft_parser.dir/libft/ft_isaint.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_parser.dir/libft/ft_isaint.c.s"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/galads/Рабочий стол/ft_parser/libft/ft_isaint.c" -o CMakeFiles/ft_parser.dir/libft/ft_isaint.c.s
 
+CMakeFiles/ft_parser.dir/libft/ft_lstadd_back.c.o: CMakeFiles/ft_parser.dir/flags.make
+CMakeFiles/ft_parser.dir/libft/ft_lstadd_back.c.o: ../libft/ft_lstadd_back.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/galads/Рабочий стол/ft_parser/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/ft_parser.dir/libft/ft_lstadd_back.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_parser.dir/libft/ft_lstadd_back.c.o -c "/home/galads/Рабочий стол/ft_parser/libft/ft_lstadd_back.c"
+
+CMakeFiles/ft_parser.dir/libft/ft_lstadd_back.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_parser.dir/libft/ft_lstadd_back.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/galads/Рабочий стол/ft_parser/libft/ft_lstadd_back.c" > CMakeFiles/ft_parser.dir/libft/ft_lstadd_back.c.i
+
+CMakeFiles/ft_parser.dir/libft/ft_lstadd_back.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_parser.dir/libft/ft_lstadd_back.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/galads/Рабочий стол/ft_parser/libft/ft_lstadd_back.c" -o CMakeFiles/ft_parser.dir/libft/ft_lstadd_back.c.s
+
+CMakeFiles/ft_parser.dir/libft/ft_lstnew.c.o: CMakeFiles/ft_parser.dir/flags.make
+CMakeFiles/ft_parser.dir/libft/ft_lstnew.c.o: ../libft/ft_lstnew.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/galads/Рабочий стол/ft_parser/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/ft_parser.dir/libft/ft_lstnew.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_parser.dir/libft/ft_lstnew.c.o -c "/home/galads/Рабочий стол/ft_parser/libft/ft_lstnew.c"
+
+CMakeFiles/ft_parser.dir/libft/ft_lstnew.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_parser.dir/libft/ft_lstnew.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/galads/Рабочий стол/ft_parser/libft/ft_lstnew.c" > CMakeFiles/ft_parser.dir/libft/ft_lstnew.c.i
+
+CMakeFiles/ft_parser.dir/libft/ft_lstnew.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_parser.dir/libft/ft_lstnew.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/galads/Рабочий стол/ft_parser/libft/ft_lstnew.c" -o CMakeFiles/ft_parser.dir/libft/ft_lstnew.c.s
+
+CMakeFiles/ft_parser.dir/libft/ft_lstlast.c.o: CMakeFiles/ft_parser.dir/flags.make
+CMakeFiles/ft_parser.dir/libft/ft_lstlast.c.o: ../libft/ft_lstlast.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/galads/Рабочий стол/ft_parser/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/ft_parser.dir/libft/ft_lstlast.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_parser.dir/libft/ft_lstlast.c.o -c "/home/galads/Рабочий стол/ft_parser/libft/ft_lstlast.c"
+
+CMakeFiles/ft_parser.dir/libft/ft_lstlast.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_parser.dir/libft/ft_lstlast.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/galads/Рабочий стол/ft_parser/libft/ft_lstlast.c" > CMakeFiles/ft_parser.dir/libft/ft_lstlast.c.i
+
+CMakeFiles/ft_parser.dir/libft/ft_lstlast.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_parser.dir/libft/ft_lstlast.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/galads/Рабочий стол/ft_parser/libft/ft_lstlast.c" -o CMakeFiles/ft_parser.dir/libft/ft_lstlast.c.s
+
+CMakeFiles/ft_parser.dir/libft/ft_lstsize.c.o: CMakeFiles/ft_parser.dir/flags.make
+CMakeFiles/ft_parser.dir/libft/ft_lstsize.c.o: ../libft/ft_lstsize.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/galads/Рабочий стол/ft_parser/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/ft_parser.dir/libft/ft_lstsize.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_parser.dir/libft/ft_lstsize.c.o -c "/home/galads/Рабочий стол/ft_parser/libft/ft_lstsize.c"
+
+CMakeFiles/ft_parser.dir/libft/ft_lstsize.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_parser.dir/libft/ft_lstsize.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/galads/Рабочий стол/ft_parser/libft/ft_lstsize.c" > CMakeFiles/ft_parser.dir/libft/ft_lstsize.c.i
+
+CMakeFiles/ft_parser.dir/libft/ft_lstsize.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_parser.dir/libft/ft_lstsize.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/galads/Рабочий стол/ft_parser/libft/ft_lstsize.c" -o CMakeFiles/ft_parser.dir/libft/ft_lstsize.c.s
+
+CMakeFiles/ft_parser.dir/libft/ft_isascii.c.o: CMakeFiles/ft_parser.dir/flags.make
+CMakeFiles/ft_parser.dir/libft/ft_isascii.c.o: ../libft/ft_isascii.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/galads/Рабочий стол/ft_parser/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/ft_parser.dir/libft/ft_isascii.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_parser.dir/libft/ft_isascii.c.o -c "/home/galads/Рабочий стол/ft_parser/libft/ft_isascii.c"
+
+CMakeFiles/ft_parser.dir/libft/ft_isascii.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_parser.dir/libft/ft_isascii.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/galads/Рабочий стол/ft_parser/libft/ft_isascii.c" > CMakeFiles/ft_parser.dir/libft/ft_isascii.c.i
+
+CMakeFiles/ft_parser.dir/libft/ft_isascii.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_parser.dir/libft/ft_isascii.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/galads/Рабочий стол/ft_parser/libft/ft_isascii.c" -o CMakeFiles/ft_parser.dir/libft/ft_isascii.c.s
+
+CMakeFiles/ft_parser.dir/ft_isascii_content.c.o: CMakeFiles/ft_parser.dir/flags.make
+CMakeFiles/ft_parser.dir/ft_isascii_content.c.o: ../ft_isascii_content.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/galads/Рабочий стол/ft_parser/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/ft_parser.dir/ft_isascii_content.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_parser.dir/ft_isascii_content.c.o -c "/home/galads/Рабочий стол/ft_parser/ft_isascii_content.c"
+
+CMakeFiles/ft_parser.dir/ft_isascii_content.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_parser.dir/ft_isascii_content.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/galads/Рабочий стол/ft_parser/ft_isascii_content.c" > CMakeFiles/ft_parser.dir/ft_isascii_content.c.i
+
+CMakeFiles/ft_parser.dir/ft_isascii_content.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_parser.dir/ft_isascii_content.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/galads/Рабочий стол/ft_parser/ft_isascii_content.c" -o CMakeFiles/ft_parser.dir/ft_isascii_content.c.s
+
 # Object files for target ft_parser
 ft_parser_OBJECTS = \
 "CMakeFiles/ft_parser.dir/ft_parser.c.o" \
@@ -217,7 +295,13 @@ ft_parser_OBJECTS = \
 "CMakeFiles/ft_parser.dir/libft/ft_strlen.c.o" \
 "CMakeFiles/ft_parser.dir/libft/ft_atoi.c.o" \
 "CMakeFiles/ft_parser.dir/libft/ft_isdigit.c.o" \
-"CMakeFiles/ft_parser.dir/libft/ft_isaint.c.o"
+"CMakeFiles/ft_parser.dir/libft/ft_isaint.c.o" \
+"CMakeFiles/ft_parser.dir/libft/ft_lstadd_back.c.o" \
+"CMakeFiles/ft_parser.dir/libft/ft_lstnew.c.o" \
+"CMakeFiles/ft_parser.dir/libft/ft_lstlast.c.o" \
+"CMakeFiles/ft_parser.dir/libft/ft_lstsize.c.o" \
+"CMakeFiles/ft_parser.dir/libft/ft_isascii.c.o" \
+"CMakeFiles/ft_parser.dir/ft_isascii_content.c.o"
 
 # External object files for target ft_parser
 ft_parser_EXTERNAL_OBJECTS =
@@ -232,9 +316,15 @@ ft_parser: CMakeFiles/ft_parser.dir/libft/ft_strlen.c.o
 ft_parser: CMakeFiles/ft_parser.dir/libft/ft_atoi.c.o
 ft_parser: CMakeFiles/ft_parser.dir/libft/ft_isdigit.c.o
 ft_parser: CMakeFiles/ft_parser.dir/libft/ft_isaint.c.o
+ft_parser: CMakeFiles/ft_parser.dir/libft/ft_lstadd_back.c.o
+ft_parser: CMakeFiles/ft_parser.dir/libft/ft_lstnew.c.o
+ft_parser: CMakeFiles/ft_parser.dir/libft/ft_lstlast.c.o
+ft_parser: CMakeFiles/ft_parser.dir/libft/ft_lstsize.c.o
+ft_parser: CMakeFiles/ft_parser.dir/libft/ft_isascii.c.o
+ft_parser: CMakeFiles/ft_parser.dir/ft_isascii_content.c.o
 ft_parser: CMakeFiles/ft_parser.dir/build.make
 ft_parser: CMakeFiles/ft_parser.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/galads/Рабочий стол/ft_parser/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Linking C executable ft_parser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/galads/Рабочий стол/ft_parser/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Linking C executable ft_parser"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ft_parser.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
