@@ -163,11 +163,39 @@ void ft_fill_map(t_game *img, t_list **list_head)
 	list = *list_head;
 
 //	printf("|%c|\n", world_map[i][j]);
-	while (list) //print list
+	while (i++ < img->map_height)
+	{
+		printf("list_map: |");
+		while (j++ < img->map_width)
+			printf("x");
+		j = 0;
+		printf("|\n");
+	}
+	while (list) //print list по столбикам
 	{
 		printf("list_map: |%s|\n", (char *)list->content);
 		list = list->next;
 	}
+	list = *list_head;
+	i = 0;
+	j = 0;
+	while (i++ < img->map_height && list)
+	{
+		printf("main_map: |");
+		while (j < img->map_width)
+		{
+			if ((((char *)list->content)[j]))
+				world_map [i][j] = (((char *)list->content)[j]);
+			else
+				world_map [i][j] = ' ';
+			printf("%c", world_map[i][j]);
+			j++;
+		}
+		j = 0;
+		list = list->next;
+		printf("|\n");
+	}
+//	ft_check_valid(img, )
 }
 
 void	ft_parse_tail(t_game *img, char **line, const int *fd)
@@ -217,7 +245,7 @@ void	ft_parse_tail(t_game *img, char **line, const int *fd)
 	printf("size height: |%d|\n", img->map_height);
 	printf("size width: |%d|\n", img->map_width);
 	list = list_head;
-	printf("content: |%s| ascii?: %d\n", list->content, ft_isascii_content(list->content));
+//	printf("content: |%s| ascii?: %d\n", list->content, ft_isascii_content(list->content));
 	ft_fill_map(img, &list_head);
 }
 
