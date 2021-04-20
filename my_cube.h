@@ -23,6 +23,8 @@
 # define S				0x0200
 # define F				0x1000
 # define C				0x2000
+# define UP				0x00001
+# define DOWN			0x00002
 
 # include <stdio.h>
 # include <unistd.h>

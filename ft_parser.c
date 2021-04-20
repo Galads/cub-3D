@@ -151,7 +151,103 @@ void	ft_init_parser(t_game *img)
 	img->texture_w.relative_path = 0;
 }
 
-void ft_fill_map(t_game *img, t_list **list_head)
+void	ft_move_trace(t_game *img, char (*world_map)[img->map_height],
+				   int i, int j)
+{
+	int flag;
+	int k;
+
+	flag = 0;
+	k = 0;
+	printf("i: %d j: %d", i, j);
+	while (k < img->map_height * img->map_width)
+	{
+		if (world_map[i + 1][j] == '1' && !(flag & UP))
+		{
+			flag |= DOWN;
+			i++;
+		}
+		else if (world_map[i][j - 1] == '1')
+		{
+			flag = 0;
+			j--;
+		}
+		else if (world_map[i - 1][j] == '1' && world_map[i - 1][j] && !(flag & DOWN))
+		{
+			flag |= UP;
+			i--;
+		}
+		else if (world_map[i][j + 1] == '1' && world_map[i][j + 1])
+		{
+			flag = 0;
+			j++;
+		}
+		else
+		{
+			printf("Error: not a valid map");
+			exit(1);
+		}
+		k++;
+	}
+}
+
+void	ft_check_valid_map(t_game *img, t_list **list_head,
+						char (*world_map)[img->map_height])
+{
+	int i = 0;
+	int j = 0;
+
+	t_list *list;
+
+	list = *list_head;
+	printf("helloooooooooooooooooooooooooooooooooooooooo\n");
+	while (i < img->map_height)
+	{
+		printf("vali_map: |");
+		while (j < img->map_width)
+		{
+			if ((((char *)list->content)[j]))
+				world_map [i][j] = (((char *)list->content)[j]);
+			else
+				world_map [i][j] = ' ';
+			printf("%c", world_map[i][j]);
+			j++;
+		}
+		j = 0;
+		i++;
+		list = list->next;
+		printf("|\n");
+	}
+	i = 0;
+	j = 0;
+	int flag;
+
+	flag = 0;
+	exit(1);
+	printf("\thello algorithm\t\n");
+	while (i < img->map_height)
+	{
+		while (j < img->map_width)
+		{
+//			printf("-----------|%c|", world_map[i][j]);
+			if(world_map[i][j] == '1' || world_map[i][j] == '2'
+			|| world_map[i][j] == '0' || world_map[i][j] == ' ')
+			{
+				if (!world_map[i][j + 1] && world_map[i][j] == '1')
+				{
+					printf("\tits broken\t\n");
+					ft_move_trace(img, world_map, i, j);
+				}
+				j++;
+			}
+		}
+		j = 0;
+		i++;
+	}
+//	printf("|%c|", world_map[0][0]);
+}
+
+void	ft_fill_map(t_game *img, t_list **list_head)
 {
 	t_list	*list;
 	char	world_map[(int)img->map_width][(int)img->map_height];
@@ -179,7 +275,7 @@ void ft_fill_map(t_game *img, t_list **list_head)
 	list = *list_head;
 	i = 0;
 	j = 0;
-	while (i++ < img->map_height && list)
+	while (i < img->map_height && list)
 	{
 		printf("main_map: |");
 		while (j < img->map_width)
@@ -192,10 +288,38 @@ void ft_fill_map(t_game *img, t_list **list_head)
 			j++;
 		}
 		j = 0;
+		i++;
 		list = list->next;
 		printf("|\n");
 	}
-//	ft_check_valid(img, )
+
+	i = 0;
+	j = 0;
+	printf("hzhzhz_map: \n");
+//	while (world_map[i][j])
+//	{
+////		printf("hello hzhzhzh :");
+//		printf("%c", world_map[i][j]);
+//		i++;
+//	}
+	i = 0;
+	j = 0;
+	list = *list_head;
+	while (i < img->map_height && list)
+	{
+		printf("hzh2_map: |");
+		while (j < img->map_width)
+		{
+			printf("%c", world_map[i][j]);
+			j++;
+		}
+		j = 0;
+		i++;
+		printf("|\n");
+		list = list->next;
+	}
+
+	ft_check_valid_map(img, list_head, world_map);
 }
 
 void	ft_parse_tail(t_game *img, char **line, const int *fd)
@@ -209,7 +333,10 @@ void	ft_parse_tail(t_game *img, char **line, const int *fd)
 	while ((i = get_next_line(*fd, line)) > 0)
 	{
 		if (!list_head && ft_isascii_content(*line))
+		{
 			list_head = ft_lstnew(*line);
+			continue;
+		}
 		list = ft_lstnew(*line);
 		if(ft_isascii_content(list->content))
 		{
@@ -232,7 +359,6 @@ void	ft_parse_tail(t_game *img, char **line, const int *fd)
 		printf("list: |%s|\n", (char *)list->content);
 		list = list->next;
 	}
-//	exit(1);
 	img->map_height = ft_lstsize(list_head);
 
 	list = list_head;
