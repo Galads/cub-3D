@@ -1,3 +1,0 @@
-/home/galads/Рабочий стол/ft_parser/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/galads/Рабочий стол/ft_parser/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/galads/Рабочий стол/ft_parser/cmake-build-debug/CMakeFiles/ft_parser.dir
