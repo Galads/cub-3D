@@ -34,7 +34,7 @@ void	ft_print_sprite(t_game *img, int draw_end_x, double transform_y,
 			{
 				d = (y) * 256 - img->img.height * 128
 					+ img->sprite.sprite_height * 128;
-				texY = ((d * texHeight) / img->sprite.sprite_height) / 256;
+				texY = ((d * TEX_HEIGHT) / img->sprite.sprite_height) / 256;
 				color_2 = *(unsigned int *)(img->sprite.addr
 						+ (texY * img->sprite.line_length + texX
 							* (img->sprite.bits_per_pixel / 8)));

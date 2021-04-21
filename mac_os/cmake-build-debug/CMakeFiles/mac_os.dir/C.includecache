@@ -18,12 +18,6 @@ unistd.h
 stdlib.h
 -
 
-/Users/brice/Desktop/ft_parser/mac_os/main3D.c
-reycasting/ft_reycasting.h
-/Users/brice/Desktop/ft_parser/mac_os/reycasting/ft_reycasting.h
-my_cube.h
-/Users/brice/Desktop/ft_parser/mac_os/my_cube.h
-
 /Users/brice/Desktop/ft_parser/mac_os/my_cube.h
 stdio.h
 -
@@ -42,57 +36,13 @@ get_next_line/get_next_line.h
 libft/libft.h
 /Users/brice/Desktop/ft_parser/mac_os/libft/libft.h
 
-/Users/brice/Desktop/ft_parser/mac_os/reycasting/ft_base_rc_value.c
-ft_reycasting.h
-/Users/brice/Desktop/ft_parser/mac_os/reycasting/ft_reycasting.h
-
 /Users/brice/Desktop/ft_parser/mac_os/reycasting/ft_calc_and_print_sprite.c
-ft_reycasting.h
-/Users/brice/Desktop/ft_parser/mac_os/reycasting/ft_reycasting.h
-
-/Users/brice/Desktop/ft_parser/mac_os/reycasting/ft_calc_step_init_side.c
-ft_reycasting.h
-/Users/brice/Desktop/ft_parser/mac_os/reycasting/ft_reycasting.h
-
-/Users/brice/Desktop/ft_parser/mac_os/reycasting/ft_control_plr.c
-ft_reycasting.h
-/Users/brice/Desktop/ft_parser/mac_os/reycasting/ft_reycasting.h
-
-/Users/brice/Desktop/ft_parser/mac_os/reycasting/ft_init_val.c
-ft_reycasting.h
-/Users/brice/Desktop/ft_parser/mac_os/reycasting/ft_reycasting.h
-
-/Users/brice/Desktop/ft_parser/mac_os/reycasting/ft_key_hook_handle.c
-ft_reycasting.h
-/Users/brice/Desktop/ft_parser/mac_os/reycasting/ft_reycasting.h
-
-/Users/brice/Desktop/ft_parser/mac_os/reycasting/ft_move_player.c
-ft_reycasting.h
-/Users/brice/Desktop/ft_parser/mac_os/reycasting/ft_reycasting.h
-
-/Users/brice/Desktop/ft_parser/mac_os/reycasting/ft_open_tex_spr.c
-ft_reycasting.h
-/Users/brice/Desktop/ft_parser/mac_os/reycasting/ft_reycasting.h
-
-/Users/brice/Desktop/ft_parser/mac_os/reycasting/ft_print_texture.c
-ft_reycasting.h
-/Users/brice/Desktop/ft_parser/mac_os/reycasting/ft_reycasting.h
-
-/Users/brice/Desktop/ft_parser/mac_os/reycasting/ft_rc_hit.c
-ft_reycasting.h
-/Users/brice/Desktop/ft_parser/mac_os/reycasting/ft_reycasting.h
-
-/Users/brice/Desktop/ft_parser/mac_os/reycasting/ft_rc_s_first.c
 ft_reycasting.h
 /Users/brice/Desktop/ft_parser/mac_os/reycasting/ft_reycasting.h
 
 /Users/brice/Desktop/ft_parser/mac_os/reycasting/ft_reycasting.h
 ../my_cube.h
 /Users/brice/Desktop/ft_parser/mac_os/my_cube.h
-
-/Users/brice/Desktop/ft_parser/mac_os/reycasting/ft_vertical_line.c
-ft_reycasting.h
-/Users/brice/Desktop/ft_parser/mac_os/reycasting/ft_reycasting.h
 
 /usr/local/include/mlx.h
 
