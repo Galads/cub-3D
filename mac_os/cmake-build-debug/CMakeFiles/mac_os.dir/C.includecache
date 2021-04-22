@@ -6,41 +6,51 @@
 
 #IncludeRegexTransform: 
 
-/home/galads/Рабочий стол/main_parser/ft_parser/mac_os/get_next_line/get_next_line.h
+/Users/brice/Desktop/main_parser/ft_parser/mac_os/ft_screen_shot.c
+string.h
+-
+errno.h
+-
+reycasting/ft_reycasting.h
+/Users/brice/Desktop/main_parser/ft_parser/mac_os/reycasting/ft_reycasting.h
+
+/Users/brice/Desktop/main_parser/ft_parser/mac_os/get_next_line/get_next_line.h
 unistd.h
 -
 stdlib.h
 -
 
-/home/galads/Рабочий стол/main_parser/ft_parser/mac_os/libft/libft.h
+/Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/libft.h
 unistd.h
 -
 stdlib.h
 -
 
-/home/galads/Рабочий стол/main_parser/ft_parser/mac_os/my_cube.h
+/Users/brice/Desktop/main_parser/ft_parser/mac_os/my_cube.h
 stdio.h
 -
 unistd.h
 -
 limits.h
 -
+fcntl.h
+-
+errno.h
+-
 mlx.h
-/home/galads/Рабочий стол/main_parser/ft_parser/mac_os/mlx.h
+/Users/brice/Desktop/main_parser/ft_parser/mac_os/mlx.h
 math.h
-/home/galads/Рабочий стол/main_parser/ft_parser/mac_os/math.h
+/Users/brice/Desktop/main_parser/ft_parser/mac_os/math.h
 stdlib.h
-/home/galads/Рабочий стол/main_parser/ft_parser/mac_os/stdlib.h
+/Users/brice/Desktop/main_parser/ft_parser/mac_os/stdlib.h
 get_next_line/get_next_line.h
-/home/galads/Рабочий стол/main_parser/ft_parser/mac_os/get_next_line/get_next_line.h
+/Users/brice/Desktop/main_parser/ft_parser/mac_os/get_next_line/get_next_line.h
 libft/libft.h
-/home/galads/Рабочий стол/main_parser/ft_parser/mac_os/libft/libft.h
+/Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/libft.h
 
-/home/galads/Рабочий стол/main_parser/ft_parser/mac_os/reycasting/ft_init_val.c
-ft_reycasting.h
-/home/galads/Рабочий стол/main_parser/ft_parser/mac_os/reycasting/ft_reycasting.h
-
-/home/galads/Рабочий стол/main_parser/ft_parser/mac_os/reycasting/ft_reycasting.h
+/Users/brice/Desktop/main_parser/ft_parser/mac_os/reycasting/ft_reycasting.h
 ../my_cube.h
-/home/galads/Рабочий стол/main_parser/ft_parser/mac_os/my_cube.h
+/Users/brice/Desktop/main_parser/ft_parser/mac_os/my_cube.h
+
+/usr/local/include/mlx.h
 

@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/mac_os.dir/ft_isaint.c.o"
   "CMakeFiles/mac_os.dir/ft_isascii_content.c.o"
   "CMakeFiles/mac_os.dir/ft_parser.c.o"
+  "CMakeFiles/mac_os.dir/ft_screen_shot.c.o"
   "CMakeFiles/mac_os.dir/get_next_line/get_next_line.c.o"
   "CMakeFiles/mac_os.dir/get_next_line/get_next_line_utils.c.o"
   "CMakeFiles/mac_os.dir/libft/ft_atoi.c.o"

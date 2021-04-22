@@ -55,14 +55,15 @@ add_executable(mac_os
 #        minilibx_opengl_20191021/mlx_new_window.h
 #        minilibx_opengl_20191021/mlx_opengl.h
 #        minilibx_opengl_20191021/mlx_shaders.c
-        reycasting/ft_control_plr.c reycasting/ft_move_player.c reycasting/ft_init_val.c reycasting/ft_open_tex_spr.c reycasting/ft_key_hook_handle.c reycasting/ft_calc_and_print_sprite.c ft_free_memory.c)
+        screenshot.bmp
+        reycasting/ft_control_plr.c reycasting/ft_move_player.c reycasting/ft_init_val.c reycasting/ft_open_tex_spr.c reycasting/ft_key_hook_handle.c reycasting/ft_calc_and_print_sprite.c ft_free_memory.c ft_screen_shot.c)
 #mac_os target
-#target_link_libraries(mac_os "-framework OpenGL")
-#target_link_libraries(mac_os "-framework AppKit")
-#target_link_libraries(mac_os /usr/local/lib/libmlx.a)
+target_link_libraries(mac_os "-framework OpenGL")
+target_link_libraries(mac_os "-framework AppKit")
+target_link_libraries(mac_os /usr/local/lib/libmlx.a)
 
 #linux target
-target_link_libraries(mac_os "-Lminilibx-linux/ -lmlx -L/usr/lib")
-target_link_libraries(mac_os "-Lminilibx-linux -Imlx_linux -O3")
-target_link_libraries(mac_os "-lXext -lX11 -lbsd -lm")
-target_link_libraries(mac_os /usr/lib/libmlx.a)
+#target_link_libraries(mac_os "-Lminilibx-linux/ -lmlx -L/usr/lib")
+#target_link_libraries(mac_os "-Lminilibx-linux -Imlx_linux -O3")
+#target_link_libraries(mac_os "-lXext -lX11 -lbsd -lm")
+#target_link_libraries(mac_os /usr/lib/libmlx.a)

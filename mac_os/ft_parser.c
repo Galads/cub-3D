@@ -379,7 +379,7 @@ void	ft_parser(int argc, char **argv, t_game *img)
 	ft_init_parser(img);
 	if (!argv[1])
 		printf("Error: no map\n");
-	if (argc == 2)
+	if (argc == 2 || argc == 3)
 	{
 		while ((i = get_next_line(fd, &line)) && j <= 7)
 		{

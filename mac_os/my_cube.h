@@ -35,6 +35,8 @@
 # include <stdio.h>
 # include <unistd.h>
 # include <limits.h>
+# include <fcntl.h>
+# include <errno.h>
 # include "mlx.h"
 # include "math.h"
 # include "stdlib.h"
@@ -148,6 +150,7 @@ typedef struct s_game
 	long long int	map_width;
 	long long int	map_height;
 	char			**world_map;
+	int				flag_screen;
 
 }					t_game;
 
@@ -155,5 +158,5 @@ int		ft_isaint(int c);
 int		ft_isascii_content(void *c);
 void	ft_parser(int argc, char **argv, t_game *img);
 void	ft_free_memory(t_game *img);
-
+void	ft_screen_shot(t_game *img);
 #endif

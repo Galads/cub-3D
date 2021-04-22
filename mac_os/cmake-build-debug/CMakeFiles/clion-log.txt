@@ -1,4 +1,4 @@
-/snap/clion/149/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/gcc -G "CodeBlocks - Unix Makefiles" "/home/galads/Рабочий стол/main_parser/ft_parser/mac_os"
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/brice/Desktop/main_parser/ft_parser/mac_os
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/galads/Рабочий стол/main_parser/ft_parser/mac_os/cmake-build-debug
+-- Build files have been written to: /Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug

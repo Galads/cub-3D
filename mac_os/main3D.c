@@ -63,7 +63,13 @@ void	render_frame(t_game *img)
 	ft_control_plr(img);
 	mlx_put_image_to_window(img->img.mlx, img->img.win,
 						 img->img.img, 0, 0);
-	mlx_destroy_image(img->img.mlx, img->img.img);
+	if (img->flag_screen == 2)
+	{
+		ft_screen_shot(img);
+		exit(1);
+	}
+	else
+		mlx_destroy_image(img->img.mlx, img->img.img);
 }
 
 void ft_basic_while(t_game *img)
@@ -76,17 +82,17 @@ void ft_basic_while(t_game *img)
 //		ft_texture(&img.texture_s, &img,img.texture_s.relative_path);
 //		ft_texture(&img.texture_w, &img,img.texture_w.relative_path);
 
-//	ft_texture(&img->texture_n, img, "/Users/brice/Desktop/ft_parser/mac_os/textures/bluestone.xpm");
-//	ft_texture(&img->texture_e, img, "/Users/brice/Desktop/ft_parser/mac_os/textures/eagle.xpm");
-//	ft_texture(&img->texture_s, img,"/Users/brice/Desktop/ft_parser/mac_os/textures/redbrick.xpm");
-//	ft_texture(&img->texture_w, img, "/Users/brice/Desktop/ft_parser/mac_os/textures/purplestone.xpm");
-//	ft_sprite(&img->sprite, img, "/Users/brice/Desktop/ft_parser/mac_os/sprites/1_1.xpm");
+	ft_texture(&img->texture_n, img, "/Users/brice/Desktop/main_parser/ft_parser/mac_os/textures/bluestone.xpm");
+	ft_texture(&img->texture_e, img, "/Users/brice/Desktop/main_parser/ft_parser/mac_os/textures/eagle.xpm");
+	ft_texture(&img->texture_s, img,"/Users/brice/Desktop/main_parser/ft_parser/mac_os/textures/redbrick.xpm");
+	ft_texture(&img->texture_w, img, "/Users/brice/Desktop/main_parser/ft_parser/mac_os/textures/purplestone.xpm");
+	ft_sprite(&img->sprite, img, "/Users/brice/Desktop/main_parser/ft_parser/mac_os/sprites/1_1.xpm");
 
-	ft_texture(&img->texture_n, img, "/home/galads/Рабочий стол/main_parser/ft_parser/mac_os/textures/bluestone.xpm");
-	ft_texture(&img->texture_e, img, "/home/galads/Рабочий стол/main_parser/ft_parser/mac_os/textures/eagle.xpm");
-	ft_texture(&img->texture_s, img,"/home/galads/Рабочий стол/main_parser/ft_parser/mac_os/textures/redbrick.xpm");
-	ft_texture(&img->texture_w, img, "/home/galads/Рабочий стол/main_parser/ft_parser/mac_os/textures/purplestone.xpm");
-	ft_sprite(&img->sprite, img, "/home/galads/Рабочий стол/main_parser/ft_parser/mac_os/sprites/1_1.xpm");
+//	ft_texture(&img->texture_n, img, "/home/galads/Рабочий стол/main_parser/ft_parser/mac_os/textures/bluestone.xpm");
+//	ft_texture(&img->texture_e, img, "/home/galads/Рабочий стол/main_parser/ft_parser/mac_os/textures/eagle.xpm");
+//	ft_texture(&img->texture_s, img,"/home/galads/Рабочий стол/main_parser/ft_parser/mac_os/textures/redbrick.xpm");
+//	ft_texture(&img->texture_w, img, "/home/galads/Рабочий стол/main_parser/ft_parser/mac_os/textures/purplestone.xpm");
+//	ft_sprite(&img->sprite, img, "/home/galads/Рабочий стол/main_parser/ft_parser/mac_os/sprites/1_1.xpm");
 
 	mlx_loop_hook(img->img.mlx, &render_frame, img);
 	mlx_do_sync(img->img.mlx);
@@ -98,15 +104,29 @@ int main(int argc, char **argv)
 	t_game	img;
 	char	*line;
 
-	line = ft_strnstr(argv[1], ".cub", INT_MAX);
-	if (line)
+//	if (!argv[1])
+//	{
+		line = ft_strnstr(argv[1], ".cub", INT_MAX);
+		if (!line)
+		{
+			printf("Error: no find file with expansion \".cub 1\"\n");
+			return 1;
+		}
+//		return (1);
+//	}
+	if (*line && argc == 2)
 	{
+		img.flag_screen = 1;
 		ft_parser(argc, argv, &img);
 		ft_init_val(&img);
 		ft_basic_while(&img);
 	}
-	else
+	else if (*line && argc == 3)
 	{
+		img.flag_screen = 2;
+		ft_parser(argc, argv, &img);
+		ft_init_val(&img);
+		ft_basic_while(&img);
 		printf("Error: no find file with expansion \".cub\"\n");
 		return (1);
 	}
