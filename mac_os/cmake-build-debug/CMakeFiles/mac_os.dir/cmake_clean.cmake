@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/mac_os.dir/ft_free_memory.c.o"
   "CMakeFiles/mac_os.dir/ft_isaint.c.o"
   "CMakeFiles/mac_os.dir/ft_isascii_content.c.o"
   "CMakeFiles/mac_os.dir/ft_parser.c.o"

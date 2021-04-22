@@ -113,6 +113,15 @@ void ft_fill_flag(t_game *img)
 	if (img->rc.col_c)
 		img->flag_control |= C;
 }
+void	ft_free_split(char **line)
+{
+	int i;
+
+	i = 0;
+	while (line[i])
+		free(line[i++]);
+	free(line);
+}
 
 void	ft_parse_head(char **line, t_game *img)
 {
@@ -122,17 +131,16 @@ void	ft_parse_head(char **line, t_game *img)
 	i = 0;
 
 	result = ft_split(*line, ' ');
+//	free(line);
 	while (result[i])
 	{
 		ft_parse_t_a_s((const char **) result, img);
 		ft_parse_str(result, img);
 		ft_fill_flag(img);
 		img->flag_parser = 0;
-//		printf("->|%s|<-\n", result[i]);
 		i++;
 	}
-//	printf("height - |%d|, width - |%d|", img->img.height, img->img.width);
-//	exit(1);
+	ft_free_split(result);
 }
 
 void	ft_init_parser(t_game *img)
@@ -194,35 +202,16 @@ void	ft_move_trace(t_game *img, char (*world_map)[img->map_width],
 
 void	ft_check_valid_map(t_game *img, t_list **list_head)
 {
-	int i = 0;
-	int j = 0;
-
-	t_list *list;
-	printf("helloooooooooooooooooooooooooooooooooooooooo\n");
-
-	i = 0;
-	j = 0;
-	list = *list_head;
-	while (i < img->map_height && list)
-	{
-		printf("hzh3_map: |");
-		while (j < img->map_width)
-		{
-			printf("%c", img->world_map[i][j]);
-			j++;
-		}
-		j = 0;
-		i++;
-		printf("|\n");
-		list = list->next;
-	}
+	int		i;
+	int		j;
+	int		flag;
+	t_list	*list;
 
 
 	i = 0;
 	j = 0;
-	int flag;
-
 	flag = 0;
+	list = *list_head;
 //	exit(1);
 //	printf("\thello algorithm\t\n");
 //	while (i < img->map_height)
@@ -244,35 +233,17 @@ void	ft_check_valid_map(t_game *img, t_list **list_head)
 //		j = 0;
 //		i++;
 //	}
-//	printf("|%c|", world_map[0][0]);
 
 	i = 0;
 	j = 0;
 	list = *list_head;
-
-	while (i < img->map_height && list)
-	{
-		printf("lols_map: |");
-		while (j < img->map_width)
-		{
-			printf("%c", (img->world_map)[i][j]);
-			j++;
-		}
-		j = 0;
-		i++;
-		printf("|\n");
-		list = list->next;
-	}
-
 }
 
 void	ft_fill_map(t_game *img, t_list **list_head)
 {
 	t_list	*list;
-//	char	world_map[(int)img->map_height][(int)img->map_width];
-//	char	**world_map;
-	int 	i;
-	int 	j;
+	int		i;
+	int		j;
 
 	i = 0;
 	j = 0;
@@ -339,22 +310,28 @@ void	ft_parse_tail(t_game *img, char **line, const int *fd)
 	t_list	*list;
 
 	j = 0;
+	free(*line);
 	while ((i = get_next_line(*fd, line)) > 0)
 	{
 		if (!list_head && ft_isascii_content(*line))
 		{
 			list_head = ft_lstnew(*line);
+//			free(*line);
 			continue;
 		}
 		list = ft_lstnew(*line);
-		if(ft_isascii_content(list->content))
+//		free(*line);
+		if (ft_isascii_content(list->content))
 		{
 			ft_lstadd_back(&list_head, list);
 			printf("i = %d |%s|\n", i, *line);
 			j++;
 		}
 		else
+		{
 			free(list);
+			free(*line);
+		}
 	}
 	printf("i = %d |%s|\n", i, *line);
 	list = ft_lstnew(*line);
@@ -387,10 +364,10 @@ void	ft_parse_tail(t_game *img, char **line, const int *fd)
 
 void	ft_parser(int argc, char **argv, t_game *img)
 {
-	int i;
-	int j;
-	int fd;
-	char *line;
+	int		j;
+	int		i;
+	int		fd;
+	char	*line;
 
 	j = 0;
 	fd = open(argv[1], O_RDONLY);
@@ -400,7 +377,6 @@ void	ft_parser(int argc, char **argv, t_game *img)
 		exit(1);
 	}
 	ft_init_parser(img);
-
 	if (!argv[1])
 		printf("Error: no map\n");
 	if (argc == 2)
@@ -414,6 +390,7 @@ void	ft_parser(int argc, char **argv, t_game *img)
 			ft_check_flag(img);
 		}
 		ft_parse_tail(img, &line, &fd);
+		free(line);
 	}
 	else if (argc == 3)
 	{

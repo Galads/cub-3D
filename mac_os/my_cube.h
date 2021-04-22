@@ -154,5 +154,6 @@ typedef struct s_game
 int		ft_isaint(int c);
 int		ft_isascii_content(void *c);
 void	ft_parser(int argc, char **argv, t_game *img);
+void	ft_free_memory(t_game *img);
 
 #endif
