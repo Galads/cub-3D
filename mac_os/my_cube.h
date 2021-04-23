@@ -19,8 +19,6 @@
 # define M_L			0x020
 # define R_R			0x100
 # define R_L			0x200
-# define TEX_WIDTH 		64
-# define TEX_HEIGHT 	64
 # define RES			0x0001
 # define NO				0x0002
 # define SO				0x0010
@@ -36,6 +34,7 @@
 # include <unistd.h>
 # include <limits.h>
 # include <fcntl.h>
+# include <string.h>
 # include <errno.h>
 # include "mlx.h"
 # include "math.h"
@@ -69,6 +68,9 @@ typedef struct s_sprite
 	double			y;
 	void			*img;
 	char			*addr;
+	double			*sprite_distance;
+	double			*z_buffer;
+	int				*sprite_order;
 	int				line_length;
 	int				endian;
 	int				width;

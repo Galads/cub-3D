@@ -47,19 +47,19 @@ void	ft_print_texture(t_game *game)
 	else
 		wallX = game->rc.pos_x + game->rc.perp_wall_dist * game->rc.ray_dir_x;
 	wallX -= floor((wallX));
-	game->rc.tex_x = (int)(wallX * (double)(TEX_WIDTH));
+	game->rc.tex_x = (int)(wallX * (double)(game->texture_n.width));
 	if (game->rc.side == 0 && game->rc.ray_dir_x > 0)
-		game->rc.tex_x = TEX_WIDTH - game->rc.tex_x - 1;
+		game->rc.tex_x = game->texture_n.width - game->rc.tex_x - 1;
 	if (game->rc.side == 1 && game->rc.ray_dir_y < 0)
-		game->rc.tex_x = TEX_WIDTH - game->rc.tex_x - 1;
-	step = 1.0 * TEX_WIDTH / game->rc.line_height;
+		game->rc.tex_x = game->texture_n.width - game->rc.tex_x - 1;
+	step = 1.0 * game->texture_n.width / game->rc.line_height;
 	texPos = (game->rc.draw_start - (double)game->img.height / 2
 			+ (double)game->rc.line_height / 2) * step;
 	y = game->rc.draw_start;
 	ft_select_texture(game, &s_tex);
 	while (y < game->rc.draw_end)
 	{
-		game->rc.tex_y = (int)texPos & (TEX_WIDTH - 1);
+		game->rc.tex_y = (int)texPos & (game->texture_n.width - 1);
 		texPos += step;
 		ft_print_sidet(game, &s_tex, y);
 		y++;

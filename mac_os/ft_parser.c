@@ -78,10 +78,7 @@ int	ft_check_flag(t_game *img)
 	if ((img->flag_control & F && img->flag_control & C && img->flag_control & S
 	&& img->flag_control & RES &&img->flag_control & EA && img->flag_control & NO
 	&& img->flag_control & SO && img->flag_control & WE))
-	{
-		printf("\t-----------------------ok------------------\t\n");
 		return (1);
-	}
 	else if (img->flag_control)
 	{
 		printf("Warning: maybe no find res or texture with sprite\n");
@@ -249,18 +246,9 @@ void	ft_fill_map(t_game *img, t_list **list_head)
 	j = 0;
 	list = *list_head;
 
-	img->world_map = (char **)ft_calloc(img->map_height, sizeof (char *));
+	img->world_map = (char **)ft_calloc(img->map_height + 1, sizeof (char *));
 	while (i < img->map_height)
 		img->world_map[i++] = (char *)ft_calloc(img->map_width, sizeof (char));
-	//	printf("|%c|\n", world_map[i][j]);
-	while (i++ < img->map_height)
-	{
-		printf("list_map: |");
-		while (j++ < img->map_width)
-			printf("x");
-		j = 0;
-		printf("|\n");
-	}
 	while (list) //print list по столбикам
 	{
 		printf("list_map: |%s|\n", (char *)list->content);
@@ -398,5 +386,4 @@ void	ft_parser(int argc, char **argv, t_game *img)
 	}
 	else
 		printf("Error: no valid arguments\n");
-	printf("Result: %s", strerror(errno));
 }

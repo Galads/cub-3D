@@ -6,13 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/Users/brice/Desktop/main_parser/ft_parser/mac_os/ft_screen_shot.c
+/Users/brice/Desktop/main_parser/ft_parser/mac_os/ft_parser.c
+stdio.h
+-
 string.h
 -
-errno.h
+fcntl.h
 -
-reycasting/ft_reycasting.h
-/Users/brice/Desktop/main_parser/ft_parser/mac_os/reycasting/ft_reycasting.h
+limits.h
+-
+errno.h
+/Users/brice/Desktop/main_parser/ft_parser/mac_os/errno.h
+my_cube.h
+/Users/brice/Desktop/main_parser/ft_parser/mac_os/my_cube.h
 
 /Users/brice/Desktop/main_parser/ft_parser/mac_os/get_next_line/get_next_line.h
 unistd.h
@@ -26,6 +32,10 @@ unistd.h
 stdlib.h
 -
 
+/Users/brice/Desktop/main_parser/ft_parser/mac_os/main3D.c
+reycasting/ft_reycasting.h
+/Users/brice/Desktop/main_parser/ft_parser/mac_os/reycasting/ft_reycasting.h
+
 /Users/brice/Desktop/main_parser/ft_parser/mac_os/my_cube.h
 stdio.h
 -
@@ -34,6 +44,8 @@ unistd.h
 limits.h
 -
 fcntl.h
+-
+string.h
 -
 errno.h
 -

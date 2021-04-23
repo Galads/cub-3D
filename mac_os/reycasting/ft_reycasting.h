@@ -32,13 +32,13 @@ void	turn_player_vector(t_game *img, int k);
 void	ft_init_val(t_game *img);
 void	ft_texture(t_data *texture, t_game *img, char *str);
 void	ft_sprite(t_sprite *sprite, t_game *img, char *str);
-void	ft_sort_sprites(int *order, const double *dist, int size);
+void	ft_sort_sprites(int *order, double *dist, int size);
 int		key_hook_p(int keycode, t_game *img);
 int		key_hook_r(int keycode, t_game *img);
 void	my_mlx_pixel_put(t_data *data, int x, int y, int color);
 void	ft_print_sprite(t_game *img, int draw_end_x, double transform_y,
 			const double *z_buffer);
 void	ft_calculate_fs(t_game *img, t_sprite *sprite,
-			const int *sprite_order, const int *i);
+			const int *sprite_order, int *i);
 
 #endif

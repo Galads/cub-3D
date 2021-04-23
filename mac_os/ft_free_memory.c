@@ -8,7 +8,11 @@ void ft_free_memory(t_game *img)
 	free(img->texture_s.relative_path);
 	free(img->texture_w.relative_path);
 	free(img->texture_e.relative_path);
+	free(img->sprite.z_buffer);
+	free(img->sprite.sprite_order);
+	free(img->sprite.sprite_distance);
+	free(img->sprite.addr);
 
-	while (img->world_map[i])
-		free(img->world_map[i++]);
+	while (i < img->map_height + 1)
+		free(img->world_map[i]);
 }

@@ -34,7 +34,7 @@ void	ft_print_sprite(t_game *img, int draw_end_x, double transform_y,
 			{
 				d = (y) * 256 - img->img.height * 128
 					+ img->sprite.sprite_height * 128;
-				texY = ((d * TEX_HEIGHT) / img->sprite.sprite_height) / 256;
+				texY = ((d * img->texture_n.width) / img->sprite.sprite_height) / 256;
 				color_2 = *(unsigned int *)(img->sprite.addr
 						+ (texY * img->sprite.line_length + texX
 							* (img->sprite.bits_per_pixel / 8)));
@@ -49,10 +49,10 @@ void	ft_print_sprite(t_game *img, int draw_end_x, double transform_y,
 }
 
 void	ft_calculate_fs(t_game *img, t_sprite *sprite,
-						const int *sprite_order, const int *i)
+						const int *sprite_order, int *i)
 {
-	img->sprite.sprite_x = sprite[sprite_order[*i]].x - img->rc.pos_x;
-	img->sprite.sprite_y = sprite[sprite_order[*i]].y - img->rc.pos_y;
+	img->sprite.sprite_x = sprite[sprite_order[(*i)]].x - img->rc.pos_x;
+	img->sprite.sprite_y = sprite[sprite_order[(*i)]].y - img->rc.pos_y;
 	img->sprite.inv_det = 1.0 / (img->pos.plane_x * img->vector.v_y
 			- img->vector.v_x * img->pos.plane_y);
 	img->sprite.transform_x = img->sprite.inv_det * (img->vector.v_y
