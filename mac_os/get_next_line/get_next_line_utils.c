@@ -6,7 +6,7 @@
 /*   By: brice <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 22:37:30 by brice             #+#    #+#             */
-/*   Updated: 2020/11/25 12:41:28 by brice            ###   ########.fr       */
+/*   Updated: 2021/04/23 12:29:24 by brice            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static	size_t	ft_strlen(const char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (str[i] != '\0')
@@ -22,7 +22,7 @@ static	size_t	ft_strlen(const char *str)
 	return (i);
 }
 
-char			*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	int		i;
 	int		j;
@@ -32,8 +32,8 @@ char			*ft_strjoin(char const *s1, char const *s2)
 	j = 0;
 	if (!s1 || !s2)
 		return (NULL);
-	if (!(str = (char *)malloc(sizeof(char) *
-					(ft_strlen(s1) + ft_strlen(s2) + 1))))
+	str = (char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
+	if (!str)
 		return (NULL);
 	while (s1[i] != '\0')
 	{
@@ -49,7 +49,7 @@ char			*ft_strjoin(char const *s1, char const *s2)
 	return (str);
 }
 
-char			*ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	if (c == '\0')
 	{
@@ -66,7 +66,7 @@ char			*ft_strchr(const char *s, int c)
 	return (0);
 }
 
-char			*ft_strdup(const char *s1)
+char	*ft_strdup(const char *s1)
 {
 	int		i;
 	int		j;

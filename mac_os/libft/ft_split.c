@@ -6,7 +6,7 @@
 /*   By: brice <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/10 05:47:59 by brice             #+#    #+#             */
-/*   Updated: 2020/11/13 02:36:22 by brice            ###   ########.fr       */
+/*   Updated: 2021/04/23 10:35:50 by brice            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,9 +53,9 @@ static	size_t	ft_strlen_char(const char *str, char c)
 
 static	size_t	ft_split_words(char **str, const char *s, char c)
 {
-	int j;
-	int i;
-	int k;
+	int	j;
+	int	i;
+	int	k;
 
 	i = 0;
 	j = 0;
@@ -64,8 +64,8 @@ static	size_t	ft_split_words(char **str, const char *s, char c)
 		k = 0;
 		while (s[i] == c)
 			i++;
-		if (!(str[j] = (char *)malloc(sizeof(char) *
-											(ft_strlen_char(&s[i], c) + 1))))
+		str[j] = (char *)malloc(sizeof(char) * (ft_strlen_char(&s[i], c) + 1));
+		if (!str[j])
 		{
 			ft_clear_arr(str);
 			return (-1);
@@ -80,7 +80,7 @@ static	size_t	ft_split_words(char **str, const char *s, char c)
 	return (j);
 }
 
-char			**ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	char	**str;
 	int		i;
@@ -92,10 +92,11 @@ char			**ft_split(char const *s, char c)
 	k = 0;
 	if (!s)
 		return (NULL);
-	if (!(str = (char **)malloc(sizeof(char *) *
-											(ft_count_split(s, c) + 1))))
+	str = (char **)malloc(sizeof(char *) * (ft_count_split(s, c) + 1));
+	if (!str)
 		return (NULL);
-	if ((j = ft_split_words(str, s, c)) < 0)
+	j = ft_split_words(str, s, c);
+	if (j < 0)
 		return (NULL);
 	str[j] = NULL;
 	return (str);

@@ -17,13 +17,13 @@ void	ft_print_sprite(t_game *img, int draw_end_x, double transform_y,
 {
 	while (img->sprite.stripe < draw_end_x)
 	{
-		int				texX;
+		int				tex_x;
 		int				y;
 		int				d;
 		int				texY;
 		unsigned int	color_2;
 
-		texX = (int)(256 * (img->sprite.stripe - (-img->sprite.sprite_width
+		tex_x = (int)(256 * (img->sprite.stripe - (-img->sprite.sprite_width
 						/ 2 + img->sprite.sprite_screen_x)) * img->sprite.width
 				/ img->sprite.sprite_width) / 256;
 		if (transform_y > 0 && img->sprite.stripe > 0 && img->sprite.stripe
@@ -36,7 +36,7 @@ void	ft_print_sprite(t_game *img, int draw_end_x, double transform_y,
 					+ img->sprite.sprite_height * 128;
 				texY = ((d * img->texture_n.width) / img->sprite.sprite_height) / 256;
 				color_2 = *(unsigned int *)(img->sprite.addr
-						+ (texY * img->sprite.line_length + texX
+						+ (texY * img->sprite.line_length + tex_x
 							* (img->sprite.bits_per_pixel / 8)));
 				if ((color_2 & 0x00FFFFFF) != 0)
 					my_mlx_pixel_put(&img->img, img->sprite.stripe,

@@ -30,11 +30,11 @@ void	ft_rc_s_first(t_game *img, double *z_buffer)
 		if (img->rc.side == 1)
 			img->rc.color /= 3;
 		if (img->rc.x % 2)
-			ft_vertical_line(&img->img, img->rc.x, 0,
+			ft_vertical_line(img, 0,
 				img->rc.draw_start, img->rc.col_c);
 		ft_print_texture(img);
 		z_buffer[img->rc.x] = img->rc.perp_wall_dist;
-		ft_vertical_line(&img->img, img->rc.x, img->rc.draw_end,
+		ft_vertical_line(img, img->rc.draw_end + 1,
 			img->img.height, img->rc.col_f);
 		img->rc.x++;
 	}

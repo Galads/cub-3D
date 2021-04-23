@@ -27,8 +27,6 @@
 # define S				0x0200
 # define F				0x1000
 # define C				0x2000
-# define UP				0x00001
-# define DOWN			0x00002
 
 # include <stdio.h>
 # include <unistd.h>
@@ -161,4 +159,5 @@ int		ft_isascii_content(void *c);
 void	ft_parser(int argc, char **argv, t_game *img);
 void	ft_free_memory(t_game *img);
 void	ft_screen_shot(t_game *img);
+char	*ft_valid_line(char **line);
 #endif

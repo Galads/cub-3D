@@ -17,7 +17,8 @@ static	int	ft_strcopy(char **save, char **line)
 	char	*clear;
 
 	clear = *line;
-	if (!(*line = ft_strjoin(*line, *save)))
+	*line = ft_strjoin(*line, *save);
+	if (!*line)
 	{
 		free(clear);
 		return (-1);
@@ -28,13 +29,15 @@ static	int	ft_strcopy(char **save, char **line)
 
 static	int	if_save_true(char **line, char **p, char **clear, char **save)
 {
-	if ((*p = ft_strchr(*save, '\n')))
+	*p = ft_strchr(*save, '\n');
+	if (*p)
 	{
 		**p = '\0';
 		if ((ft_strcopy(save, line)) < 0)
 			return (-1);
 		*clear = *save;
-		if (!(*save = ft_strdup(*p + 1)))
+		*save = ft_strdup(*p + 1);
+		if (!*save)
 		{
 			free(*clear);
 			return (-1);
@@ -57,21 +60,25 @@ static	int	get_line_while(char **p, int *fd, char **line, char **save)
 	char	*buf;
 	int		rd;
 
-	if (!(buf = (char *)malloc(sizeof(char) * (BUFFER_SIZE + 1))))
+	buf = (char *)malloc(sizeof(char) * (BUFFER_SIZE + 1));
+	if (!buf)
 		return (-1);
-	while (!*p && (rd = read(*fd, buf, BUFFER_SIZE)) > 0)
+	rd = read(*fd, buf, BUFFER_SIZE);
+	while (!*p && rd > 0)
 	{
 		buf[rd] = '\0';
-		if ((*p = ft_strchr(buf, '\n')))
+		*p = ft_strchr(buf, '\n');
+		if (*p)
 		{
-			**p = '\0';
-			if (!(*save = ft_strdup(*p + 1)))
+			**p ='\0';
+			*save = ft_strdup(*p + 1);
+			if (!*save)
 			{
 				free(buf);
 				return (-1);
 			}
 		}
-		if ((ft_strcopy(&buf, line)) < 0)
+		if (ft_strcopy(&buf, line) < 0)
 		{
 			free(buf);
 			return (-1);
@@ -81,7 +88,7 @@ static	int	get_line_while(char **p, int *fd, char **line, char **save)
 	return (rd);
 }
 
-int			get_next_line(int fd, char **line)
+int	get_next_line(int fd, char **line)
 {
 	static char	*save;
 	char		*clear;
@@ -91,7 +98,8 @@ int			get_next_line(int fd, char **line)
 
 	if (fd < 0 || BUFFER_SIZE < 1 || !line)
 		return (-1);
-	if (!(*line = ft_strdup("")))
+	*line = ft_strdup("");
+	if (!*line)
 		return (-1);
 	if (save)
 	{
@@ -107,5 +115,8 @@ int			get_next_line(int fd, char **line)
 	if (save)
 		return (1);
 	free(save);
-	return ((rd < 0) ? -1 : 0);
+	if (rd < 0)
+		return (-1);
+	else
+		return (0);
 }

@@ -2,7 +2,6 @@
 #include <string.h>
 #include <fcntl.h>
 #include <limits.h>
-//#include <error.h>
 #include "errno.h"
 #include "my_cube.h"
 
@@ -13,7 +12,6 @@ int	ft_create_trgb(int t, int r, int g, int b)
 
 void ft_parse_t_a_s(const char **result, t_game *img)
 {
-//	printf("res: %d, sprite: %d\n", (img->flag_parser & RES), (img->flag_parser & S));
 	if (!ft_strncmp(*result, "R", INT_MAX))
 	{
 		img->flag_parser |= RES;
@@ -43,11 +41,18 @@ void	ft_parse_str(const char **result, t_game *img)
 	{
 		img->img.height = ft_atoi(result[1]);
 		img->img.width = ft_atoi(result[2]);
+		img->flag_parser ^= RES;
 	}
 	else if (img->flag_parser & S && result[1] && !result[2])
 		img->sprite.relative_path = ft_strdup((char *)result[1]);
 	else if (img->flag_parser & NO && result[1] && !result[2])
+	{
 		img->texture_n.relative_path = ft_strdup((char *)result[1]);
+		printf("set NO\n");
+//		free(img->texture_n.relative_path);
+//		printf("1\n");
+//		printf("2\n");
+	}
 	else if (img->flag_parser & SO && result[1] && !result[2])
 		img->texture_s.relative_path = ft_strdup((char *)result[1]);
 	else if (img->flag_parser & WE && result[1] && !result[2])
@@ -65,12 +70,9 @@ void	ft_parse_str(const char **result, t_game *img)
 	else
 	{
 		printf("Error: map not a valid\n");
-//		printf("result: %s\n", result[0]);
-//		free(result);
 		exit(1);
 	}
-	printf("height - |%d|, width - |%d|\n", img->img.height, img->img.width);
-//	printf("sprite path - |%s|\n", img->sprite.relative_path);
+
 }
 
 int	ft_check_flag(t_game *img)
@@ -80,10 +82,7 @@ int	ft_check_flag(t_game *img)
 	&& img->flag_control & SO && img->flag_control & WE))
 		return (1);
 	else if (img->flag_control)
-	{
 		printf("Warning: maybe no find res or texture with sprite\n");
-//		exit(1);
-	}
 	else
 	{
 		printf("hello");
@@ -94,21 +93,21 @@ int	ft_check_flag(t_game *img)
 void ft_fill_flag(t_game *img)
 {
 	if (img->img.height && img->img.width)
-		img->flag_control |= RES;
+		img->flag_parser ^= RES;
 	if (img->sprite.relative_path)
-		img->flag_control |= S;
+		img->flag_control ^= S;
 	if (img->texture_n.relative_path)
-		img->flag_control |= NO;
+		img->flag_control ^= NO;
 	if (img->texture_s.relative_path)
-		img->flag_control |= SO;
+		img->flag_control ^= SO;
 	if (img->texture_w.relative_path)
-		img->flag_control |= WE;
+		img->flag_control ^= WE;
 	if (img->texture_e.relative_path)
-		img->flag_control |= EA;
+		img->flag_control ^= EA;
 	if (img->rc.col_f)
-		img->flag_control |= F;
+		img->flag_control ^= F;
 	if (img->rc.col_c)
-		img->flag_control |= C;
+		img->flag_control ^= C;
 }
 void	ft_free_split(char **line)
 {
@@ -128,16 +127,23 @@ void	ft_parse_head(char **line, t_game *img)
 	i = 0;
 
 	result = ft_split(*line, ' ');
-//	free(line);
 	while (result[i])
 	{
-		ft_parse_t_a_s((const char **) result, img);
+		ft_parse_t_a_s(result, img);
 		ft_parse_str(result, img);
 		ft_fill_flag(img);
+//		break;
 		img->flag_parser = 0;
 		i++;
 	}
-	ft_free_split(result);
+//	ft_free_split(result);
+//	int i;
+
+	i = 0;
+	while (result[i] != '\0')
+		free(result[i++]);
+	free(result);
+//	free(line);
 }
 
 void	ft_init_parser(t_game *img)
@@ -157,137 +163,39 @@ void	ft_init_parser(t_game *img)
 	img->map_height = 0;
 }
 
-void	ft_move_trace(t_game *img, char (*world_map)[img->map_width],
-				   int i, int j)
-{
-	int flag;
-	int k;
-
-	flag = 0;
-	k = 0;
-	printf("i: %d j: %d", i, j);
-	while (k < img->map_height * img->map_width)
-	{
-		if (world_map[i + 1][j] == '1' && !(flag & UP))
-		{
-			flag |= DOWN;
-			i++;
-		}
-		else if (world_map[i][j - 1] == '1')
-		{
-			flag = 0;
-			j--;
-		}
-		else if (world_map[i - 1][j] == '1' && world_map[i - 1][j] && !(flag & DOWN))
-		{
-			flag |= UP;
-			i--;
-		}
-		else if (world_map[i][j + 1] == '1' && world_map[i][j + 1])
-		{
-			flag = 0;
-			j++;
-		}
-		else
-		{
-			printf("Error: not a valid map");
-			exit(1);
-		}
-		k++;
-	}
-}
-
-void	ft_check_valid_map(t_game *img, t_list **list_head)
-{
-	int		i;
-	int		j;
-	int		flag;
-	t_list	*list;
-
-
-	i = 0;
-	j = 0;
-	flag = 0;
-	list = *list_head;
-//	exit(1);
-//	printf("\thello algorithm\t\n");
-//	while (i < img->map_height)
-//	{
-//		while (j < img->map_width)
-//		{
-////			printf("-----------|%c|", world_map[i][j]);
-//			if(world_map[i][j] == '1' || world_map[i][j] == '2'
-//			|| world_map[i][j] == '0' || world_map[i][j] == ' ')
-//			{
-//				if (!world_map[i][j + 1] && world_map[i][j] == '1')
-//				{
-//					printf("\tits broken\t\n");
-//					ft_move_trace(img, world_map, i, j);
-//				}
-//				j++;
-//			}
-//		}
-//		j = 0;
-//		i++;
-//	}
-
-	i = 0;
-	j = 0;
-	list = *list_head;
-}
-
 void	ft_fill_map(t_game *img, t_list **list_head)
 {
 	t_list	*list;
 	int		i;
 	int		j;
+	int		k;
 
 	i = 0;
 	j = 0;
+	k = 0;
 	list = *list_head;
 
 	img->world_map = (char **)ft_calloc(img->map_height + 1, sizeof (char *));
 	while (i < img->map_height)
 		img->world_map[i++] = (char *)ft_calloc(img->map_width, sizeof (char));
-	while (list) //print list по столбикам
-	{
-		printf("list_map: |%s|\n", (char *)list->content);
-		list = list->next;
-	}
 	list = *list_head;
 	i = 0;
-	j = 0;
-	int k;
-
-	k = 0;
 	while (i < img->map_height && list)
 	{
 		printf("main_map: |");
 		k = ft_strlen(list->content);
 		ft_strlcpy(img->world_map[i], list->content, k + 1);
-		j = 0;
 		i++;
 		list = list->next;
 		printf("|\n");
 	}
-
-	i = 0;
-	j = 0;
-	list = *list_head;
-	while (i < img->map_height && list)
-	{
-		printf("hzh2_map: |");
-		while (j < img->map_width)
-		{
-			printf("%c", img->world_map[i][j]);
-			j++;
-		}
-		j = 0;
-		i++;
-		printf("|\n");
-		list = list->next;
-	}
-	ft_check_valid_map(img, list_head);
+//	list = *list_head;
+//	while (list) {
+//		printf("zx : |%s|\n", (char *) list->content);
+//		list = list->next;
+//	}
+//	list = *list_head;
+	ft_lstclear(list_head, &free);
 }
 
 void	ft_parse_tail(t_game *img, char **line, const int *fd)
@@ -298,55 +206,33 @@ void	ft_parse_tail(t_game *img, char **line, const int *fd)
 	t_list	*list;
 
 	j = 0;
-	free(*line);
+	char *lin;
+
+	lin = ft_valid_line(line);
+	if (*lin != '\0' && *lin != '\n' && (ft_check_flag(img) == 1))
+		list_head = ft_lstnew(*line);
+
 	while ((i = get_next_line(*fd, line)) > 0)
 	{
-		if (!list_head && ft_isascii_content(*line))
-		{
+		if (!list_head)
 			list_head = ft_lstnew(*line);
-//			free(*line);
-			continue;
-		}
-		list = ft_lstnew(*line);
-//		free(*line);
-		if (ft_isascii_content(list->content))
-		{
-			ft_lstadd_back(&list_head, list);
-			printf("i = %d |%s|\n", i, *line);
-			j++;
-		}
 		else
 		{
-			free(list);
-			free(*line);
+			list = ft_lstnew(*line);
+			ft_lstadd_back(&list_head, list);
 		}
 	}
-	printf("i = %d |%s|\n", i, *line);
 	list = ft_lstnew(*line);
 	ft_lstadd_back(&list_head, list);
-
-//	free(list);
-	list = list_head;
-	printf("ALLALDLFLLFLALFL 1: |%d|\n", img->map_width);
-	while (list) //print list
-	{
-		printf("list: |%s|\n", (char *)list->content);
-		list = list->next;
-	}
 	img->map_height = ft_lstsize(list_head);
 
 	list = list_head;
-	printf("ALLALDLFLLFLALFL 2: |%d|\n", img->map_width);
-	while (list) //print list
+	while (list)
 	{
 		if (img->map_width < ft_strlen(list->content))
 			img->map_width = (int)ft_strlen(list->content);
 		list = list->next;
 	}
-	printf("size height: |%d|\n", img->map_height);
-	printf("size width: |%d|\n", img->map_width);
-	list = list_head;
-//	printf("content: |%s| ascii?: %d\n", list->content, ft_isascii_content(list->content));
 	ft_fill_map(img, &list_head);
 }
 
@@ -377,13 +263,9 @@ void	ft_parser(int argc, char **argv, t_game *img)
 			free(line);
 			ft_check_flag(img);
 		}
-		ft_parse_tail(img, &line, &fd);
 		free(line);
+		ft_parse_tail(img, &line, &fd);
+//		free(line);
+//		exit(1);
 	}
-	else if (argc == 3)
-	{
-
-	}
-	else
-		printf("Error: no valid arguments\n");
 }

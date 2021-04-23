@@ -16,5 +16,5 @@ int	ft_isascii_content(void *c)
 {
 	if (*(char *)c == '\0')
 		return (0);
-	return (*(char *)c >= 0 && *(char *)c <= 127);
+	return (*(char *)c > 0 && *(char *)c <= 127);
 }

@@ -6,7 +6,7 @@
 /*   By: brice <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/16 18:56:03 by brice             #+#    #+#             */
-/*   Updated: 2021/04/16 19:06:54 by brice            ###   ########.fr       */
+/*   Updated: 2021/04/23 12:44:16 by brice            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,33 +34,39 @@ void	ft_select_texture(t_game *game, t_data *s_tex)
 		*s_tex = game->texture_e;
 }
 
-void	ft_print_texture(t_game *game)
+void	ft_check_side(t_game *game, double *step, double *tex_pos, int *y)
 {
-	double	wallX;
-	double	step;
-	double	texPos;
-	int		y;
-	t_data	s_tex;
+	double	wall_x;
 
 	if (game->rc.side == 0)
-		wallX = game->rc.pos_y + game->rc.perp_wall_dist * game->rc.ray_dir_y;
+		wall_x = game->rc.pos_y + game->rc.perp_wall_dist * game->rc.ray_dir_y;
 	else
-		wallX = game->rc.pos_x + game->rc.perp_wall_dist * game->rc.ray_dir_x;
-	wallX -= floor((wallX));
-	game->rc.tex_x = (int)(wallX * (double)(game->texture_n.width));
+		wall_x = game->rc.pos_x + game->rc.perp_wall_dist * game->rc.ray_dir_x;
+	wall_x -= floor((wall_x));
+	game->rc.tex_x = (int)(wall_x * (double)(game->texture_n.width));
 	if (game->rc.side == 0 && game->rc.ray_dir_x > 0)
 		game->rc.tex_x = game->texture_n.width - game->rc.tex_x - 1;
 	if (game->rc.side == 1 && game->rc.ray_dir_y < 0)
 		game->rc.tex_x = game->texture_n.width - game->rc.tex_x - 1;
-	step = 1.0 * game->texture_n.width / game->rc.line_height;
-	texPos = (game->rc.draw_start - (double)game->img.height / 2
-			+ (double)game->rc.line_height / 2) * step;
-	y = game->rc.draw_start;
+	*step = 1.0 * game->texture_n.width / game->rc.line_height;
+	*tex_pos = (game->rc.draw_start - (double)game->img.height / 2
+			  + (double)game->rc.line_height / 2) * *step;
+	*y = game->rc.draw_start;
+}
+
+void	ft_print_texture(t_game *game)
+{
+	double	step;
+	double	tex_pos;
+	int		y;
+	t_data	s_tex;
+
+	ft_check_side(game, &step, &tex_pos, &y);
 	ft_select_texture(game, &s_tex);
 	while (y < game->rc.draw_end)
 	{
-		game->rc.tex_y = (int)texPos & (game->texture_n.width - 1);
-		texPos += step;
+		game->rc.tex_y = (int)tex_pos & (game->texture_n.width - 1);
+		tex_pos += step;
 		ft_print_sidet(game, &s_tex, y);
 		y++;
 	}

@@ -122,6 +122,7 @@ int	main(int argc, char **argv)
 		ft_parser(argc, argv, &img);
 		ft_init_val(&img);
 		ft_basic_while(&img);
+//		sleep(1000);
 	}
 	else if (*line && argc == 3 && !ft_strncmp(argv[2], "--save", INT_MAX))
 	{

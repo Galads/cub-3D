@@ -12,15 +12,12 @@
 
 #include "ft_reycasting.h"
 
-void	ft_vertical_line(t_data *img, int x, int draw_start,
-		int draw_end, int color)
-{
-	int	i;
+void	ft_vertical_line(t_game *img, int draw_start, int draw_end, int color) {
+	int i;
 
 	i = draw_start;
-	while (i < draw_end)
-	{
-		my_mlx_pixel_put(img, x, i, color);
+	while (i < draw_end) {
+		my_mlx_pixel_put(&img->img, img->rc.x, i, color);
 		i++;
 	}
 }

@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/screenshot.bmp">
+			<Option target="mac_os"/>
+		</Unit>
 		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/ft_free_memory.c">
 			<Option target="mac_os"/>
 		</Unit>
@@ -95,6 +98,9 @@
 			<Option target="mac_os"/>
 		</Unit>
 		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/ft_screen_shot.c">
+			<Option target="mac_os"/>
+		</Unit>
+		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/ft_valid_line.c">
 			<Option target="mac_os"/>
 		</Unit>
 		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/get_next_line/get_next_line.c">
@@ -119,6 +125,9 @@
 			<Option target="mac_os"/>
 		</Unit>
 		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/ft_lstadd_back.c">
+			<Option target="mac_os"/>
+		</Unit>
+		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/ft_lstclear.c">
 			<Option target="mac_os"/>
 		</Unit>
 		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/ft_lstlast.c">
@@ -185,9 +194,6 @@
 			<Option target="mac_os"/>
 		</Unit>
 		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/reycasting/ft_vertical_line.c">
-			<Option target="mac_os"/>
-		</Unit>
-		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/screenshot.bmp">
 			<Option target="mac_os"/>
 		</Unit>
 		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/CMakeLists.txt">

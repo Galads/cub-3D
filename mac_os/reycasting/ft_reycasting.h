@@ -18,8 +18,8 @@ void	ft_rc_s_first(t_game *img, double *z_buffer);
 void	ft_rc_hit(t_game *img);
 void	ft_base_rc_value(t_game	*img);
 void	ft_calc_step_init_side(t_game *img);
-void	ft_vertical_line(t_data *img, int x, int draw_start,
-			int draw_end, int color);
+void	ft_vertical_line(t_game *img, int draw_start,
+					  int draw_end, int color);
 void	ft_print_texture(t_game *game);
 void	ft_print_sidet(t_game *game, t_data *texture, int y);
 void	ft_select_texture(t_game *game, t_data *s_tex);

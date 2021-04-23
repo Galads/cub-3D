@@ -32,6 +32,8 @@ CMakeFiles/mac_os.dir/ft_screen_shot.c.o: ../my_cube.h
 CMakeFiles/mac_os.dir/ft_screen_shot.c.o: ../reycasting/ft_reycasting.h
 CMakeFiles/mac_os.dir/ft_screen_shot.c.o: /usr/local/include/mlx.h
 
+CMakeFiles/mac_os.dir/ft_valid_line.c.o: ../ft_valid_line.c
+
 CMakeFiles/mac_os.dir/get_next_line/get_next_line.c.o: ../get_next_line/get_next_line.c
 CMakeFiles/mac_os.dir/get_next_line/get_next_line.c.o: ../get_next_line/get_next_line.h
 
@@ -53,8 +55,9 @@ CMakeFiles/mac_os.dir/libft/ft_isdigit.c.o: ../libft/libft.h
 CMakeFiles/mac_os.dir/libft/ft_lstadd_back.c.o: ../libft/ft_lstadd_back.c
 CMakeFiles/mac_os.dir/libft/ft_lstadd_back.c.o: ../libft/libft.h
 
-CMakeFiles/mac_os.dir/libft/ft_lstlast.c.o: ../libft/ft_lstlast.c
-CMakeFiles/mac_os.dir/libft/ft_lstlast.c.o: ../libft/libft.h
+CMakeFiles/mac_os.dir/libft/ft_lstclear.c.o: ../libft/ft_lstclear.c
+CMakeFiles/mac_os.dir/libft/ft_lstclear.c.o: ../libft/libft.h
+
 
 CMakeFiles/mac_os.dir/libft/ft_lstnew.c.o: ../libft/ft_lstnew.c
 CMakeFiles/mac_os.dir/libft/ft_lstnew.c.o: ../libft/libft.h

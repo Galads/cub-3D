@@ -277,6 +277,33 @@ ft_screen_shot.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/ft_screen_shot.c.s
 .PHONY : ft_screen_shot.c.s
 
+ft_valid_line.o: ft_valid_line.c.o
+
+.PHONY : ft_valid_line.o
+
+# target to build an object file
+ft_valid_line.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/ft_valid_line.c.o
+.PHONY : ft_valid_line.c.o
+
+ft_valid_line.i: ft_valid_line.c.i
+
+.PHONY : ft_valid_line.i
+
+# target to preprocess a source file
+ft_valid_line.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/ft_valid_line.c.i
+.PHONY : ft_valid_line.c.i
+
+ft_valid_line.s: ft_valid_line.c.s
+
+.PHONY : ft_valid_line.s
+
+# target to generate assembly for a file
+ft_valid_line.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/ft_valid_line.c.s
+.PHONY : ft_valid_line.c.s
+
 get_next_line/get_next_line.o: get_next_line/get_next_line.c.o
 
 .PHONY : get_next_line/get_next_line.o
@@ -465,6 +492,33 @@ libft/ft_lstadd_back.s: libft/ft_lstadd_back.c.s
 libft/ft_lstadd_back.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/libft/ft_lstadd_back.c.s
 .PHONY : libft/ft_lstadd_back.c.s
+
+libft/ft_lstclear.o: libft/ft_lstclear.c.o
+
+.PHONY : libft/ft_lstclear.o
+
+# target to build an object file
+libft/ft_lstclear.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/libft/ft_lstclear.c.o
+.PHONY : libft/ft_lstclear.c.o
+
+libft/ft_lstclear.i: libft/ft_lstclear.c.i
+
+.PHONY : libft/ft_lstclear.i
+
+# target to preprocess a source file
+libft/ft_lstclear.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/libft/ft_lstclear.c.i
+.PHONY : libft/ft_lstclear.c.i
+
+libft/ft_lstclear.s: libft/ft_lstclear.c.s
+
+.PHONY : libft/ft_lstclear.s
+
+# target to generate assembly for a file
+libft/ft_lstclear.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/libft/ft_lstclear.c.s
+.PHONY : libft/ft_lstclear.c.s
 
 libft/ft_lstlast.o: libft/ft_lstlast.c.o
 
@@ -1057,6 +1111,9 @@ help:
 	@echo "... ft_screen_shot.o"
 	@echo "... ft_screen_shot.i"
 	@echo "... ft_screen_shot.s"
+	@echo "... ft_valid_line.o"
+	@echo "... ft_valid_line.i"
+	@echo "... ft_valid_line.s"
 	@echo "... get_next_line/get_next_line.o"
 	@echo "... get_next_line/get_next_line.i"
 	@echo "... get_next_line/get_next_line.s"
@@ -1078,6 +1135,9 @@ help:
 	@echo "... libft/ft_lstadd_back.o"
 	@echo "... libft/ft_lstadd_back.i"
 	@echo "... libft/ft_lstadd_back.s"
+	@echo "... libft/ft_lstclear.o"
+	@echo "... libft/ft_lstclear.i"
+	@echo "... libft/ft_lstclear.s"
 	@echo "... libft/ft_lstlast.o"
 	@echo "... libft/ft_lstlast.i"
 	@echo "... libft/ft_lstlast.s"
