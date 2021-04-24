@@ -65,6 +65,9 @@ CMakeFiles/mac_os.dir/libft/ft_lstnew.c.o: ../libft/libft.h
 CMakeFiles/mac_os.dir/libft/ft_lstsize.c.o: ../libft/ft_lstsize.c
 CMakeFiles/mac_os.dir/libft/ft_lstsize.c.o: ../libft/libft.h
 
+CMakeFiles/mac_os.dir/libft/ft_memchr.c.o: ../libft/ft_memchr.c
+CMakeFiles/mac_os.dir/libft/ft_memchr.c.o: ../libft/libft.h
+
 CMakeFiles/mac_os.dir/libft/ft_split.c.o: ../libft/ft_split.c
 CMakeFiles/mac_os.dir/libft/ft_split.c.o: ../libft/libft.h
 

@@ -30,6 +30,7 @@ add_executable(mac_os
         libft/ft_lstlast.c
         libft/ft_lstsize.c
         libft/ft_isascii.c
+        libft/ft_memchr.c
         ./ft_isascii_content.c
         ./ft_isaint.c
 #        graphics

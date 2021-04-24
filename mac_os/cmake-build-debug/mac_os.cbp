@@ -139,6 +139,9 @@
 		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/ft_lstsize.c">
 			<Option target="mac_os"/>
 		</Unit>
+		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/ft_memchr.c">
+			<Option target="mac_os"/>
+		</Unit>
 		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/ft_split.c">
 			<Option target="mac_os"/>
 		</Unit>

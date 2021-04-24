@@ -65,6 +65,9 @@ CMakeFiles/mac_os.dir/libft/ft_lstnew.c.o
 CMakeFiles/mac_os.dir/libft/ft_lstsize.c.o
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/ft_lstsize.c
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/libft.h
+CMakeFiles/mac_os.dir/libft/ft_memchr.c.o
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/ft_memchr.c
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/libft.h
 CMakeFiles/mac_os.dir/libft/ft_split.c.o
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/ft_split.c
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/libft.h

@@ -16,6 +16,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/mac_os.dir/libft/ft_lstlast.c.o"
   "CMakeFiles/mac_os.dir/libft/ft_lstnew.c.o"
   "CMakeFiles/mac_os.dir/libft/ft_lstsize.c.o"
+  "CMakeFiles/mac_os.dir/libft/ft_memchr.c.o"
   "CMakeFiles/mac_os.dir/libft/ft_split.c.o"
   "CMakeFiles/mac_os.dir/libft/ft_strlcpy.c.o"
   "CMakeFiles/mac_os.dir/libft/ft_strlen.c.o"

@@ -601,6 +601,33 @@ libft/ft_lstsize.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/libft/ft_lstsize.c.s
 .PHONY : libft/ft_lstsize.c.s
 
+libft/ft_memchr.o: libft/ft_memchr.c.o
+
+.PHONY : libft/ft_memchr.o
+
+# target to build an object file
+libft/ft_memchr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/libft/ft_memchr.c.o
+.PHONY : libft/ft_memchr.c.o
+
+libft/ft_memchr.i: libft/ft_memchr.c.i
+
+.PHONY : libft/ft_memchr.i
+
+# target to preprocess a source file
+libft/ft_memchr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/libft/ft_memchr.c.i
+.PHONY : libft/ft_memchr.c.i
+
+libft/ft_memchr.s: libft/ft_memchr.c.s
+
+.PHONY : libft/ft_memchr.s
+
+# target to generate assembly for a file
+libft/ft_memchr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/libft/ft_memchr.c.s
+.PHONY : libft/ft_memchr.c.s
+
 libft/ft_split.o: libft/ft_split.c.o
 
 .PHONY : libft/ft_split.o
@@ -1147,6 +1174,9 @@ help:
 	@echo "... libft/ft_lstsize.o"
 	@echo "... libft/ft_lstsize.i"
 	@echo "... libft/ft_lstsize.s"
+	@echo "... libft/ft_memchr.o"
+	@echo "... libft/ft_memchr.i"
+	@echo "... libft/ft_memchr.s"
 	@echo "... libft/ft_split.o"
 	@echo "... libft/ft_split.i"
 	@echo "... libft/ft_split.s"

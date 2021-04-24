@@ -21,6 +21,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/ft_lstlast.c" "/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles/mac_os.dir/libft/ft_lstlast.c.o"
   "/Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/ft_lstnew.c" "/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles/mac_os.dir/libft/ft_lstnew.c.o"
   "/Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/ft_lstsize.c" "/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles/mac_os.dir/libft/ft_lstsize.c.o"
+  "/Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/ft_memchr.c" "/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles/mac_os.dir/libft/ft_memchr.c.o"
   "/Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/ft_split.c" "/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles/mac_os.dir/libft/ft_split.c.o"
   "/Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/ft_strlcpy.c" "/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles/mac_os.dir/libft/ft_strlcpy.c.o"
   "/Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/ft_strlen.c" "/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles/mac_os.dir/libft/ft_strlen.c.o"
