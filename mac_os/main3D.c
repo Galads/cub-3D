@@ -120,9 +120,9 @@ int	main(int argc, char **argv)
 	{
 		img.flag_screen = 1;
 		ft_parser(argc, argv, &img);
+//		sleep(1000);
 		ft_init_val(&img);
 		ft_basic_while(&img);
-//		sleep(1000);
 	}
 	else if (*line && argc == 3 && !ft_strncmp(argv[2], "--save", INT_MAX))
 	{

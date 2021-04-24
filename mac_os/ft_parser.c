@@ -12,24 +12,24 @@ int	ft_create_trgb(int t, int r, int g, int b)
 
 void ft_parse_t_a_s(const char **result, t_game *img)
 {
-	if (!ft_strncmp(*result, "R", INT_MAX))
+	if (!ft_strncmp(*result, "R", INT_MAX) && !(img->flag_control & RES))
 	{
 		img->flag_parser |= RES;
 		printf("set R\n");
 	}
-	else if (!ft_strncmp(*result, "S", INT_MAX))
+	else if (!ft_strncmp(*result, "S", INT_MAX) && !(img->flag_control & S))
 		img->flag_parser |= S;
-	else if (!ft_strncmp(*result, "NO", INT_MAX))
+	else if (!ft_strncmp(*result, "NO", INT_MAX) && !(img->flag_control & NO))
 		img->flag_parser |= NO;
-	else if (!ft_strncmp(*result, "SO", INT_MAX))
+	else if (!ft_strncmp(*result, "SO", INT_MAX) && !(img->flag_control & SO))
 		img->flag_parser |= SO;
-	else if (!ft_strncmp(*result, "WE", INT_MAX))
+	else if (!ft_strncmp(*result, "WE", INT_MAX) && !(img->flag_control & WE))
 		img->flag_parser |= WE;
-	else if (!ft_strncmp(*result, "EA", INT_MAX))
+	else if (!ft_strncmp(*result, "EA", INT_MAX) && !(img->flag_control & EA))
 		img->flag_parser |= EA;
-	else if (!ft_strncmp(*result, "F", INT_MAX))
+	else if (!ft_strncmp(*result, "F", INT_MAX) && !(img->flag_control & F))
 		img->flag_parser |= F;
-	else if (!ft_strncmp(*result, "C", INT_MAX))
+	else if (!ft_strncmp(*result, "C", INT_MAX) && !(img->flag_control & C))
 		img->flag_parser |= C;
 //	else
 //		printf("Error: no find res or texture with sprite\n");
@@ -41,7 +41,7 @@ void	ft_parse_str(const char **result, t_game *img)
 	{
 		img->img.height = ft_atoi(result[1]);
 		img->img.width = ft_atoi(result[2]);
-		img->flag_parser ^= RES;
+//		img->flag_parser = RES;
 	}
 	else if (img->flag_parser & S && result[1] && !result[2])
 		img->sprite.relative_path = ft_strdup((char *)result[1]);
@@ -69,8 +69,8 @@ void	ft_parse_str(const char **result, t_game *img)
 									   ft_atoi(result[5]));
 	else
 	{
-		printf("Error: map not a valid\n");
-		exit(1);
+		printf("Warning: maybe map not a valid\n");
+//		exit(1);
 	}
 
 }
@@ -93,21 +93,21 @@ int	ft_check_flag(t_game *img)
 void ft_fill_flag(t_game *img)
 {
 	if (img->img.height && img->img.width)
-		img->flag_parser ^= RES;
+		img->flag_control |= RES;
 	if (img->sprite.relative_path)
-		img->flag_control ^= S;
+		img->flag_control |= S;
 	if (img->texture_n.relative_path)
-		img->flag_control ^= NO;
+		img->flag_control |= NO;
 	if (img->texture_s.relative_path)
-		img->flag_control ^= SO;
+		img->flag_control |= SO;
 	if (img->texture_w.relative_path)
-		img->flag_control ^= WE;
+		img->flag_control |= WE;
 	if (img->texture_e.relative_path)
-		img->flag_control ^= EA;
+		img->flag_control |= EA;
 	if (img->rc.col_f)
-		img->flag_control ^= F;
+		img->flag_control |= F;
 	if (img->rc.col_c)
-		img->flag_control ^= C;
+		img->flag_control |= C;
 }
 void	ft_free_split(char **line)
 {
@@ -130,20 +130,15 @@ void	ft_parse_head(char **line, t_game *img)
 	while (result[i])
 	{
 		ft_parse_t_a_s(result, img);
+//		ft_fill_flag(img);
 		ft_parse_str(result, img);
 		ft_fill_flag(img);
 //		break;
 		img->flag_parser = 0;
 		i++;
 	}
-//	ft_free_split(result);
-//	int i;
+	ft_free_split(result);
 
-	i = 0;
-	while (result[i] != '\0')
-		free(result[i++]);
-	free(result);
-//	free(line);
 }
 
 void	ft_init_parser(t_game *img)
@@ -261,7 +256,7 @@ void	ft_parser(int argc, char **argv, t_game *img)
 			if (*line != '\0')
 				j++;
 			free(line);
-			ft_check_flag(img);
+//			ft_check_flag(img);
 		}
 		free(line);
 		ft_parse_tail(img, &line, &fd);
