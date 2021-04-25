@@ -160,6 +160,27 @@
 		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/main3D.c">
 			<Option target="mac_os"/>
 		</Unit>
+		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/map_parser.c">
+			<Option target="mac_os"/>
+		</Unit>
+		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/map_parser_utils.c">
+			<Option target="mac_os"/>
+		</Unit>
+		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_check.c">
+			<Option target="mac_os"/>
+		</Unit>
+		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_check_handlers.c">
+			<Option target="mac_os"/>
+		</Unit>
+		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_parse.c">
+			<Option target="mac_os"/>
+		</Unit>
+		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_parse_inter.c">
+			<Option target="mac_os"/>
+		</Unit>
+		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/parser.h">
+			<Option target="mac_os"/>
+		</Unit>
 		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/reycasting/ft_base_rc_value.c">
 			<Option target="mac_os"/>
 		</Unit>

@@ -42,6 +42,8 @@
 # include "get_next_line/get_next_line.h"
 # include "libft/libft.h"
 
+typedef unsigned int t_bool;
+
 typedef struct s_vector
 {
 	double		v_x;
@@ -154,6 +156,8 @@ typedef struct s_game
 	char			**world_map;
 	int				flag_screen;
 	int				j_ps;
+	int				flag_p;
+	int				i;
 }					t_game;
 
 int		ft_isaint(int c);
@@ -162,4 +166,9 @@ void	ft_parser(int argc, char **argv, t_game *img);
 void	ft_free_memory(t_game *img);
 void	ft_screen_shot(t_game *img);
 int		ft_valid_line(char **line);
+void	check_around_02plr(t_game *opt, const size_t *str_sizes, size_t i,
+						   size_t j);
+void	save_player_position(t_game *opt, const char c, const size_t x,
+							 const size_t y);
+void	map_parser(t_game *opt);
 #endif

@@ -23,6 +23,8 @@ CMakeFiles/mac_os.dir/ft_parser.c.o: ../ft_parser.c
 CMakeFiles/mac_os.dir/ft_parser.c.o: ../get_next_line/get_next_line.h
 CMakeFiles/mac_os.dir/ft_parser.c.o: ../libft/libft.h
 CMakeFiles/mac_os.dir/ft_parser.c.o: ../my_cube.h
+CMakeFiles/mac_os.dir/ft_parser.c.o: ../parser/parser.h
+CMakeFiles/mac_os.dir/ft_parser.c.o: ../reycasting/ft_reycasting.h
 CMakeFiles/mac_os.dir/ft_parser.c.o: /usr/local/include/mlx.h
 
 CMakeFiles/mac_os.dir/ft_screen_shot.c.o: ../ft_screen_shot.c
@@ -89,6 +91,52 @@ CMakeFiles/mac_os.dir/main3D.c.o: ../main3D.c
 CMakeFiles/mac_os.dir/main3D.c.o: ../my_cube.h
 CMakeFiles/mac_os.dir/main3D.c.o: ../reycasting/ft_reycasting.h
 CMakeFiles/mac_os.dir/main3D.c.o: /usr/local/include/mlx.h
+
+CMakeFiles/mac_os.dir/map_parser.c.o: ../get_next_line/get_next_line.h
+CMakeFiles/mac_os.dir/map_parser.c.o: ../libft/libft.h
+CMakeFiles/mac_os.dir/map_parser.c.o: ../map_parser.c
+CMakeFiles/mac_os.dir/map_parser.c.o: ../my_cube.h
+CMakeFiles/mac_os.dir/map_parser.c.o: ../reycasting/ft_reycasting.h
+CMakeFiles/mac_os.dir/map_parser.c.o: /usr/local/include/mlx.h
+
+CMakeFiles/mac_os.dir/map_parser_utils.c.o: ../get_next_line/get_next_line.h
+CMakeFiles/mac_os.dir/map_parser_utils.c.o: ../libft/libft.h
+CMakeFiles/mac_os.dir/map_parser_utils.c.o: ../map_parser_utils.c
+CMakeFiles/mac_os.dir/map_parser_utils.c.o: ../my_cube.h
+CMakeFiles/mac_os.dir/map_parser_utils.c.o: ../reycasting/ft_reycasting.h
+CMakeFiles/mac_os.dir/map_parser_utils.c.o: /usr/local/include/mlx.h
+
+CMakeFiles/mac_os.dir/parser/ft_check.c.o: ../get_next_line/get_next_line.h
+CMakeFiles/mac_os.dir/parser/ft_check.c.o: ../libft/libft.h
+CMakeFiles/mac_os.dir/parser/ft_check.c.o: ../my_cube.h
+CMakeFiles/mac_os.dir/parser/ft_check.c.o: ../parser/ft_check.c
+CMakeFiles/mac_os.dir/parser/ft_check.c.o: ../parser/parser.h
+CMakeFiles/mac_os.dir/parser/ft_check.c.o: ../reycasting/ft_reycasting.h
+CMakeFiles/mac_os.dir/parser/ft_check.c.o: /usr/local/include/mlx.h
+
+CMakeFiles/mac_os.dir/parser/ft_check_handlers.c.o: ../get_next_line/get_next_line.h
+CMakeFiles/mac_os.dir/parser/ft_check_handlers.c.o: ../libft/libft.h
+CMakeFiles/mac_os.dir/parser/ft_check_handlers.c.o: ../my_cube.h
+CMakeFiles/mac_os.dir/parser/ft_check_handlers.c.o: ../parser/ft_check_handlers.c
+CMakeFiles/mac_os.dir/parser/ft_check_handlers.c.o: ../parser/parser.h
+CMakeFiles/mac_os.dir/parser/ft_check_handlers.c.o: ../reycasting/ft_reycasting.h
+CMakeFiles/mac_os.dir/parser/ft_check_handlers.c.o: /usr/local/include/mlx.h
+
+CMakeFiles/mac_os.dir/parser/ft_parse.c.o: ../get_next_line/get_next_line.h
+CMakeFiles/mac_os.dir/parser/ft_parse.c.o: ../libft/libft.h
+CMakeFiles/mac_os.dir/parser/ft_parse.c.o: ../my_cube.h
+CMakeFiles/mac_os.dir/parser/ft_parse.c.o: ../parser/ft_parse.c
+CMakeFiles/mac_os.dir/parser/ft_parse.c.o: ../parser/parser.h
+CMakeFiles/mac_os.dir/parser/ft_parse.c.o: ../reycasting/ft_reycasting.h
+CMakeFiles/mac_os.dir/parser/ft_parse.c.o: /usr/local/include/mlx.h
+
+CMakeFiles/mac_os.dir/parser/ft_parse_inter.c.o: ../get_next_line/get_next_line.h
+CMakeFiles/mac_os.dir/parser/ft_parse_inter.c.o: ../libft/libft.h
+CMakeFiles/mac_os.dir/parser/ft_parse_inter.c.o: ../my_cube.h
+CMakeFiles/mac_os.dir/parser/ft_parse_inter.c.o: ../parser/ft_parse_inter.c
+CMakeFiles/mac_os.dir/parser/ft_parse_inter.c.o: ../parser/parser.h
+CMakeFiles/mac_os.dir/parser/ft_parse_inter.c.o: ../reycasting/ft_reycasting.h
+CMakeFiles/mac_os.dir/parser/ft_parse_inter.c.o: /usr/local/include/mlx.h
 
 CMakeFiles/mac_os.dir/reycasting/ft_base_rc_value.c.o: ../get_next_line/get_next_line.h
 CMakeFiles/mac_os.dir/reycasting/ft_base_rc_value.c.o: ../libft/libft.h

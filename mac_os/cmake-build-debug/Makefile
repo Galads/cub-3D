@@ -790,6 +790,168 @@ main3D.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/main3D.c.s
 .PHONY : main3D.c.s
 
+map_parser.o: map_parser.c.o
+
+.PHONY : map_parser.o
+
+# target to build an object file
+map_parser.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/map_parser.c.o
+.PHONY : map_parser.c.o
+
+map_parser.i: map_parser.c.i
+
+.PHONY : map_parser.i
+
+# target to preprocess a source file
+map_parser.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/map_parser.c.i
+.PHONY : map_parser.c.i
+
+map_parser.s: map_parser.c.s
+
+.PHONY : map_parser.s
+
+# target to generate assembly for a file
+map_parser.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/map_parser.c.s
+.PHONY : map_parser.c.s
+
+map_parser_utils.o: map_parser_utils.c.o
+
+.PHONY : map_parser_utils.o
+
+# target to build an object file
+map_parser_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/map_parser_utils.c.o
+.PHONY : map_parser_utils.c.o
+
+map_parser_utils.i: map_parser_utils.c.i
+
+.PHONY : map_parser_utils.i
+
+# target to preprocess a source file
+map_parser_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/map_parser_utils.c.i
+.PHONY : map_parser_utils.c.i
+
+map_parser_utils.s: map_parser_utils.c.s
+
+.PHONY : map_parser_utils.s
+
+# target to generate assembly for a file
+map_parser_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/map_parser_utils.c.s
+.PHONY : map_parser_utils.c.s
+
+parser/ft_check.o: parser/ft_check.c.o
+
+.PHONY : parser/ft_check.o
+
+# target to build an object file
+parser/ft_check.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/parser/ft_check.c.o
+.PHONY : parser/ft_check.c.o
+
+parser/ft_check.i: parser/ft_check.c.i
+
+.PHONY : parser/ft_check.i
+
+# target to preprocess a source file
+parser/ft_check.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/parser/ft_check.c.i
+.PHONY : parser/ft_check.c.i
+
+parser/ft_check.s: parser/ft_check.c.s
+
+.PHONY : parser/ft_check.s
+
+# target to generate assembly for a file
+parser/ft_check.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/parser/ft_check.c.s
+.PHONY : parser/ft_check.c.s
+
+parser/ft_check_handlers.o: parser/ft_check_handlers.c.o
+
+.PHONY : parser/ft_check_handlers.o
+
+# target to build an object file
+parser/ft_check_handlers.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/parser/ft_check_handlers.c.o
+.PHONY : parser/ft_check_handlers.c.o
+
+parser/ft_check_handlers.i: parser/ft_check_handlers.c.i
+
+.PHONY : parser/ft_check_handlers.i
+
+# target to preprocess a source file
+parser/ft_check_handlers.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/parser/ft_check_handlers.c.i
+.PHONY : parser/ft_check_handlers.c.i
+
+parser/ft_check_handlers.s: parser/ft_check_handlers.c.s
+
+.PHONY : parser/ft_check_handlers.s
+
+# target to generate assembly for a file
+parser/ft_check_handlers.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/parser/ft_check_handlers.c.s
+.PHONY : parser/ft_check_handlers.c.s
+
+parser/ft_parse.o: parser/ft_parse.c.o
+
+.PHONY : parser/ft_parse.o
+
+# target to build an object file
+parser/ft_parse.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/parser/ft_parse.c.o
+.PHONY : parser/ft_parse.c.o
+
+parser/ft_parse.i: parser/ft_parse.c.i
+
+.PHONY : parser/ft_parse.i
+
+# target to preprocess a source file
+parser/ft_parse.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/parser/ft_parse.c.i
+.PHONY : parser/ft_parse.c.i
+
+parser/ft_parse.s: parser/ft_parse.c.s
+
+.PHONY : parser/ft_parse.s
+
+# target to generate assembly for a file
+parser/ft_parse.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/parser/ft_parse.c.s
+.PHONY : parser/ft_parse.c.s
+
+parser/ft_parse_inter.o: parser/ft_parse_inter.c.o
+
+.PHONY : parser/ft_parse_inter.o
+
+# target to build an object file
+parser/ft_parse_inter.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/parser/ft_parse_inter.c.o
+.PHONY : parser/ft_parse_inter.c.o
+
+parser/ft_parse_inter.i: parser/ft_parse_inter.c.i
+
+.PHONY : parser/ft_parse_inter.i
+
+# target to preprocess a source file
+parser/ft_parse_inter.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/parser/ft_parse_inter.c.i
+.PHONY : parser/ft_parse_inter.c.i
+
+parser/ft_parse_inter.s: parser/ft_parse_inter.c.s
+
+.PHONY : parser/ft_parse_inter.s
+
+# target to generate assembly for a file
+parser/ft_parse_inter.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/parser/ft_parse_inter.c.s
+.PHONY : parser/ft_parse_inter.c.s
+
 reycasting/ft_base_rc_value.o: reycasting/ft_base_rc_value.c.o
 
 .PHONY : reycasting/ft_base_rc_value.o
@@ -1195,6 +1357,24 @@ help:
 	@echo "... main3D.o"
 	@echo "... main3D.i"
 	@echo "... main3D.s"
+	@echo "... map_parser.o"
+	@echo "... map_parser.i"
+	@echo "... map_parser.s"
+	@echo "... map_parser_utils.o"
+	@echo "... map_parser_utils.i"
+	@echo "... map_parser_utils.s"
+	@echo "... parser/ft_check.o"
+	@echo "... parser/ft_check.i"
+	@echo "... parser/ft_check.s"
+	@echo "... parser/ft_check_handlers.o"
+	@echo "... parser/ft_check_handlers.i"
+	@echo "... parser/ft_check_handlers.s"
+	@echo "... parser/ft_parse.o"
+	@echo "... parser/ft_parse.i"
+	@echo "... parser/ft_parse.s"
+	@echo "... parser/ft_parse_inter.o"
+	@echo "... parser/ft_parse_inter.i"
+	@echo "... parser/ft_parse_inter.s"
 	@echo "... reycasting/ft_base_rc_value.o"
 	@echo "... reycasting/ft_base_rc_value.i"
 	@echo "... reycasting/ft_base_rc_value.s"

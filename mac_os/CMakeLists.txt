@@ -43,6 +43,7 @@ add_executable(mac_os
         reycasting/ft_vertical_line.c
         libft/ft_lstclear.c
 
+
 #        minilibx_mms_20200219/mlx_rgb.c
 #        minilibx_mms_20200219/mlx_png.c
 #        minilibx_mms_20200219/mlx_string_put.c
@@ -57,8 +58,10 @@ add_executable(mac_os
 #        minilibx_opengl_20191021/mlx_new_window.h
 #        minilibx_opengl_20191021/mlx_opengl.h
 #        minilibx_opengl_20191021/mlx_shaders.c
+        map_parser.c
+        map_parser_utils.c
         screenshot.bmp
-        reycasting/ft_control_plr.c reycasting/ft_move_player.c reycasting/ft_init_val.c reycasting/ft_open_tex_spr.c reycasting/ft_key_hook_handle.c reycasting/ft_calc_and_print_sprite.c ft_free_memory.c ft_screen_shot.c ft_valid_line.c)
+        reycasting/ft_control_plr.c reycasting/ft_move_player.c reycasting/ft_init_val.c reycasting/ft_open_tex_spr.c reycasting/ft_key_hook_handle.c reycasting/ft_calc_and_print_sprite.c ft_free_memory.c ft_screen_shot.c ft_valid_line.c parser/parser.h parser/ft_check.c parser/ft_check_handlers.c parser/ft_parse.c parser/ft_parse_inter.c)
 #mac_os target
 target_link_libraries(mac_os "-framework OpenGL")
 target_link_libraries(mac_os "-framework AppKit")

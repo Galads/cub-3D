@@ -120,6 +120,7 @@ int	main(int argc, char **argv)
 	{
 		img.flag_screen = 1;
 		ft_parser(argc, argv, &img);
+		map_parser(&img);
 //		sleep(1000);
 		ft_init_val(&img);
 		ft_basic_while(&img);

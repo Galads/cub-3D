@@ -17,8 +17,7 @@ static	int	ft_strcopy(char **save, char **line)
 	char	*clear;
 
 	clear = *line;
-	*line = ft_strjoin(*line, *save);
-	if (!*line)
+	if (!(*line = ft_strjoin(*line, *save)))
 	{
 		free(clear);
 		return (-1);
@@ -29,15 +28,13 @@ static	int	ft_strcopy(char **save, char **line)
 
 static	int	if_save_true(char **line, char **p, char **clear, char **save)
 {
-	*p = ft_strchr(*save, '\n');
-	if (*p)
+	if ((*p = ft_strchr(*save, '\n')))
 	{
 		**p = '\0';
 		if ((ft_strcopy(save, line)) < 0)
 			return (-1);
 		*clear = *save;
-		*save = ft_strdup(*p + 1);
-		if (!*save)
+		if (!(*save = ft_strdup(*p + 1)))
 		{
 			free(*clear);
 			return (-1);
@@ -60,25 +57,21 @@ static	int	get_line_while(char **p, int *fd, char **line, char **save)
 	char	*buf;
 	int		rd;
 
-	buf = (char *)malloc(sizeof(char) * (BUFFER_SIZE + 1));
-	if (!buf)
+	if (!(buf = (char *)malloc(sizeof(char) * (BUFFER_SIZE + 1))))
 		return (-1);
-	rd = read(*fd, buf, BUFFER_SIZE);
-	while (!*p && rd > 0)
+	while (!*p && (rd = read(*fd, buf, BUFFER_SIZE)) > 0)
 	{
 		buf[rd] = '\0';
-		*p = ft_strchr(buf, '\n');
-		if (*p)
+		if ((*p = ft_strchr(buf, '\n')))
 		{
-			**p ='\0';
-			*save = ft_strdup(*p + 1);
-			if (!*save)
+			**p = '\0';
+			if (!(*save = ft_strdup(*p + 1)))
 			{
 				free(buf);
 				return (-1);
 			}
 		}
-		if (ft_strcopy(&buf, line) < 0)
+		if ((ft_strcopy(&buf, line)) < 0)
 		{
 			free(buf);
 			return (-1);
@@ -88,7 +81,7 @@ static	int	get_line_while(char **p, int *fd, char **line, char **save)
 	return (rd);
 }
 
-int	get_next_line(int fd, char **line)
+int			get_next_line(int fd, char **line)
 {
 	static char	*save;
 	char		*clear;
@@ -98,8 +91,7 @@ int	get_next_line(int fd, char **line)
 
 	if (fd < 0 || BUFFER_SIZE < 1 || !line)
 		return (-1);
-	*line = ft_strdup("");
-	if (!*line)
+	if (!(*line = ft_strdup("")))
 		return (-1);
 	if (save)
 	{
@@ -115,8 +107,5 @@ int	get_next_line(int fd, char **line)
 	if (save)
 		return (1);
 	free(save);
-	if (rd < 0)
-		return (-1);
-	else
-		return (0);
+	return ((rd < 0) ? -1 : 0);
 }
