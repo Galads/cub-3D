@@ -1,20 +1,11 @@
-C        123, 30 , 145
-
-    F      225    ,225,     20
 
 
+    NO         ./path_to_the_north_texture
 
-       R         1080       1080
-
-
-NO                              ./path_to_the_north_texture
-
-SO                  ./path_south_texture
-
+SO ./path_south_texture
 
 
                                 WE    ./path_to_the_west_texture
-
 
 
 
@@ -22,11 +13,21 @@ SO                  ./path_south_texture
 
 
 
+
+
+
+
+
+
+C        123, 30 , 145
+
+
+
+    F      225    ,225,     20
+
+R         550       550
+
 S             ./path_to_the_sprite_texture
-
-
-
-
 
         1111111111111111111111111
         1000000000110000000000001

@@ -27,6 +27,8 @@
 # define S				0x0200
 # define F				0x1000
 # define C				0x2000
+# define HEIGHT			1440
+# define WIDTH			2550
 
 # include <stdio.h>
 # include <unistd.h>
@@ -151,7 +153,7 @@ typedef struct s_game
 	long long int	map_height;
 	char			**world_map;
 	int				flag_screen;
-
+	int				j_ps;
 }					t_game;
 
 int		ft_isaint(int c);
@@ -159,5 +161,5 @@ int		ft_isascii_content(void *c);
 void	ft_parser(int argc, char **argv, t_game *img);
 void	ft_free_memory(t_game *img);
 void	ft_screen_shot(t_game *img);
-char	*ft_valid_line(char **line);
+int		ft_valid_line(char **line);
 #endif
