@@ -5,6 +5,6 @@ int ft_valid_line(char **line)
 
 	i = 0;
 	while ((*line)[i] == ' ')
-		(*line)[i++];
+		i++;
 	return i;
 }

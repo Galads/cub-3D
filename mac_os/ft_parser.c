@@ -49,7 +49,6 @@ void	ft_parse_tail(t_game *img, char **line, const int *fd)
 	{
 		img->i = get_next_line(*fd, line);
 		ft_check_line(line, &list_head, &list, img);
-		printf("their i : %d\n", img->i);
 		if (img->i == 0)
 			break;
 	}
@@ -90,7 +89,7 @@ void	ft_parser(int argc, char **argv, t_game *img)
 	char	*line;
 
 	i = 1;
-
+	(void)argc;
 	fd = ft_parser_open(img, argv);
 	while ((i > 0) && img->j_ps < 8)
 	{

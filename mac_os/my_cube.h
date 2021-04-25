@@ -27,9 +27,9 @@
 # define S				0x0200
 # define F				0x1000
 # define C				0x2000
-# define HEIGHT			1440
-# define WIDTH			2550
-
+# define HEIGHT			1080
+# define WIDTH			1080
+# define INT_MAX2		2147483647
 # include <stdio.h>
 # include <unistd.h>
 # include <limits.h>

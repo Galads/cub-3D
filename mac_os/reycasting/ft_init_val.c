@@ -103,6 +103,7 @@ void	ft_init_val(t_game *img)
 	i = 0;
 	j = 0;
 	ft_init_sprite(img, &i, &j, k);
+	printf("%d|%d", img->img.width, img->img.height);
 	img->img.mlx = mlx_init();
 	img->img.win = mlx_new_window(img->img.mlx, img->img.width,
 			img->img.height, "CUB3D");

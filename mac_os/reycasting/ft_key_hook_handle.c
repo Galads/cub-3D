@@ -31,6 +31,7 @@ int	key_hook_p(int keycode, t_game *img)
 		img->flags |= R_L;
 	if (keycode == 65363 || keycode == 124)
 		img->flags |= R_R;
+	return (1);
 }
 
 int	key_hook_r(int keycode, t_game *img)
@@ -47,6 +48,7 @@ int	key_hook_r(int keycode, t_game *img)
 		img->flags ^= R_L;
 	if (keycode == 65363 || keycode == 124)
 		img->flags ^= R_R;
+	return (1);
 }
 
 void	my_mlx_pixel_put(t_data *data, int x, int y, int color)

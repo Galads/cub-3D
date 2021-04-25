@@ -74,14 +74,14 @@ int	ft_check_str_num(char **result)
 
 int ft_parse_head_if_int(t_game *img, char **result, char **line, int *i)
 {
-	if (((*i) <= 6 && !ft_strncmp(result[0], "F", INT_MAX) || (*i) <= 6
-		&& !ft_strncmp(result[0], "C", INT_MAX)) && ft_check_str_num(line))
+	if ((((*i) <= 6 && !ft_strncmp(result[0], "F", INT_MAX)) || ((*i) <= 6
+		&& !ft_strncmp(result[0], "C", INT_MAX))) && ft_check_str_num(line))
 	{
 		ft_free_split(result);
 		result = ft_split(*line, ',');
 		*i = 0;
 		while (result[(*i)])
-			result[(*i)++];
+			(*i)++;
 		if (*i == 3)
 		{
 			if (ft_check_addr_mem(result[0], 'F'))

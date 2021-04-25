@@ -1,5 +1,4 @@
 
-
 #include "reycasting/ft_reycasting.h"
 
 void	check_around_02plr(t_game *opt, const size_t *str_sizes, size_t i,

@@ -1,3 +1,5 @@
+R         -550       -550
+
 C   123 , 30 , 145
 
     NO         ./path_to_the_north_texture
@@ -25,7 +27,6 @@ SO    ./path_south_texture
 
     F    225,  225,     20
 
-R         550       550
 
 S             ./path_to_the_sprite_texture
 

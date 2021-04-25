@@ -48,6 +48,16 @@ void	ft_check_if(t_game *img, char **result)
 	{
 		img->img.height = ft_atoi(result[1]);
 		img->img.width = ft_atoi(result[2]);
+		if (img->img.width < 0)
+		{
+			img->img.width = WIDTH;
+			exit(3);
+		}
+		if (img->img.height < 0)
+		{
+			img->img.height = HEIGHT;
+			exit(3);
+		}
 		img->j_ps++;
 	}
 	if (img->flag_parser & S && result[1] && !result[2])
@@ -92,8 +102,8 @@ void	ft_check_if_last(t_game *img, char **result)
 
 void	ft_parse_str(const char **result, t_game *img)
 {
-	ft_check_if(img, result);
-	ft_check_if_last(img, result);
+	ft_check_if(img, (char **) result);
+	ft_check_if_last(img, (char **) result);
 	if (img->flag_parser & C && ft_isaint(ft_atoi(&*(result)[1]))
 		&& ft_isaint(ft_atoi(&(*result)[3]))
 		&& ft_isaint(ft_atoi(&*(result)[5])))

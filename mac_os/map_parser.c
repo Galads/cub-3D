@@ -1,14 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   map_parser.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: dkenchur <dkenchur@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/21 04:18:40 by dkenchur          #+#    #+#             */
-/*   Updated: 2021/04/23 23:33:54 by dkenchur         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
 
 #include "reycasting/ft_reycasting.h"
 
@@ -71,35 +60,6 @@ static void	follow_linemap(t_game *opt, const char **map, size_t row_idx,
 	}
 }
 
-//static t_point	*save_sprite_positions(t_game *opt, size_t sprites_count)
-//{
-//	t_point		*sprite_positions;
-//	size_t		i;
-//	size_t		j;
-//
-//	if (!sprites_count)
-//		return (NULL);
-//	sprite_positions = (t_point *)ft_calloc(sprites_count, sizeof(t_point));
-//	if (!sprite_positions)
-//		exit_error(5, opt, NULL, NULL);
-//	i = 0;
-//	while (i < opt->map.rows)
-//	{
-//		j = 0;
-//		while (*(*(opt->map.map + i) + j))
-//		{
-//			if (*(*(opt->map.map + i) + j) == '2')
-//			{
-//				(sprite_positions + --sprites_count)->x = (double)i + 0.5;
-//				(sprite_positions + sprites_count)->y = (double)j + 0.5;
-//			}
-//			j++;
-//		}
-//		i++;
-//	}
-//	return (sprite_positions);
-//}
-
 void	map_parser(t_game *opt)
 {
 	size_t	i;
@@ -113,7 +73,7 @@ void	map_parser(t_game *opt)
 	check_map_borders(opt);
 	sprites_count = 0;
 	i = 1;
-	while (i < opt->map_height - 1)
+	while ((int)i < opt->map_height - 1)
 	{
 		follow_linemap(opt, (const char **)opt->world_map, i, &sprites_count);
 		i++;
@@ -123,6 +83,4 @@ void	map_parser(t_game *opt)
 		printf("Error: map parse\n");
 		exit(22);
 	}
-//	opt->spr_positions = save_sprite_positions(opt, sprites_count);
-//	opt->sprites_count = sprites_count;
 }
