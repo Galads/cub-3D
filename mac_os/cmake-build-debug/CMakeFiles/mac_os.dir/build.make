@@ -336,9 +336,22 @@ CMakeFiles/mac_os.dir/ft_isaint.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mac_os.dir/ft_isaint.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/brice/Desktop/main_parser/ft_parser/mac_os/ft_isaint.c -o CMakeFiles/mac_os.dir/ft_isaint.c.s
 
+CMakeFiles/mac_os.dir/parser/ft_check_colors1.c.o: CMakeFiles/mac_os.dir/flags.make
+CMakeFiles/mac_os.dir/parser/ft_check_colors1.c.o: ../parser/ft_check_colors1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/mac_os.dir/parser/ft_check_colors1.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mac_os.dir/parser/ft_check_colors1.c.o -c /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_check_colors1.c
+
+CMakeFiles/mac_os.dir/parser/ft_check_colors1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mac_os.dir/parser/ft_check_colors1.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_check_colors1.c > CMakeFiles/mac_os.dir/parser/ft_check_colors1.c.i
+
+CMakeFiles/mac_os.dir/parser/ft_check_colors1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mac_os.dir/parser/ft_check_colors1.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_check_colors1.c -o CMakeFiles/mac_os.dir/parser/ft_check_colors1.c.s
+
 CMakeFiles/mac_os.dir/reycasting/ft_print_texture.c.o: CMakeFiles/mac_os.dir/flags.make
 CMakeFiles/mac_os.dir/reycasting/ft_print_texture.c.o: ../reycasting/ft_print_texture.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/mac_os.dir/reycasting/ft_print_texture.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/mac_os.dir/reycasting/ft_print_texture.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mac_os.dir/reycasting/ft_print_texture.c.o -c /Users/brice/Desktop/main_parser/ft_parser/mac_os/reycasting/ft_print_texture.c
 
 CMakeFiles/mac_os.dir/reycasting/ft_print_texture.c.i: cmake_force
@@ -351,7 +364,7 @@ CMakeFiles/mac_os.dir/reycasting/ft_print_texture.c.s: cmake_force
 
 CMakeFiles/mac_os.dir/reycasting/ft_rc_s_first.c.o: CMakeFiles/mac_os.dir/flags.make
 CMakeFiles/mac_os.dir/reycasting/ft_rc_s_first.c.o: ../reycasting/ft_rc_s_first.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/mac_os.dir/reycasting/ft_rc_s_first.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/mac_os.dir/reycasting/ft_rc_s_first.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mac_os.dir/reycasting/ft_rc_s_first.c.o -c /Users/brice/Desktop/main_parser/ft_parser/mac_os/reycasting/ft_rc_s_first.c
 
 CMakeFiles/mac_os.dir/reycasting/ft_rc_s_first.c.i: cmake_force
@@ -364,7 +377,7 @@ CMakeFiles/mac_os.dir/reycasting/ft_rc_s_first.c.s: cmake_force
 
 CMakeFiles/mac_os.dir/reycasting/ft_base_rc_value.c.o: CMakeFiles/mac_os.dir/flags.make
 CMakeFiles/mac_os.dir/reycasting/ft_base_rc_value.c.o: ../reycasting/ft_base_rc_value.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/mac_os.dir/reycasting/ft_base_rc_value.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/mac_os.dir/reycasting/ft_base_rc_value.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mac_os.dir/reycasting/ft_base_rc_value.c.o -c /Users/brice/Desktop/main_parser/ft_parser/mac_os/reycasting/ft_base_rc_value.c
 
 CMakeFiles/mac_os.dir/reycasting/ft_base_rc_value.c.i: cmake_force
@@ -377,7 +390,7 @@ CMakeFiles/mac_os.dir/reycasting/ft_base_rc_value.c.s: cmake_force
 
 CMakeFiles/mac_os.dir/reycasting/ft_calc_step_init_side.c.o: CMakeFiles/mac_os.dir/flags.make
 CMakeFiles/mac_os.dir/reycasting/ft_calc_step_init_side.c.o: ../reycasting/ft_calc_step_init_side.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/mac_os.dir/reycasting/ft_calc_step_init_side.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/mac_os.dir/reycasting/ft_calc_step_init_side.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mac_os.dir/reycasting/ft_calc_step_init_side.c.o -c /Users/brice/Desktop/main_parser/ft_parser/mac_os/reycasting/ft_calc_step_init_side.c
 
 CMakeFiles/mac_os.dir/reycasting/ft_calc_step_init_side.c.i: cmake_force
@@ -390,7 +403,7 @@ CMakeFiles/mac_os.dir/reycasting/ft_calc_step_init_side.c.s: cmake_force
 
 CMakeFiles/mac_os.dir/reycasting/ft_rc_hit.c.o: CMakeFiles/mac_os.dir/flags.make
 CMakeFiles/mac_os.dir/reycasting/ft_rc_hit.c.o: ../reycasting/ft_rc_hit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/mac_os.dir/reycasting/ft_rc_hit.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/mac_os.dir/reycasting/ft_rc_hit.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mac_os.dir/reycasting/ft_rc_hit.c.o -c /Users/brice/Desktop/main_parser/ft_parser/mac_os/reycasting/ft_rc_hit.c
 
 CMakeFiles/mac_os.dir/reycasting/ft_rc_hit.c.i: cmake_force
@@ -403,7 +416,7 @@ CMakeFiles/mac_os.dir/reycasting/ft_rc_hit.c.s: cmake_force
 
 CMakeFiles/mac_os.dir/reycasting/ft_vertical_line.c.o: CMakeFiles/mac_os.dir/flags.make
 CMakeFiles/mac_os.dir/reycasting/ft_vertical_line.c.o: ../reycasting/ft_vertical_line.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/mac_os.dir/reycasting/ft_vertical_line.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/mac_os.dir/reycasting/ft_vertical_line.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mac_os.dir/reycasting/ft_vertical_line.c.o -c /Users/brice/Desktop/main_parser/ft_parser/mac_os/reycasting/ft_vertical_line.c
 
 CMakeFiles/mac_os.dir/reycasting/ft_vertical_line.c.i: cmake_force
@@ -416,7 +429,7 @@ CMakeFiles/mac_os.dir/reycasting/ft_vertical_line.c.s: cmake_force
 
 CMakeFiles/mac_os.dir/libft/ft_lstclear.c.o: CMakeFiles/mac_os.dir/flags.make
 CMakeFiles/mac_os.dir/libft/ft_lstclear.c.o: ../libft/ft_lstclear.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/mac_os.dir/libft/ft_lstclear.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/mac_os.dir/libft/ft_lstclear.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mac_os.dir/libft/ft_lstclear.c.o -c /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/ft_lstclear.c
 
 CMakeFiles/mac_os.dir/libft/ft_lstclear.c.i: cmake_force
@@ -427,9 +440,35 @@ CMakeFiles/mac_os.dir/libft/ft_lstclear.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mac_os.dir/libft/ft_lstclear.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/ft_lstclear.c -o CMakeFiles/mac_os.dir/libft/ft_lstclear.c.s
 
+CMakeFiles/mac_os.dir/parser/ft_handler_f_c.c.o: CMakeFiles/mac_os.dir/flags.make
+CMakeFiles/mac_os.dir/parser/ft_handler_f_c.c.o: ../parser/ft_handler_f_c.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/mac_os.dir/parser/ft_handler_f_c.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mac_os.dir/parser/ft_handler_f_c.c.o -c /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_handler_f_c.c
+
+CMakeFiles/mac_os.dir/parser/ft_handler_f_c.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mac_os.dir/parser/ft_handler_f_c.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_handler_f_c.c > CMakeFiles/mac_os.dir/parser/ft_handler_f_c.c.i
+
+CMakeFiles/mac_os.dir/parser/ft_handler_f_c.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mac_os.dir/parser/ft_handler_f_c.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_handler_f_c.c -o CMakeFiles/mac_os.dir/parser/ft_handler_f_c.c.s
+
+CMakeFiles/mac_os.dir/parser/ft_handler_f_c1.c.o: CMakeFiles/mac_os.dir/flags.make
+CMakeFiles/mac_os.dir/parser/ft_handler_f_c1.c.o: ../parser/ft_handler_f_c1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/mac_os.dir/parser/ft_handler_f_c1.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mac_os.dir/parser/ft_handler_f_c1.c.o -c /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_handler_f_c1.c
+
+CMakeFiles/mac_os.dir/parser/ft_handler_f_c1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mac_os.dir/parser/ft_handler_f_c1.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_handler_f_c1.c > CMakeFiles/mac_os.dir/parser/ft_handler_f_c1.c.i
+
+CMakeFiles/mac_os.dir/parser/ft_handler_f_c1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mac_os.dir/parser/ft_handler_f_c1.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_handler_f_c1.c -o CMakeFiles/mac_os.dir/parser/ft_handler_f_c1.c.s
+
 CMakeFiles/mac_os.dir/map_parser.c.o: CMakeFiles/mac_os.dir/flags.make
 CMakeFiles/mac_os.dir/map_parser.c.o: ../map_parser.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/mac_os.dir/map_parser.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/mac_os.dir/map_parser.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mac_os.dir/map_parser.c.o -c /Users/brice/Desktop/main_parser/ft_parser/mac_os/map_parser.c
 
 CMakeFiles/mac_os.dir/map_parser.c.i: cmake_force
@@ -442,7 +481,7 @@ CMakeFiles/mac_os.dir/map_parser.c.s: cmake_force
 
 CMakeFiles/mac_os.dir/map_parser_utils.c.o: CMakeFiles/mac_os.dir/flags.make
 CMakeFiles/mac_os.dir/map_parser_utils.c.o: ../map_parser_utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/mac_os.dir/map_parser_utils.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/mac_os.dir/map_parser_utils.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mac_os.dir/map_parser_utils.c.o -c /Users/brice/Desktop/main_parser/ft_parser/mac_os/map_parser_utils.c
 
 CMakeFiles/mac_os.dir/map_parser_utils.c.i: cmake_force
@@ -455,7 +494,7 @@ CMakeFiles/mac_os.dir/map_parser_utils.c.s: cmake_force
 
 CMakeFiles/mac_os.dir/reycasting/ft_control_plr.c.o: CMakeFiles/mac_os.dir/flags.make
 CMakeFiles/mac_os.dir/reycasting/ft_control_plr.c.o: ../reycasting/ft_control_plr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/mac_os.dir/reycasting/ft_control_plr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/mac_os.dir/reycasting/ft_control_plr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mac_os.dir/reycasting/ft_control_plr.c.o -c /Users/brice/Desktop/main_parser/ft_parser/mac_os/reycasting/ft_control_plr.c
 
 CMakeFiles/mac_os.dir/reycasting/ft_control_plr.c.i: cmake_force
@@ -468,7 +507,7 @@ CMakeFiles/mac_os.dir/reycasting/ft_control_plr.c.s: cmake_force
 
 CMakeFiles/mac_os.dir/reycasting/ft_move_player.c.o: CMakeFiles/mac_os.dir/flags.make
 CMakeFiles/mac_os.dir/reycasting/ft_move_player.c.o: ../reycasting/ft_move_player.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/mac_os.dir/reycasting/ft_move_player.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/mac_os.dir/reycasting/ft_move_player.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mac_os.dir/reycasting/ft_move_player.c.o -c /Users/brice/Desktop/main_parser/ft_parser/mac_os/reycasting/ft_move_player.c
 
 CMakeFiles/mac_os.dir/reycasting/ft_move_player.c.i: cmake_force
@@ -481,7 +520,7 @@ CMakeFiles/mac_os.dir/reycasting/ft_move_player.c.s: cmake_force
 
 CMakeFiles/mac_os.dir/reycasting/ft_init_val.c.o: CMakeFiles/mac_os.dir/flags.make
 CMakeFiles/mac_os.dir/reycasting/ft_init_val.c.o: ../reycasting/ft_init_val.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/mac_os.dir/reycasting/ft_init_val.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/mac_os.dir/reycasting/ft_init_val.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mac_os.dir/reycasting/ft_init_val.c.o -c /Users/brice/Desktop/main_parser/ft_parser/mac_os/reycasting/ft_init_val.c
 
 CMakeFiles/mac_os.dir/reycasting/ft_init_val.c.i: cmake_force
@@ -494,7 +533,7 @@ CMakeFiles/mac_os.dir/reycasting/ft_init_val.c.s: cmake_force
 
 CMakeFiles/mac_os.dir/reycasting/ft_open_tex_spr.c.o: CMakeFiles/mac_os.dir/flags.make
 CMakeFiles/mac_os.dir/reycasting/ft_open_tex_spr.c.o: ../reycasting/ft_open_tex_spr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/mac_os.dir/reycasting/ft_open_tex_spr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/mac_os.dir/reycasting/ft_open_tex_spr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mac_os.dir/reycasting/ft_open_tex_spr.c.o -c /Users/brice/Desktop/main_parser/ft_parser/mac_os/reycasting/ft_open_tex_spr.c
 
 CMakeFiles/mac_os.dir/reycasting/ft_open_tex_spr.c.i: cmake_force
@@ -507,7 +546,7 @@ CMakeFiles/mac_os.dir/reycasting/ft_open_tex_spr.c.s: cmake_force
 
 CMakeFiles/mac_os.dir/reycasting/ft_key_hook_handle.c.o: CMakeFiles/mac_os.dir/flags.make
 CMakeFiles/mac_os.dir/reycasting/ft_key_hook_handle.c.o: ../reycasting/ft_key_hook_handle.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/mac_os.dir/reycasting/ft_key_hook_handle.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/mac_os.dir/reycasting/ft_key_hook_handle.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mac_os.dir/reycasting/ft_key_hook_handle.c.o -c /Users/brice/Desktop/main_parser/ft_parser/mac_os/reycasting/ft_key_hook_handle.c
 
 CMakeFiles/mac_os.dir/reycasting/ft_key_hook_handle.c.i: cmake_force
@@ -520,7 +559,7 @@ CMakeFiles/mac_os.dir/reycasting/ft_key_hook_handle.c.s: cmake_force
 
 CMakeFiles/mac_os.dir/reycasting/ft_calc_and_print_sprite.c.o: CMakeFiles/mac_os.dir/flags.make
 CMakeFiles/mac_os.dir/reycasting/ft_calc_and_print_sprite.c.o: ../reycasting/ft_calc_and_print_sprite.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/mac_os.dir/reycasting/ft_calc_and_print_sprite.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/mac_os.dir/reycasting/ft_calc_and_print_sprite.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mac_os.dir/reycasting/ft_calc_and_print_sprite.c.o -c /Users/brice/Desktop/main_parser/ft_parser/mac_os/reycasting/ft_calc_and_print_sprite.c
 
 CMakeFiles/mac_os.dir/reycasting/ft_calc_and_print_sprite.c.i: cmake_force
@@ -533,7 +572,7 @@ CMakeFiles/mac_os.dir/reycasting/ft_calc_and_print_sprite.c.s: cmake_force
 
 CMakeFiles/mac_os.dir/ft_free_memory.c.o: CMakeFiles/mac_os.dir/flags.make
 CMakeFiles/mac_os.dir/ft_free_memory.c.o: ../ft_free_memory.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/mac_os.dir/ft_free_memory.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/mac_os.dir/ft_free_memory.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mac_os.dir/ft_free_memory.c.o -c /Users/brice/Desktop/main_parser/ft_parser/mac_os/ft_free_memory.c
 
 CMakeFiles/mac_os.dir/ft_free_memory.c.i: cmake_force
@@ -546,7 +585,7 @@ CMakeFiles/mac_os.dir/ft_free_memory.c.s: cmake_force
 
 CMakeFiles/mac_os.dir/ft_screen_shot.c.o: CMakeFiles/mac_os.dir/flags.make
 CMakeFiles/mac_os.dir/ft_screen_shot.c.o: ../ft_screen_shot.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/mac_os.dir/ft_screen_shot.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/mac_os.dir/ft_screen_shot.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mac_os.dir/ft_screen_shot.c.o -c /Users/brice/Desktop/main_parser/ft_parser/mac_os/ft_screen_shot.c
 
 CMakeFiles/mac_os.dir/ft_screen_shot.c.i: cmake_force
@@ -559,7 +598,7 @@ CMakeFiles/mac_os.dir/ft_screen_shot.c.s: cmake_force
 
 CMakeFiles/mac_os.dir/ft_valid_line.c.o: CMakeFiles/mac_os.dir/flags.make
 CMakeFiles/mac_os.dir/ft_valid_line.c.o: ../ft_valid_line.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/mac_os.dir/ft_valid_line.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/mac_os.dir/ft_valid_line.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mac_os.dir/ft_valid_line.c.o -c /Users/brice/Desktop/main_parser/ft_parser/mac_os/ft_valid_line.c
 
 CMakeFiles/mac_os.dir/ft_valid_line.c.i: cmake_force
@@ -572,7 +611,7 @@ CMakeFiles/mac_os.dir/ft_valid_line.c.s: cmake_force
 
 CMakeFiles/mac_os.dir/parser/ft_check.c.o: CMakeFiles/mac_os.dir/flags.make
 CMakeFiles/mac_os.dir/parser/ft_check.c.o: ../parser/ft_check.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/mac_os.dir/parser/ft_check.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/mac_os.dir/parser/ft_check.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mac_os.dir/parser/ft_check.c.o -c /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_check.c
 
 CMakeFiles/mac_os.dir/parser/ft_check.c.i: cmake_force
@@ -585,7 +624,7 @@ CMakeFiles/mac_os.dir/parser/ft_check.c.s: cmake_force
 
 CMakeFiles/mac_os.dir/parser/ft_check_handlers.c.o: CMakeFiles/mac_os.dir/flags.make
 CMakeFiles/mac_os.dir/parser/ft_check_handlers.c.o: ../parser/ft_check_handlers.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/mac_os.dir/parser/ft_check_handlers.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/mac_os.dir/parser/ft_check_handlers.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mac_os.dir/parser/ft_check_handlers.c.o -c /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_check_handlers.c
 
 CMakeFiles/mac_os.dir/parser/ft_check_handlers.c.i: cmake_force
@@ -598,7 +637,7 @@ CMakeFiles/mac_os.dir/parser/ft_check_handlers.c.s: cmake_force
 
 CMakeFiles/mac_os.dir/parser/ft_parse.c.o: CMakeFiles/mac_os.dir/flags.make
 CMakeFiles/mac_os.dir/parser/ft_parse.c.o: ../parser/ft_parse.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/mac_os.dir/parser/ft_parse.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/mac_os.dir/parser/ft_parse.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mac_os.dir/parser/ft_parse.c.o -c /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_parse.c
 
 CMakeFiles/mac_os.dir/parser/ft_parse.c.i: cmake_force
@@ -611,7 +650,7 @@ CMakeFiles/mac_os.dir/parser/ft_parse.c.s: cmake_force
 
 CMakeFiles/mac_os.dir/parser/ft_parse_inter.c.o: CMakeFiles/mac_os.dir/flags.make
 CMakeFiles/mac_os.dir/parser/ft_parse_inter.c.o: ../parser/ft_parse_inter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/mac_os.dir/parser/ft_parse_inter.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/mac_os.dir/parser/ft_parse_inter.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mac_os.dir/parser/ft_parse_inter.c.o -c /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_parse_inter.c
 
 CMakeFiles/mac_os.dir/parser/ft_parse_inter.c.i: cmake_force
@@ -621,6 +660,32 @@ CMakeFiles/mac_os.dir/parser/ft_parse_inter.c.i: cmake_force
 CMakeFiles/mac_os.dir/parser/ft_parse_inter.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mac_os.dir/parser/ft_parse_inter.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_parse_inter.c -o CMakeFiles/mac_os.dir/parser/ft_parse_inter.c.s
+
+CMakeFiles/mac_os.dir/ft_print_error.c.o: CMakeFiles/mac_os.dir/flags.make
+CMakeFiles/mac_os.dir/ft_print_error.c.o: ../ft_print_error.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/mac_os.dir/ft_print_error.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mac_os.dir/ft_print_error.c.o -c /Users/brice/Desktop/main_parser/ft_parser/mac_os/ft_print_error.c
+
+CMakeFiles/mac_os.dir/ft_print_error.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mac_os.dir/ft_print_error.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/brice/Desktop/main_parser/ft_parser/mac_os/ft_print_error.c > CMakeFiles/mac_os.dir/ft_print_error.c.i
+
+CMakeFiles/mac_os.dir/ft_print_error.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mac_os.dir/ft_print_error.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/brice/Desktop/main_parser/ft_parser/mac_os/ft_print_error.c -o CMakeFiles/mac_os.dir/ft_print_error.c.s
+
+CMakeFiles/mac_os.dir/parser/ft_check_if_f.c.o: CMakeFiles/mac_os.dir/flags.make
+CMakeFiles/mac_os.dir/parser/ft_check_if_f.c.o: ../parser/ft_check_if_f.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/mac_os.dir/parser/ft_check_if_f.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mac_os.dir/parser/ft_check_if_f.c.o -c /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_check_if_f.c
+
+CMakeFiles/mac_os.dir/parser/ft_check_if_f.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mac_os.dir/parser/ft_check_if_f.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_check_if_f.c > CMakeFiles/mac_os.dir/parser/ft_check_if_f.c.i
+
+CMakeFiles/mac_os.dir/parser/ft_check_if_f.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mac_os.dir/parser/ft_check_if_f.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_check_if_f.c -o CMakeFiles/mac_os.dir/parser/ft_check_if_f.c.s
 
 # Object files for target mac_os
 mac_os_OBJECTS = \
@@ -644,6 +709,7 @@ mac_os_OBJECTS = \
 "CMakeFiles/mac_os.dir/libft/ft_memchr.c.o" \
 "CMakeFiles/mac_os.dir/ft_isascii_content.c.o" \
 "CMakeFiles/mac_os.dir/ft_isaint.c.o" \
+"CMakeFiles/mac_os.dir/parser/ft_check_colors1.c.o" \
 "CMakeFiles/mac_os.dir/reycasting/ft_print_texture.c.o" \
 "CMakeFiles/mac_os.dir/reycasting/ft_rc_s_first.c.o" \
 "CMakeFiles/mac_os.dir/reycasting/ft_base_rc_value.c.o" \
@@ -651,6 +717,8 @@ mac_os_OBJECTS = \
 "CMakeFiles/mac_os.dir/reycasting/ft_rc_hit.c.o" \
 "CMakeFiles/mac_os.dir/reycasting/ft_vertical_line.c.o" \
 "CMakeFiles/mac_os.dir/libft/ft_lstclear.c.o" \
+"CMakeFiles/mac_os.dir/parser/ft_handler_f_c.c.o" \
+"CMakeFiles/mac_os.dir/parser/ft_handler_f_c1.c.o" \
 "CMakeFiles/mac_os.dir/map_parser.c.o" \
 "CMakeFiles/mac_os.dir/map_parser_utils.c.o" \
 "CMakeFiles/mac_os.dir/reycasting/ft_control_plr.c.o" \
@@ -665,7 +733,9 @@ mac_os_OBJECTS = \
 "CMakeFiles/mac_os.dir/parser/ft_check.c.o" \
 "CMakeFiles/mac_os.dir/parser/ft_check_handlers.c.o" \
 "CMakeFiles/mac_os.dir/parser/ft_parse.c.o" \
-"CMakeFiles/mac_os.dir/parser/ft_parse_inter.c.o"
+"CMakeFiles/mac_os.dir/parser/ft_parse_inter.c.o" \
+"CMakeFiles/mac_os.dir/ft_print_error.c.o" \
+"CMakeFiles/mac_os.dir/parser/ft_check_if_f.c.o"
 
 # External object files for target mac_os
 mac_os_EXTERNAL_OBJECTS =
@@ -690,6 +760,7 @@ mac_os: CMakeFiles/mac_os.dir/libft/ft_isascii.c.o
 mac_os: CMakeFiles/mac_os.dir/libft/ft_memchr.c.o
 mac_os: CMakeFiles/mac_os.dir/ft_isascii_content.c.o
 mac_os: CMakeFiles/mac_os.dir/ft_isaint.c.o
+mac_os: CMakeFiles/mac_os.dir/parser/ft_check_colors1.c.o
 mac_os: CMakeFiles/mac_os.dir/reycasting/ft_print_texture.c.o
 mac_os: CMakeFiles/mac_os.dir/reycasting/ft_rc_s_first.c.o
 mac_os: CMakeFiles/mac_os.dir/reycasting/ft_base_rc_value.c.o
@@ -697,6 +768,8 @@ mac_os: CMakeFiles/mac_os.dir/reycasting/ft_calc_step_init_side.c.o
 mac_os: CMakeFiles/mac_os.dir/reycasting/ft_rc_hit.c.o
 mac_os: CMakeFiles/mac_os.dir/reycasting/ft_vertical_line.c.o
 mac_os: CMakeFiles/mac_os.dir/libft/ft_lstclear.c.o
+mac_os: CMakeFiles/mac_os.dir/parser/ft_handler_f_c.c.o
+mac_os: CMakeFiles/mac_os.dir/parser/ft_handler_f_c1.c.o
 mac_os: CMakeFiles/mac_os.dir/map_parser.c.o
 mac_os: CMakeFiles/mac_os.dir/map_parser_utils.c.o
 mac_os: CMakeFiles/mac_os.dir/reycasting/ft_control_plr.c.o
@@ -712,10 +785,12 @@ mac_os: CMakeFiles/mac_os.dir/parser/ft_check.c.o
 mac_os: CMakeFiles/mac_os.dir/parser/ft_check_handlers.c.o
 mac_os: CMakeFiles/mac_os.dir/parser/ft_parse.c.o
 mac_os: CMakeFiles/mac_os.dir/parser/ft_parse_inter.c.o
+mac_os: CMakeFiles/mac_os.dir/ft_print_error.c.o
+mac_os: CMakeFiles/mac_os.dir/parser/ft_check_if_f.c.o
 mac_os: CMakeFiles/mac_os.dir/build.make
 mac_os: /usr/local/lib/libmlx.a
 mac_os: CMakeFiles/mac_os.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Linking C executable mac_os"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Linking C executable mac_os"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mac_os.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

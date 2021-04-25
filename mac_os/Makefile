@@ -6,19 +6,9 @@ INCLUDES	= ./libft/
 
 MLX			= ./minilibx_opengl_20191021/
 
-# MLX			= ./minilibx-linux/
-
 PARS_DIR	= ./parser/
 
 GNL_DIR		= ./get_next_line/
-
-#MEM_DIR		= ./destroy_memory/
-
-#HERRORS_DIR	= ./handler_errors/
-
-#CUBE_DIR	= ./ft_cube/
-
-#GAME_DIR	= ./ft_cube/game_control/
 
 REYCAST_DIR	= ./reycasting/
 
@@ -40,7 +30,8 @@ SRCS		= main3D.c	 $(GNL_DIR)get_next_line.c $(GNL_DIR)get_next_line_utils.c\
 				          libft/ft_lstadd_back.c\
 				    	  libft/ft_lstnew.c libft/ft_lstclear.c libft/ft_lstlast.c libft/ft_lstsize.c\
 				          ft_free_memory.c ft_isaint.c ft_parser.c ft_screen_shot.c ft_valid_line.c map_parser.c\
-				          map_parser_utils.c\
+				          map_parser_utils.c ft_print_error.c ./parser/ft_check_if_f.c ./parser/ft_check_colors1.c\
+				          ./parser/ft_handler_f_c1.c ./parser/ft_handler_f_c.c
 
 
 CFLAGS		= -Wall -Wextra -Werror

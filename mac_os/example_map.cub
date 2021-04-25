@@ -25,7 +25,7 @@ SO    ./textures/eagle.xpm
 
     F    225,  225,     20
 
-R         -1080       -1080
+R         1080       1080
 
 S             ./sprites/1_1.xpm
 

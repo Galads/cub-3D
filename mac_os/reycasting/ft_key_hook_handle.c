@@ -16,7 +16,7 @@ int	key_hook_p(int keycode, t_game *img)
 {
 	if (keycode == 65307 || keycode == 53)
 	{
-		ft_free_memory(img);
+//		ft_free_memory(img);
 		exit(26);
 	}
 	if (keycode == 'd' || keycode == 2)

@@ -6,7 +6,7 @@
 /*   By: brice <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/21 11:29:50 by brice             #+#    #+#             */
-/*   Updated: 2021/04/21 11:44:34 by brice            ###   ########.fr       */
+/*   Updated: 2021/04/25 17:56:28 by brice            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,14 @@
 void	ft_print_sprite(t_game *img, int draw_end_x, double transform_y,
 						const double *z_buffer) //edit
 {
+	int				tex_x;
+	int				y;
+	int				d;
+	int				texY;
+	unsigned int	color_2;
+
 	while (img->sprite.stripe < draw_end_x)
 	{
-		int				tex_x;
-		int				y;
-		int				d;
-		int				texY;
-		unsigned int	color_2;
-
 		tex_x = (int)(256 * (img->sprite.stripe - (-img->sprite.sprite_width
 						/ 2 + img->sprite.sprite_screen_x)) * img->sprite.width
 				/ img->sprite.sprite_width) / 256;
@@ -34,7 +34,8 @@ void	ft_print_sprite(t_game *img, int draw_end_x, double transform_y,
 			{
 				d = (y) * 256 - img->img.height * 128
 					+ img->sprite.sprite_height * 128;
-				texY = ((d * img->texture_n.width) / img->sprite.sprite_height) / 256;
+				texY = ((d * img->texture_n.width)
+						/ img->sprite.sprite_height) / 256;
 				color_2 = *(unsigned int *)(img->sprite.addr
 						+ (texY * img->sprite.line_length + tex_x
 							* (img->sprite.bits_per_pixel / 8)));

@@ -33,6 +33,7 @@ add_executable(mac_os
         libft/ft_memchr.c
         ./ft_isascii_content.c
         ./ft_isaint.c
+        ./parser/ft_check_colors1.c
 #        graphics
         reycasting/ft_reycasting.h
         reycasting/ft_print_texture.c
@@ -42,8 +43,8 @@ add_executable(mac_os
         reycasting/ft_rc_hit.c
         reycasting/ft_vertical_line.c
         libft/ft_lstclear.c
-
-
+        ./parser/ft_handler_f_c.c
+        ./parser/ft_handler_f_c1.c
 #        minilibx_mms_20200219/mlx_rgb.c
 #        minilibx_mms_20200219/mlx_png.c
 #        minilibx_mms_20200219/mlx_string_put.c
@@ -59,9 +60,10 @@ add_executable(mac_os
 #        minilibx_opengl_20191021/mlx_opengl.h
 #        minilibx_opengl_20191021/mlx_shaders.c
         map_parser.c
+
         map_parser_utils.c
         screenshot.bmp
-        reycasting/ft_control_plr.c reycasting/ft_move_player.c reycasting/ft_init_val.c reycasting/ft_open_tex_spr.c reycasting/ft_key_hook_handle.c reycasting/ft_calc_and_print_sprite.c ft_free_memory.c ft_screen_shot.c ft_valid_line.c parser/parser.h parser/ft_check.c parser/ft_check_handlers.c parser/ft_parse.c parser/ft_parse_inter.c)
+        reycasting/ft_control_plr.c reycasting/ft_move_player.c reycasting/ft_init_val.c reycasting/ft_open_tex_spr.c reycasting/ft_key_hook_handle.c reycasting/ft_calc_and_print_sprite.c ft_free_memory.c ft_screen_shot.c ft_valid_line.c parser/parser.h parser/ft_check.c parser/ft_check_handlers.c parser/ft_parse.c parser/ft_parse_inter.c ft_print_error.c parser/ft_check_if_f.c parser/ft_handler_f_c1.c parser/ft_handler_f_c.c)
 #mac_os target
 target_link_libraries(mac_os "-framework OpenGL")
 target_link_libraries(mac_os "-framework AppKit")

@@ -6,7 +6,7 @@
 /*   By: brice <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/25 09:30:08 by brice             #+#    #+#             */
-/*   Updated: 2021/04/25 09:33:46 by brice            ###   ########.fr       */
+/*   Updated: 2021/04/25 15:59:45 by brice            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,21 +60,7 @@ void	ft_check_if(t_game *img, char **result)
 		}
 		img->j_ps++;
 	}
-	if (img->flag_parser & S && result[1] && !result[2])
-	{
-		img->sprite.relative_path = ft_strdup((char *)result[1]);
-		img->j_ps++;
-	}
-	if (img->flag_parser & NO && result[1] && !result[2])
-	{
-		img->texture_n.relative_path = ft_strdup((char *)result[1]);
-		img->j_ps++;
-	}
-	if (img->flag_parser & SO && result[1] && !result[2])
-	{
-		img->texture_s.relative_path = ft_strdup((char *)result[1]);
-		img->j_ps++;
-	}
+	ft_check_if_f(img, result);
 }
 
 void	ft_check_if_last(t_game *img, char **result)

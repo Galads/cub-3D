@@ -135,6 +135,15 @@ typedef struct s_rey
 	int		col_c;
 	int		col_f;
 }			t_rey;
+typedef struct s_rgb
+{
+	int		r;
+	int		g;
+	int		b;
+	int		i;
+	int		j;
+	int		k;
+}			t_rgb;
 
 typedef struct s_game
 {
@@ -148,6 +157,7 @@ typedef struct s_game
 	t_vector		vector;
 	t_pos			pos;
 	t_rey			rc;
+	t_rgb			rgb;
 	unsigned int	flags;
 	unsigned int	flag_parser;
 	unsigned int	flag_control;
@@ -171,4 +181,5 @@ void	check_around_02plr(t_game *opt, const size_t *str_sizes, size_t i,
 void	save_player_position(t_game *opt, const char c, const size_t x,
 							 const size_t y);
 void	map_parser(t_game *opt);
+void	ft_print_error(t_game *img, char *str, int code);
 #endif

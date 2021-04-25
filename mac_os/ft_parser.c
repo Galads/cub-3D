@@ -1,17 +1,28 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_parser.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: brice <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/04/25 18:38:56 by brice             #+#    #+#             */
+/*   Updated: 2021/04/25 18:41:49 by brice            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "parser/parser.h"
 
 void	ft_check_num(t_game *img)
 {
 	if (!img->img.height || !img->img.width || !img->sprite.relative_path
-	|| !img->texture_e.relative_path || !img->texture_w.relative_path
-	|| !img->texture_n.relative_path || !img->texture_s.relative_path
-	|| img->rc.col_f == -1 || img->rc.col_c == -1)
+		|| !img->texture_e.relative_path || !img->texture_w.relative_path
+		|| !img->texture_n.relative_path || !img->texture_s.relative_path
+		|| img->rc.col_f == -1 || img->rc.col_c == -1)
 	{
 		printf("Error: not a valid header");
 		exit(1);
 	}
 }
-
 
 void	ft_fill_map(t_game *img, t_list **list_head)
 {
@@ -23,7 +34,6 @@ void	ft_fill_map(t_game *img, t_list **list_head)
 	i = 0;
 	j = 0;
 	list = *list_head;
-
 	img->world_map = (char **)ft_calloc(img->map_height + 1, sizeof (char *));
 	while (i < img->map_height)
 		img->world_map[i++] = (char *)ft_calloc(img->map_width, sizeof (char));
@@ -37,8 +47,6 @@ void	ft_fill_map(t_game *img, t_list **list_head)
 	}
 	ft_lstclear(list_head, &free);
 }
-
-
 
 void	ft_parse_tail(t_game *img, char **line, const int *fd)
 {
@@ -70,8 +78,7 @@ int	ft_parser_open(t_game *img, char **argv)
 	fd = open(argv[1], O_RDONLY);
 	if (fd < 0)
 	{
-		printf("Error: %s", strerror(errno));
-		exit(1);
+		ft_print_error(img, "fd < 0", 1);
 	}
 	ft_init_parser(img);
 	if (!argv[1])

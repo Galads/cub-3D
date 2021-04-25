@@ -6,76 +6,11 @@
 /*   By: brice <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/25 09:34:18 by brice             #+#    #+#             */
-/*   Updated: 2021/04/25 09:38:44 by brice            ###   ########.fr       */
+/*   Updated: 2021/04/25 17:01:30 by brice            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "parser.h"
-
-void	ft_check_colors(char **result)
-{
-	int i;
-	int j;
-
-	i = 0;
-	j = 0;
-	while (result[i])
-	{
-		while (result[i][j])
-		{
-			if (result[i][j] == ' ' || result[i][j] == 'F'
-				|| result[i][j] == 'C')
-				j++;
-			else if (!ft_isdigit(result[i][j]) && result[i][j] != '\0' && result[i][j] != ' ' )
-			{
-				printf("Error: not a valid strings\n");
-				exit(13);
-			}
-			else
-			{
-				while (ft_isdigit(result[i][j]))
-					j++;
-			}
-		}
-		j = 0;
-		i++;
-	}
-}
-
-void	ft_handler_f_c(int *col, char **result)
-{
-	int	i;
-	int	j;
-	int	k;
-	int	rgb[3];
-
-	i = 0;
-	j = 1;
-	k = 0;
-	ft_check_colors(result);
-	while (result[i])
-	{
-		while (result[i][j])
-		{
-			if (result[i][j] == ' ' || result[i][j] == 'F'
-					|| result[i][j] == 'C')
-				j++;
-			else if (ft_isdigit(result[i][j]))
-			{
-				rgb[k++] = ft_atoi(&result[i][j]);
-				break ;
-			}
-			else
-			{
-				printf("Error: not a valid string header\n");
-				exit(1);
-			}
-		}
-		j = 0;
-		i++;
-	}
-	*col = ft_create_trgb(0, rgb[0], rgb[1], rgb[2]);
-}
 
 void	ft_init_parser(t_game *img)
 {
@@ -120,7 +55,8 @@ void	ft_fill_flag(t_game *img)
 	}
 }
 
-void	ft_check_line_first(char **line, t_list **list_head, int *k, t_game *img)
+void	ft_check_line_first(char **line, t_list **list_head,
+			int *k, t_game *img)
 {
 	if ((*line)[(*k)] && (*line)[(*k)] != '1')
 	{
@@ -148,7 +84,8 @@ void	ft_check_line_first(char **line, t_list **list_head, int *k, t_game *img)
 	}
 }
 
-void	ft_check_line(char **line, t_list **list_head, t_list **list, t_game *img)
+void	ft_check_line(char **line, t_list **list_head,
+			t_list **list, t_game *img)
 {
 	int	k;
 	int	k5;

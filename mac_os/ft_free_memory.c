@@ -17,10 +17,10 @@ void	ft_free_memory(t_game *img)
 	int	i;
 
 	i = 0;
-//	free(img->texture_n.relative_path);
-//	free(img->texture_s.relative_path);
-//	free(img->texture_w.relative_path);
-//	free(img->texture_e.relative_path);
+	free(img->texture_n.relative_path);
+	free(img->texture_s.relative_path);
+	free(img->texture_w.relative_path);
+	free(img->texture_e.relative_path);
 	free(img->sprite.z_buffer);
 	free(img->sprite.sprite_order);
 	free(img->sprite.sprite_distance);
@@ -33,7 +33,7 @@ void	ft_free_memory(t_game *img)
 	mlx_destroy_image(img->img.mlx, img->texture_w.img);
 	mlx_destroy_image(img->img.mlx, img->sprite.img);
 	i = 0;
-	while (i < img->map_height + 1)
+	while (i < img->map_height)
 		free(img->world_map[i++]);
 	free(img->world_map);
 	mlx_destroy_window(img->img.mlx, img->img.win);

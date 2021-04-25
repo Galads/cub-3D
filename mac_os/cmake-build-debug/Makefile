@@ -250,6 +250,33 @@ ft_parser.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/ft_parser.c.s
 .PHONY : ft_parser.c.s
 
+ft_print_error.o: ft_print_error.c.o
+
+.PHONY : ft_print_error.o
+
+# target to build an object file
+ft_print_error.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/ft_print_error.c.o
+.PHONY : ft_print_error.c.o
+
+ft_print_error.i: ft_print_error.c.i
+
+.PHONY : ft_print_error.i
+
+# target to preprocess a source file
+ft_print_error.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/ft_print_error.c.i
+.PHONY : ft_print_error.c.i
+
+ft_print_error.s: ft_print_error.c.s
+
+.PHONY : ft_print_error.s
+
+# target to generate assembly for a file
+ft_print_error.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/ft_print_error.c.s
+.PHONY : ft_print_error.c.s
+
 ft_screen_shot.o: ft_screen_shot.c.o
 
 .PHONY : ft_screen_shot.o
@@ -871,6 +898,33 @@ parser/ft_check.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/parser/ft_check.c.s
 .PHONY : parser/ft_check.c.s
 
+parser/ft_check_colors1.o: parser/ft_check_colors1.c.o
+
+.PHONY : parser/ft_check_colors1.o
+
+# target to build an object file
+parser/ft_check_colors1.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/parser/ft_check_colors1.c.o
+.PHONY : parser/ft_check_colors1.c.o
+
+parser/ft_check_colors1.i: parser/ft_check_colors1.c.i
+
+.PHONY : parser/ft_check_colors1.i
+
+# target to preprocess a source file
+parser/ft_check_colors1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/parser/ft_check_colors1.c.i
+.PHONY : parser/ft_check_colors1.c.i
+
+parser/ft_check_colors1.s: parser/ft_check_colors1.c.s
+
+.PHONY : parser/ft_check_colors1.s
+
+# target to generate assembly for a file
+parser/ft_check_colors1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/parser/ft_check_colors1.c.s
+.PHONY : parser/ft_check_colors1.c.s
+
 parser/ft_check_handlers.o: parser/ft_check_handlers.c.o
 
 .PHONY : parser/ft_check_handlers.o
@@ -897,6 +951,87 @@ parser/ft_check_handlers.s: parser/ft_check_handlers.c.s
 parser/ft_check_handlers.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/parser/ft_check_handlers.c.s
 .PHONY : parser/ft_check_handlers.c.s
+
+parser/ft_check_if_f.o: parser/ft_check_if_f.c.o
+
+.PHONY : parser/ft_check_if_f.o
+
+# target to build an object file
+parser/ft_check_if_f.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/parser/ft_check_if_f.c.o
+.PHONY : parser/ft_check_if_f.c.o
+
+parser/ft_check_if_f.i: parser/ft_check_if_f.c.i
+
+.PHONY : parser/ft_check_if_f.i
+
+# target to preprocess a source file
+parser/ft_check_if_f.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/parser/ft_check_if_f.c.i
+.PHONY : parser/ft_check_if_f.c.i
+
+parser/ft_check_if_f.s: parser/ft_check_if_f.c.s
+
+.PHONY : parser/ft_check_if_f.s
+
+# target to generate assembly for a file
+parser/ft_check_if_f.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/parser/ft_check_if_f.c.s
+.PHONY : parser/ft_check_if_f.c.s
+
+parser/ft_handler_f_c.o: parser/ft_handler_f_c.c.o
+
+.PHONY : parser/ft_handler_f_c.o
+
+# target to build an object file
+parser/ft_handler_f_c.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/parser/ft_handler_f_c.c.o
+.PHONY : parser/ft_handler_f_c.c.o
+
+parser/ft_handler_f_c.i: parser/ft_handler_f_c.c.i
+
+.PHONY : parser/ft_handler_f_c.i
+
+# target to preprocess a source file
+parser/ft_handler_f_c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/parser/ft_handler_f_c.c.i
+.PHONY : parser/ft_handler_f_c.c.i
+
+parser/ft_handler_f_c.s: parser/ft_handler_f_c.c.s
+
+.PHONY : parser/ft_handler_f_c.s
+
+# target to generate assembly for a file
+parser/ft_handler_f_c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/parser/ft_handler_f_c.c.s
+.PHONY : parser/ft_handler_f_c.c.s
+
+parser/ft_handler_f_c1.o: parser/ft_handler_f_c1.c.o
+
+.PHONY : parser/ft_handler_f_c1.o
+
+# target to build an object file
+parser/ft_handler_f_c1.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/parser/ft_handler_f_c1.c.o
+.PHONY : parser/ft_handler_f_c1.c.o
+
+parser/ft_handler_f_c1.i: parser/ft_handler_f_c1.c.i
+
+.PHONY : parser/ft_handler_f_c1.i
+
+# target to preprocess a source file
+parser/ft_handler_f_c1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/parser/ft_handler_f_c1.c.i
+.PHONY : parser/ft_handler_f_c1.c.i
+
+parser/ft_handler_f_c1.s: parser/ft_handler_f_c1.c.s
+
+.PHONY : parser/ft_handler_f_c1.s
+
+# target to generate assembly for a file
+parser/ft_handler_f_c1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/parser/ft_handler_f_c1.c.s
+.PHONY : parser/ft_handler_f_c1.c.s
 
 parser/ft_parse.o: parser/ft_parse.c.o
 
@@ -1297,6 +1432,9 @@ help:
 	@echo "... ft_parser.o"
 	@echo "... ft_parser.i"
 	@echo "... ft_parser.s"
+	@echo "... ft_print_error.o"
+	@echo "... ft_print_error.i"
+	@echo "... ft_print_error.s"
 	@echo "... ft_screen_shot.o"
 	@echo "... ft_screen_shot.i"
 	@echo "... ft_screen_shot.s"
@@ -1366,9 +1504,21 @@ help:
 	@echo "... parser/ft_check.o"
 	@echo "... parser/ft_check.i"
 	@echo "... parser/ft_check.s"
+	@echo "... parser/ft_check_colors1.o"
+	@echo "... parser/ft_check_colors1.i"
+	@echo "... parser/ft_check_colors1.s"
 	@echo "... parser/ft_check_handlers.o"
 	@echo "... parser/ft_check_handlers.i"
 	@echo "... parser/ft_check_handlers.s"
+	@echo "... parser/ft_check_if_f.o"
+	@echo "... parser/ft_check_if_f.i"
+	@echo "... parser/ft_check_if_f.s"
+	@echo "... parser/ft_handler_f_c.o"
+	@echo "... parser/ft_handler_f_c.i"
+	@echo "... parser/ft_handler_f_c.s"
+	@echo "... parser/ft_handler_f_c1.o"
+	@echo "... parser/ft_handler_f_c1.i"
+	@echo "... parser/ft_handler_f_c1.s"
 	@echo "... parser/ft_parse.o"
 	@echo "... parser/ft_parse.i"
 	@echo "... parser/ft_parse.s"

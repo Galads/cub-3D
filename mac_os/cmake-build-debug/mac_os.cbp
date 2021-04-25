@@ -82,9 +82,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/cmake-build-debug/screenshot.bmp">
-			<Option target="mac_os"/>
-		</Unit>
 		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/ft_free_memory.c">
 			<Option target="mac_os"/>
 		</Unit>
@@ -95,6 +92,9 @@
 			<Option target="mac_os"/>
 		</Unit>
 		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/ft_parser.c">
+			<Option target="mac_os"/>
+		</Unit>
+		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/ft_print_error.c">
 			<Option target="mac_os"/>
 		</Unit>
 		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/ft_screen_shot.c">
@@ -169,7 +169,19 @@
 		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_check.c">
 			<Option target="mac_os"/>
 		</Unit>
+		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_check_colors1.c">
+			<Option target="mac_os"/>
+		</Unit>
 		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_check_handlers.c">
+			<Option target="mac_os"/>
+		</Unit>
+		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_check_if_f.c">
+			<Option target="mac_os"/>
+		</Unit>
+		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_handler_f_c.c">
+			<Option target="mac_os"/>
+		</Unit>
+		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_handler_f_c1.c">
 			<Option target="mac_os"/>
 		</Unit>
 		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_parse.c">
@@ -218,6 +230,9 @@
 			<Option target="mac_os"/>
 		</Unit>
 		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/reycasting/ft_vertical_line.c">
+			<Option target="mac_os"/>
+		</Unit>
+		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/screenshot.bmp">
 			<Option target="mac_os"/>
 		</Unit>
 		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/CMakeLists.txt">

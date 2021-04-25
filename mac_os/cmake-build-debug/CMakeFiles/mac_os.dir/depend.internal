@@ -27,6 +27,12 @@ CMakeFiles/mac_os.dir/ft_parser.c.o
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/parser.h
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/reycasting/ft_reycasting.h
  /usr/local/include/mlx.h
+CMakeFiles/mac_os.dir/ft_print_error.c.o
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/ft_print_error.c
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/get_next_line/get_next_line.h
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/libft.h
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/my_cube.h
+ /usr/local/include/mlx.h
 CMakeFiles/mac_os.dir/ft_screen_shot.c.o
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/ft_screen_shot.c
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/get_next_line/get_next_line.h
@@ -114,11 +120,43 @@ CMakeFiles/mac_os.dir/parser/ft_check.c.o
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/parser.h
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/reycasting/ft_reycasting.h
  /usr/local/include/mlx.h
+CMakeFiles/mac_os.dir/parser/ft_check_colors1.c.o
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/get_next_line/get_next_line.h
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/libft.h
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/my_cube.h
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_check_colors1.c
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/parser.h
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/reycasting/ft_reycasting.h
+ /usr/local/include/mlx.h
 CMakeFiles/mac_os.dir/parser/ft_check_handlers.c.o
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/get_next_line/get_next_line.h
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/libft.h
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/my_cube.h
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_check_handlers.c
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/parser.h
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/reycasting/ft_reycasting.h
+ /usr/local/include/mlx.h
+CMakeFiles/mac_os.dir/parser/ft_check_if_f.c.o
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/get_next_line/get_next_line.h
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/libft.h
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/my_cube.h
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_check_if_f.c
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/parser.h
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/reycasting/ft_reycasting.h
+ /usr/local/include/mlx.h
+CMakeFiles/mac_os.dir/parser/ft_handler_f_c.c.o
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/get_next_line/get_next_line.h
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/libft.h
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/my_cube.h
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_handler_f_c.c
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/parser.h
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/reycasting/ft_reycasting.h
+ /usr/local/include/mlx.h
+CMakeFiles/mac_os.dir/parser/ft_handler_f_c1.c.o
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/get_next_line/get_next_line.h
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/libft.h
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/my_cube.h
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_handler_f_c1.c
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/parser.h
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/reycasting/ft_reycasting.h
  /usr/local/include/mlx.h
