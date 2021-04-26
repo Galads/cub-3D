@@ -2,11 +2,10 @@ C   123 , 30 , 145
 
     NO         ./textures/bluestone.xpm
 
-SO    ./textures/eagle.xpm
+SO ./textures/eagle.xpm
 
 
                                 WE    ./textures/redbrick.xpm
-
 
 
             EA        ./textures/purplestone.xpm
@@ -25,9 +24,18 @@ SO    ./textures/eagle.xpm
 
     F    225,  225,     20
 
-R         1080       1080
+R         1080      1080
 
 S             ./sprites/1_1.xpm
+
+
+
+
+
+
+
+
+
 
 
         1111111111111111111111111   111

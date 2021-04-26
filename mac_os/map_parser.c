@@ -30,15 +30,9 @@ t_bool	compare_strsymbs(const char *str, const char *str_cmp,
 static void	check_map_borders(t_game *opt)
 {
 	if (!compare_strsymbs(*opt->world_map, " 1", 2))
-	{
-		printf("Error: map parse\n");
-		exit(2);
-	}
+		ft_print_error(opt, "map parse borders", 2);
 	if (!compare_strsymbs(*(opt->world_map + opt->map_height - 1), " 1", 2))
-	{
-		printf("Error: map parse\n");
-		exit(2);
-	}
+		ft_print_error(opt, "map parse borders", 2);
 }
 
 static void	follow_linemap(t_game *opt, const char **map, size_t row_idx,
@@ -77,10 +71,7 @@ void	map_parser(t_game *opt)
 	size_t	sprites_count;
 
 	if (!opt->map_height)
-	{
-		printf("Error: map parse\n");
-		exit(11);
-	}
+		ft_print_error(opt, "map parse, no height", 22);
 	check_map_borders(opt);
 	sprites_count = 0;
 	i = 1;
@@ -90,8 +81,5 @@ void	map_parser(t_game *opt)
 		i++;
 	}
 	if (opt->pos.pos_x < 1)
-	{
-		printf("Error: map parse\n");
-		exit(22);
-	}
+		ft_print_error(opt, "map parse, pos < 1", 22);
 }

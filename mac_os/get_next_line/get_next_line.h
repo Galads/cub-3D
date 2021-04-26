@@ -22,4 +22,7 @@ int		get_next_line(int fd, char **line);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strdup(const char *s1);
+int		ft_exit_code(int isexit, int res);
+int		fill_remainder(char **current, char **remainder,
+			char **buf, int *isexit);
 #endif

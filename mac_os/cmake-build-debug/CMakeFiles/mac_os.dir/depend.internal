@@ -42,12 +42,18 @@ CMakeFiles/mac_os.dir/ft_screen_shot.c.o
  /usr/local/include/mlx.h
 CMakeFiles/mac_os.dir/ft_valid_line.c.o
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/ft_valid_line.c
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/get_next_line/get_next_line.h
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/libft.h
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/my_cube.h
+ /usr/local/include/mlx.h
 CMakeFiles/mac_os.dir/get_next_line/get_next_line.c.o
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/get_next_line/get_next_line.c
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/get_next_line/get_next_line.h
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/libft.h
 CMakeFiles/mac_os.dir/get_next_line/get_next_line_utils.c.o
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/get_next_line/get_next_line.h
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/get_next_line/get_next_line_utils.c
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/libft.h
 CMakeFiles/mac_os.dir/libft/ft_atoi.c.o
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/ft_atoi.c
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/libft.h
@@ -79,6 +85,12 @@ CMakeFiles/mac_os.dir/libft/ft_memchr.c.o
 CMakeFiles/mac_os.dir/libft/ft_split.c.o
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/ft_split.c
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/libft.h
+CMakeFiles/mac_os.dir/libft/ft_strchr.c.o
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/ft_strchr.c
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/libft.h
+CMakeFiles/mac_os.dir/libft/ft_strdup.c.o
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/ft_strdup.c
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/libft.h
 CMakeFiles/mac_os.dir/libft/ft_strlcpy.c.o
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/ft_strlcpy.c
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/libft.h
@@ -90,6 +102,9 @@ CMakeFiles/mac_os.dir/libft/ft_strncmp.c.o
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/libft.h
 CMakeFiles/mac_os.dir/libft/ft_strnstr.c.o
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/ft_strnstr.c
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/libft.h
+CMakeFiles/mac_os.dir/libft/ft_strrchr.c.o
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/ft_strrchr.c
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/libft.h
 CMakeFiles/mac_os.dir/main3D.c.o
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/get_next_line/get_next_line.h
@@ -141,6 +156,14 @@ CMakeFiles/mac_os.dir/parser/ft_check_if_f.c.o
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/libft.h
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/my_cube.h
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_check_if_f.c
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/parser.h
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/reycasting/ft_reycasting.h
+ /usr/local/include/mlx.h
+CMakeFiles/mac_os.dir/parser/ft_check_valid_files.c.o
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/get_next_line/get_next_line.h
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/libft.h
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/my_cube.h
+ /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_check_valid_files.c
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/parser.h
  /Users/brice/Desktop/main_parser/ft_parser/mac_os/reycasting/ft_reycasting.h
  /usr/local/include/mlx.h

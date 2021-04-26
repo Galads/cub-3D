@@ -13,6 +13,7 @@
 #ifndef FT_REYCASTING_H
 # define FT_REYCASTING_H
 # include "../my_cube.h"
+# include "../libft/libft.h"
 
 void	ft_rc_s_first(t_game *img, double *z_buffer);
 void	ft_rc_hit(t_game *img);

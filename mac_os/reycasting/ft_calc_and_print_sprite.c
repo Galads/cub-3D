@@ -44,7 +44,7 @@ void	ft_print_sprite(t_game *img, int draw_end_x, double transform_y,
 		tex_x = (int)(256 * (img->sprite.stripe - (-img->sprite.sprite_width
 						/ 2 + img->sprite.sprite_screen_x)) * img->sprite.width
 				/ img->sprite.sprite_width) / 256;
-		if (transform_y > 0 && img->sprite.stripe > 0 && img->sprite.stripe
+		if (transform_y > 0 && img->sprite.stripe
 			< img->img.width && transform_y < z_buffer[img->sprite.stripe])
 		{
 			img->y_s = img->sprite.draw_start_y;

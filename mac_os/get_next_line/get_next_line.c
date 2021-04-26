@@ -9,103 +9,93 @@
 /*   Updated: 2020/11/25 12:41:48 by brice            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "get_next_line.h"
+#include "../libft/libft.h"
 
-static	int	ft_strcopy(char **save, char **line)
+static int	copy_to_line(char **str, char **line)
 {
-	char	*clear;
+	char	*current;
 
-	clear = *line;
-	if (!(*line = ft_strjoin(*line, *save)))
+	current = *line;
+	*line = ft_strjoin(*line, *str);
+	free(current);
+	if (!*line)
 	{
-		free(clear);
-		return (-1);
+		free(*str);
+		return (0);
 	}
-	free(clear);
 	return (1);
 }
 
-static	int	if_save_true(char **line, char **p, char **clear, char **save)
+static int	check_remainder(char **remainder, char **line)
 {
-	if ((*p = ft_strchr(*save, '\n')))
+	char	*current;
+	char	*p_n;
+
+	if (!*remainder)
+		return (0);
+	p_n = ft_strchr(*remainder, '\n');
+	if (p_n)
 	{
-		**p = '\0';
-		if ((ft_strcopy(save, line)) < 0)
+		*p_n = '\0';
+		if (!copy_to_line(remainder, line))
 			return (-1);
-		*clear = *save;
-		if (!(*save = ft_strdup(*p + 1)))
-		{
-			free(*clear);
-			return (-1);
-		}
-		free(*clear);
-		return (-2);
+		current = *remainder;
+		*remainder = ft_strdup(++p_n);
+		free(current);
+		return (1);
 	}
 	else
 	{
-		if ((ft_strcopy(save, line)) < 0)
+		if (!copy_to_line(remainder, line))
 			return (-1);
-		free(*save);
-		*save = NULL;
-		return (1);
+		free(*remainder);
+		*remainder = NULL;
 	}
+	return (0);
 }
 
-static	int	get_line_while(char **p, int *fd, char **line, char **save)
+static int	get_line(int fd, char **line, char **remainder, char **buf)
 {
-	char	*buf;
-	int		rd;
+	int		res;
+	char	*current;
+	int		isexit;
 
-	if (!(buf = (char *)malloc(sizeof(char) * (BUFFER_SIZE + 1))))
-		return (-1);
-	while (!*p && (rd = read(*fd, buf, BUFFER_SIZE)) > 0)
+	isexit = 1;
+	res = read(fd, *buf, BUFFER_SIZE);
+	while (isexit && res > 0)
 	{
-		buf[rd] = '\0';
-		if ((*p = ft_strchr(buf, '\n')))
-		{
-			**p = '\0';
-			if (!(*save = ft_strdup(*p + 1)))
-			{
-				free(buf);
-				return (-1);
-			}
-		}
-		if ((ft_strcopy(&buf, line)) < 0)
-		{
-			free(buf);
+		*(*buf + res) = '\0';
+		if (!fill_remainder(&current, remainder, buf, &isexit))
 			return (-1);
-		}
+		if (!copy_to_line(buf, line))
+			return (-1);
 	}
-	free(buf);
-	return (rd);
+	free(*buf);
+	return (ft_exit_code(isexit, res));
 }
 
-int			get_next_line(int fd, char **line)
+int	get_next_line(int fd, char **line)
 {
-	static char	*save;
-	char		*clear;
-	char		*p;
-	int			rd;
-	int			flag;
+	static char		*remainder;
+	int				res;
+	char			*buf;
 
 	if (fd < 0 || BUFFER_SIZE < 1 || !line)
 		return (-1);
-	if (!(*line = ft_strdup("")))
+	*line = ft_strdup("");
+	if (!*line)
 		return (-1);
-	if (save)
-	{
-		flag = if_save_true(line, &p, &clear, &save);
-		if (flag == -1)
-			return (-1);
-		else if (flag == -2)
-			return (1);
-	}
-	else
-		p = NULL;
-	rd = get_line_while(&p, &fd, line, &save);
-	if (save)
+	res = check_remainder(&remainder, line);
+	if (res > 0)
 		return (1);
-	free(save);
-	return ((rd < 0) ? -1 : 0);
+	else if (res == -1)
+		return (-1);
+	buf = (char *)malloc(sizeof(char) * (BUFFER_SIZE + 1));
+	if (!buf)
+		return (-1);
+	res = get_line(fd, line, &remainder, &buf);
+	if (res < 0)
+		return (-1);
+	return (res);
 }

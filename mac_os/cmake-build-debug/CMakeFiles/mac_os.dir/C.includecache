@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/brice/Desktop/main_parser/ft_parser/mac_os/ft_print_error.c
-my_cube.h
-/Users/brice/Desktop/main_parser/ft_parser/mac_os/my_cube.h
-
 /Users/brice/Desktop/main_parser/ft_parser/mac_os/get_next_line/get_next_line.h
 unistd.h
 -
@@ -21,6 +17,10 @@ unistd.h
 -
 stdlib.h
 -
+
+/Users/brice/Desktop/main_parser/ft_parser/mac_os/main3D.c
+reycasting/ft_reycasting.h
+/Users/brice/Desktop/main_parser/ft_parser/mac_os/reycasting/ft_reycasting.h
 
 /Users/brice/Desktop/main_parser/ft_parser/mac_os/my_cube.h
 stdio.h
@@ -44,6 +44,12 @@ stdlib.h
 get_next_line/get_next_line.h
 /Users/brice/Desktop/main_parser/ft_parser/mac_os/get_next_line/get_next_line.h
 libft/libft.h
+/Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/libft.h
+
+/Users/brice/Desktop/main_parser/ft_parser/mac_os/reycasting/ft_reycasting.h
+../my_cube.h
+/Users/brice/Desktop/main_parser/ft_parser/mac_os/my_cube.h
+../libft/libft.h
 /Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/libft.h
 
 /usr/local/include/mlx.h

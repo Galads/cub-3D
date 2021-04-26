@@ -109,10 +109,7 @@ void	ft_parser(int argc, char **argv, t_game *img)
 			free(line);
 	}
 	if (img->j_ps != 8)
-	{
-		printf("Error: parse header\n");
-		exit(33);
-	}
+		ft_print_error(img, "Error: parse header\n", 33);
 	ft_check_num(img);
 	ft_parse_tail(img, &line, &fd);
 }

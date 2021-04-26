@@ -27,9 +27,8 @@
 # define S				0x0200
 # define F				0x1000
 # define C				0x2000
-# define HEIGHT			1080
-# define WIDTH			1080
-# define INT_MAX2		2147483647
+# define HEIGHT			1440
+# define WIDTH			2550
 # include <stdio.h>
 # include <unistd.h>
 # include <limits.h>
@@ -185,4 +184,7 @@ void	save_player_position(t_game *opt, const char c, const size_t x,
 			const size_t y);
 void	map_parser(t_game *opt);
 void	ft_print_error(t_game *img, char *str, int code);
+void	ft_init_parser(t_game *img);
+int		ft_check_valid_files(char *argv, char *str);
+
 #endif

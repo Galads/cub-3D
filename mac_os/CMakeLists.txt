@@ -63,7 +63,28 @@ add_executable(mac_os
 
         map_parser_utils.c
         screenshot.bmp
-        reycasting/ft_control_plr.c reycasting/ft_move_player.c reycasting/ft_init_val.c reycasting/ft_open_tex_spr.c reycasting/ft_key_hook_handle.c reycasting/ft_calc_and_print_sprite.c ft_free_memory.c ft_screen_shot.c ft_valid_line.c parser/parser.h parser/ft_check.c parser/ft_check_handlers.c parser/ft_parse.c parser/ft_parse_inter.c ft_print_error.c parser/ft_check_if_f.c parser/ft_handler_f_c1.c parser/ft_handler_f_c.c)
+        reycasting/ft_control_plr.c
+        reycasting/ft_move_player.c
+        reycasting/ft_init_val.c
+        reycasting/ft_open_tex_spr.c
+        reycasting/ft_key_hook_handle.c
+        reycasting/ft_calc_and_print_sprite.c
+        ft_free_memory.c
+        ft_screen_shot.c
+        ft_valid_line.c
+        parser/parser.h
+        parser/ft_check.c
+        parser/ft_check_handlers.c
+        parser/ft_parse.c
+        parser/ft_parse_inter.c
+        ft_print_error.c
+        parser/ft_check_if_f.c
+        parser/ft_handler_f_c1.c
+        parser/ft_handler_f_c.c
+        parser/ft_check_valid_files.c
+        libft/ft_strrchr.c
+        libft/ft_strchr.c
+        libft/ft_strdup.c)
 #mac_os target
 target_link_libraries(mac_os "-framework OpenGL")
 target_link_libraries(mac_os "-framework AppKit")

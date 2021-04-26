@@ -72,14 +72,14 @@ void	ft_write_body(t_game *img, unsigned char *color, int fd,
 	y = img->img.height;
 	while (y > 0)
 	{
-		x = img->img.width;
-		while (x > 0)
+		x = 0;
+		while (x < img->img.width)
 		{
 			color[0] = (my_mlx_pixel_put2(&img->img, x, y) & 0x0000FF);
 			color[1] = ((my_mlx_pixel_put2(&img->img, x, y) >> 8) & 0x0000FF);
 			color[2] = ((my_mlx_pixel_put2(&img->img, x, y) >> 16) & 0x0000FF);
 			write(fd, color, 3);
-			x--;
+			x++;
 		}
 		write(fd, bmp_pad, padd_amount);
 		y--;
@@ -96,7 +96,7 @@ void	ft_screen_shot(t_game *img)
 	padd_amount = 0;
 	fd = open("screenshot.bmp", O_CREAT | O_WRONLY, S_IREAD | S_IWRITE);
 	if (!fd)
-		printf("Error: %s", strerror(errno));
+		ft_print_error(img, strerror(errno), 12);
 	else
 	{
 		file_size = 40 + 14 + img->img.width * img->img.height

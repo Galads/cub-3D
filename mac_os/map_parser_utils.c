@@ -21,9 +21,9 @@ void	check_around_02plr(t_game *opt, const size_t *str_sizes, size_t i,
 
 	map = (const char **)opt->world_map;
 	if (j == 0 || j == *(str_sizes + 1) - 1)
-		ft_print_error(opt, "Error: map parse\n", 2);
+		ft_print_error(opt, "map parse\n", 2);
 	if (j > *(str_sizes + 0) - 1 || j > *(str_sizes + 2) - 1)
-		ft_print_error(opt, "Error: map parse\n", 2);
+		ft_print_error(opt, "map parse\n", 2);
 	around_symbs[0] = *(*(map + i) + j - 1);
 	around_symbs[1] = *(*(map + i) + j + 1);
 	around_symbs[2] = *(*(map + i - 1) + j);
@@ -32,7 +32,7 @@ void	check_around_02plr(t_game *opt, const size_t *str_sizes, size_t i,
 	while (k < 4)
 	{
 		if (!ft_memchr("012NSWE", around_symbs[k], 7))
-			ft_print_error(opt, "Error: map parse\n", 2);
+			ft_print_error(opt, "map parse\n", 2);
 		k++;
 	}
 }
@@ -89,10 +89,7 @@ void	save_player_position(t_game *opt, const char c, const size_t x,
 	const size_t y)
 {
 	if (opt->pos.pos_x > 0)
-	{
-		printf("Error: plr pos\n");
-		exit(16);
-	}
+		ft_print_error(opt, "plr pos\n", 16);
 	opt->pos.pos_x = (double)x + 0.5;
 	opt->pos.pos_y = (double)y + 0.5;
 	select_player_direction(&opt->vector, c);

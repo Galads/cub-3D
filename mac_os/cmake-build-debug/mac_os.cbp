@@ -145,6 +145,12 @@
 		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/ft_split.c">
 			<Option target="mac_os"/>
 		</Unit>
+		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/ft_strchr.c">
+			<Option target="mac_os"/>
+		</Unit>
+		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/ft_strdup.c">
+			<Option target="mac_os"/>
+		</Unit>
 		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/ft_strlcpy.c">
 			<Option target="mac_os"/>
 		</Unit>
@@ -155,6 +161,9 @@
 			<Option target="mac_os"/>
 		</Unit>
 		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/ft_strnstr.c">
+			<Option target="mac_os"/>
+		</Unit>
+		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/libft/ft_strrchr.c">
 			<Option target="mac_os"/>
 		</Unit>
 		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/main3D.c">
@@ -176,6 +185,9 @@
 			<Option target="mac_os"/>
 		</Unit>
 		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_check_if_f.c">
+			<Option target="mac_os"/>
+		</Unit>
+		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_check_valid_files.c">
 			<Option target="mac_os"/>
 		</Unit>
 		<Unit filename="/Users/brice/Desktop/main_parser/ft_parser/mac_os/parser/ft_handler_f_c.c">

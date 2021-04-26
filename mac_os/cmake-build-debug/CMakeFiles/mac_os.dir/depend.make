@@ -41,12 +41,18 @@ CMakeFiles/mac_os.dir/ft_screen_shot.c.o: ../reycasting/ft_reycasting.h
 CMakeFiles/mac_os.dir/ft_screen_shot.c.o: /usr/local/include/mlx.h
 
 CMakeFiles/mac_os.dir/ft_valid_line.c.o: ../ft_valid_line.c
+CMakeFiles/mac_os.dir/ft_valid_line.c.o: ../get_next_line/get_next_line.h
+CMakeFiles/mac_os.dir/ft_valid_line.c.o: ../libft/libft.h
+CMakeFiles/mac_os.dir/ft_valid_line.c.o: ../my_cube.h
+CMakeFiles/mac_os.dir/ft_valid_line.c.o: /usr/local/include/mlx.h
 
 CMakeFiles/mac_os.dir/get_next_line/get_next_line.c.o: ../get_next_line/get_next_line.c
 CMakeFiles/mac_os.dir/get_next_line/get_next_line.c.o: ../get_next_line/get_next_line.h
+CMakeFiles/mac_os.dir/get_next_line/get_next_line.c.o: ../libft/libft.h
 
 CMakeFiles/mac_os.dir/get_next_line/get_next_line_utils.c.o: ../get_next_line/get_next_line.h
 CMakeFiles/mac_os.dir/get_next_line/get_next_line_utils.c.o: ../get_next_line/get_next_line_utils.c
+CMakeFiles/mac_os.dir/get_next_line/get_next_line_utils.c.o: ../libft/libft.h
 
 CMakeFiles/mac_os.dir/libft/ft_atoi.c.o: ../libft/ft_atoi.c
 CMakeFiles/mac_os.dir/libft/ft_atoi.c.o: ../libft/libft.h
@@ -79,6 +85,12 @@ CMakeFiles/mac_os.dir/libft/ft_memchr.c.o: ../libft/libft.h
 CMakeFiles/mac_os.dir/libft/ft_split.c.o: ../libft/ft_split.c
 CMakeFiles/mac_os.dir/libft/ft_split.c.o: ../libft/libft.h
 
+CMakeFiles/mac_os.dir/libft/ft_strchr.c.o: ../libft/ft_strchr.c
+CMakeFiles/mac_os.dir/libft/ft_strchr.c.o: ../libft/libft.h
+
+CMakeFiles/mac_os.dir/libft/ft_strdup.c.o: ../libft/ft_strdup.c
+CMakeFiles/mac_os.dir/libft/ft_strdup.c.o: ../libft/libft.h
+
 CMakeFiles/mac_os.dir/libft/ft_strlcpy.c.o: ../libft/ft_strlcpy.c
 CMakeFiles/mac_os.dir/libft/ft_strlcpy.c.o: ../libft/libft.h
 
@@ -90,6 +102,9 @@ CMakeFiles/mac_os.dir/libft/ft_strncmp.c.o: ../libft/libft.h
 
 CMakeFiles/mac_os.dir/libft/ft_strnstr.c.o: ../libft/ft_strnstr.c
 CMakeFiles/mac_os.dir/libft/ft_strnstr.c.o: ../libft/libft.h
+
+CMakeFiles/mac_os.dir/libft/ft_strrchr.c.o: ../libft/ft_strrchr.c
+CMakeFiles/mac_os.dir/libft/ft_strrchr.c.o: ../libft/libft.h
 
 CMakeFiles/mac_os.dir/main3D.c.o: ../get_next_line/get_next_line.h
 CMakeFiles/mac_os.dir/main3D.c.o: ../libft/libft.h
@@ -143,6 +158,14 @@ CMakeFiles/mac_os.dir/parser/ft_check_if_f.c.o: ../parser/ft_check_if_f.c
 CMakeFiles/mac_os.dir/parser/ft_check_if_f.c.o: ../parser/parser.h
 CMakeFiles/mac_os.dir/parser/ft_check_if_f.c.o: ../reycasting/ft_reycasting.h
 CMakeFiles/mac_os.dir/parser/ft_check_if_f.c.o: /usr/local/include/mlx.h
+
+CMakeFiles/mac_os.dir/parser/ft_check_valid_files.c.o: ../get_next_line/get_next_line.h
+CMakeFiles/mac_os.dir/parser/ft_check_valid_files.c.o: ../libft/libft.h
+CMakeFiles/mac_os.dir/parser/ft_check_valid_files.c.o: ../my_cube.h
+CMakeFiles/mac_os.dir/parser/ft_check_valid_files.c.o: ../parser/ft_check_valid_files.c
+CMakeFiles/mac_os.dir/parser/ft_check_valid_files.c.o: ../parser/parser.h
+CMakeFiles/mac_os.dir/parser/ft_check_valid_files.c.o: ../reycasting/ft_reycasting.h
+CMakeFiles/mac_os.dir/parser/ft_check_valid_files.c.o: /usr/local/include/mlx.h
 
 CMakeFiles/mac_os.dir/parser/ft_handler_f_c.c.o: ../get_next_line/get_next_line.h
 CMakeFiles/mac_os.dir/parser/ft_handler_f_c.c.o: ../libft/libft.h

@@ -682,6 +682,60 @@ libft/ft_split.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/libft/ft_split.c.s
 .PHONY : libft/ft_split.c.s
 
+libft/ft_strchr.o: libft/ft_strchr.c.o
+
+.PHONY : libft/ft_strchr.o
+
+# target to build an object file
+libft/ft_strchr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/libft/ft_strchr.c.o
+.PHONY : libft/ft_strchr.c.o
+
+libft/ft_strchr.i: libft/ft_strchr.c.i
+
+.PHONY : libft/ft_strchr.i
+
+# target to preprocess a source file
+libft/ft_strchr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/libft/ft_strchr.c.i
+.PHONY : libft/ft_strchr.c.i
+
+libft/ft_strchr.s: libft/ft_strchr.c.s
+
+.PHONY : libft/ft_strchr.s
+
+# target to generate assembly for a file
+libft/ft_strchr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/libft/ft_strchr.c.s
+.PHONY : libft/ft_strchr.c.s
+
+libft/ft_strdup.o: libft/ft_strdup.c.o
+
+.PHONY : libft/ft_strdup.o
+
+# target to build an object file
+libft/ft_strdup.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/libft/ft_strdup.c.o
+.PHONY : libft/ft_strdup.c.o
+
+libft/ft_strdup.i: libft/ft_strdup.c.i
+
+.PHONY : libft/ft_strdup.i
+
+# target to preprocess a source file
+libft/ft_strdup.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/libft/ft_strdup.c.i
+.PHONY : libft/ft_strdup.c.i
+
+libft/ft_strdup.s: libft/ft_strdup.c.s
+
+.PHONY : libft/ft_strdup.s
+
+# target to generate assembly for a file
+libft/ft_strdup.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/libft/ft_strdup.c.s
+.PHONY : libft/ft_strdup.c.s
+
 libft/ft_strlcpy.o: libft/ft_strlcpy.c.o
 
 .PHONY : libft/ft_strlcpy.o
@@ -789,6 +843,33 @@ libft/ft_strnstr.s: libft/ft_strnstr.c.s
 libft/ft_strnstr.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/libft/ft_strnstr.c.s
 .PHONY : libft/ft_strnstr.c.s
+
+libft/ft_strrchr.o: libft/ft_strrchr.c.o
+
+.PHONY : libft/ft_strrchr.o
+
+# target to build an object file
+libft/ft_strrchr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/libft/ft_strrchr.c.o
+.PHONY : libft/ft_strrchr.c.o
+
+libft/ft_strrchr.i: libft/ft_strrchr.c.i
+
+.PHONY : libft/ft_strrchr.i
+
+# target to preprocess a source file
+libft/ft_strrchr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/libft/ft_strrchr.c.i
+.PHONY : libft/ft_strrchr.c.i
+
+libft/ft_strrchr.s: libft/ft_strrchr.c.s
+
+.PHONY : libft/ft_strrchr.s
+
+# target to generate assembly for a file
+libft/ft_strrchr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/libft/ft_strrchr.c.s
+.PHONY : libft/ft_strrchr.c.s
 
 main3D.o: main3D.c.o
 
@@ -978,6 +1059,33 @@ parser/ft_check_if_f.s: parser/ft_check_if_f.c.s
 parser/ft_check_if_f.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/parser/ft_check_if_f.c.s
 .PHONY : parser/ft_check_if_f.c.s
+
+parser/ft_check_valid_files.o: parser/ft_check_valid_files.c.o
+
+.PHONY : parser/ft_check_valid_files.o
+
+# target to build an object file
+parser/ft_check_valid_files.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/parser/ft_check_valid_files.c.o
+.PHONY : parser/ft_check_valid_files.c.o
+
+parser/ft_check_valid_files.i: parser/ft_check_valid_files.c.i
+
+.PHONY : parser/ft_check_valid_files.i
+
+# target to preprocess a source file
+parser/ft_check_valid_files.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/parser/ft_check_valid_files.c.i
+.PHONY : parser/ft_check_valid_files.c.i
+
+parser/ft_check_valid_files.s: parser/ft_check_valid_files.c.s
+
+.PHONY : parser/ft_check_valid_files.s
+
+# target to generate assembly for a file
+parser/ft_check_valid_files.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mac_os.dir/build.make CMakeFiles/mac_os.dir/parser/ft_check_valid_files.c.s
+.PHONY : parser/ft_check_valid_files.c.s
 
 parser/ft_handler_f_c.o: parser/ft_handler_f_c.c.o
 
@@ -1480,6 +1588,12 @@ help:
 	@echo "... libft/ft_split.o"
 	@echo "... libft/ft_split.i"
 	@echo "... libft/ft_split.s"
+	@echo "... libft/ft_strchr.o"
+	@echo "... libft/ft_strchr.i"
+	@echo "... libft/ft_strchr.s"
+	@echo "... libft/ft_strdup.o"
+	@echo "... libft/ft_strdup.i"
+	@echo "... libft/ft_strdup.s"
 	@echo "... libft/ft_strlcpy.o"
 	@echo "... libft/ft_strlcpy.i"
 	@echo "... libft/ft_strlcpy.s"
@@ -1492,6 +1606,9 @@ help:
 	@echo "... libft/ft_strnstr.o"
 	@echo "... libft/ft_strnstr.i"
 	@echo "... libft/ft_strnstr.s"
+	@echo "... libft/ft_strrchr.o"
+	@echo "... libft/ft_strrchr.i"
+	@echo "... libft/ft_strrchr.s"
 	@echo "... main3D.o"
 	@echo "... main3D.i"
 	@echo "... main3D.s"
@@ -1513,6 +1630,9 @@ help:
 	@echo "... parser/ft_check_if_f.o"
 	@echo "... parser/ft_check_if_f.i"
 	@echo "... parser/ft_check_if_f.s"
+	@echo "... parser/ft_check_valid_files.o"
+	@echo "... parser/ft_check_valid_files.i"
+	@echo "... parser/ft_check_valid_files.s"
 	@echo "... parser/ft_handler_f_c.o"
 	@echo "... parser/ft_handler_f_c.i"
 	@echo "... parser/ft_handler_f_c.s"

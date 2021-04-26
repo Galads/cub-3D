@@ -49,10 +49,7 @@ void	ft_fill_flag(t_game *img)
 	else if (img->rc.col_c != -1 && !(img->flag_control & C))
 		img->flag_control |= C;
 	else
-	{
-		printf("Error: many count headers elements\n");
-		exit(1);
-	}
+		ft_print_error(img, "many count headers elements\n", 7);
 }
 
 void	ft_check_line_first(char **line, t_list **list_head,
@@ -61,14 +58,12 @@ void	ft_check_line_first(char **line, t_list **list_head,
 	if ((*line)[(*k)] && (*line)[(*k)] != '1')
 	{
 		free(*line);
-		printf("Error: invalid map\n");
-		exit(45);
+		ft_print_error(img, "invalid map\n", 45);
 	}
 	if ((*line)[(*k)] == '\0' && *list_head && img->i != 0)
 	{
 		free(*line);
-		printf("Error: invalid map\n");
-		exit(46);
+		ft_print_error(img, "invalid map\n", 45);
 	}
 	while ((*line)[(*k)])
 	{

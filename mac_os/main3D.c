@@ -6,7 +6,7 @@
 /*   By: brice <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/23 08:52:43 by brice             #+#    #+#             */
-/*   Updated: 2021/04/23 09:50:30 by brice            ###   ########.fr       */
+/*   Updated: 2021/04/26 18:37:43 by brice            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void 	ft_calculate_sprites(t_game *img, double *z_buffer,
 	img->sprite.draw_end_y = img->sprite.sprite_height / 2
 		+ img->img.height / 2;
 	if (img->sprite.draw_end_y >= img->img.height)
-		img->sprite.draw_end_y = img->img.height - 1;
+		img->sprite.draw_end_y = img->img.height;
 	img->sprite.sprite_width = abs((int)(img->img.height
 				/ (img->sprite.transform_y)));
 	draw_start_x = -img->sprite.sprite_width / 2 + img->sprite.sprite_screen_x;
@@ -36,7 +36,7 @@ void 	ft_calculate_sprites(t_game *img, double *z_buffer,
 		draw_start_x = 0;
 	draw_end_x = img->sprite.sprite_width / 2 + img->sprite.sprite_screen_x;
 	if (draw_end_x >= img->img.width)
-		draw_end_x = img->img.width - 1;
+		draw_end_x = img->img.width;
 	img->sprite.stripe = draw_start_x;
 	ft_print_sprite(img, draw_end_x, (img->sprite.transform_y), z_buffer);
 	(*i)++;
@@ -74,9 +74,10 @@ int	render_frame(t_game *img)
 		img->img.img, 0, 0);
 	if (img->flag_screen == 2)
 	{
+		write(1, "fffffffff\n", 12);
 		ft_screen_shot(img);
 		mlx_destroy_image(img->img.mlx, img->img.img);
-		exit(1);
+		ft_print_error(img, "No error, screen make OK", 1);
 	}
 	else
 		mlx_destroy_image(img->img.mlx, img->img.img);
@@ -100,28 +101,22 @@ void	ft_basic_while(t_game *img)
 int	main(int argc, char **argv)
 {
 	t_game	img;
-	char	*line;
+	int		err;
 
+	ft_init_parser(&img);
 	if (argc == 1)
 		ft_print_error(&img, "no argument map", 1);
-	line = ft_strnstr(argv[1], ".cub", INT_MAX2);
-	if (!line)
-		ft_print_error(&img, "\"Error: no find file with expansion"
-			"\\\".cub 1\\\"\\n\"", 1);
-	if (*line && argc == 2)
-	{
+	err = ft_check_valid_files(argv[1], ".cub");
+	if (!err)
+		ft_print_error(&img, "no find file with expansion .cub", 1);
+	if (err && argc == 2)
 		img.flag_screen = 1;
-		ft_parser(argc, argv, &img);
-		map_parser(&img);
-		ft_init_val(&img);
-		ft_basic_while(&img);
-	}
-	else if (*line && argc == 3 && !ft_strncmp(argv[2], "--save", INT_MAX2))
-	{
+	else if (err && argc == 3 && ft_check_valid_files(argv[2], "--save"))
 		img.flag_screen = 2;
-		ft_parser(argc, argv, &img);
-		ft_init_val(&img);
-		ft_basic_while(&img);
-	}
+	ft_parser(argc, argv, &img);
+	map_parser(&img);
+	ft_init_val(&img);
+	ft_basic_while(&img);
+	ft_print_error(&img, "no valid arguments\n", 1);
 	return (0);
 }

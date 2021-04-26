@@ -11,15 +11,33 @@
 /* ************************************************************************** */
 
 #include "get_next_line.h"
+#include "../libft/libft.h"
 
-static	size_t	ft_strlen(const char *str)
+int	ft_exit_code(int isexit, int res)
 {
-	int	i;
+	if (!isexit && res > 0)
+		return (1);
+	if (res == -1)
+		return (-1);
+	else
+		return (0);
+}
 
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
+int	fill_remainder(char **current, char **remainder, char **buf, int *isexit)
+{
+	*current = ft_strchr(*buf, '\n');
+	if (*current)
+	{
+		**current = '\0';
+		*remainder = ft_strdup(++(*current));
+		if (!*remainder)
+		{
+			free(*buf);
+			return (0);
+		}
+		*isexit = 0;
+	}
+	return (1);
 }
 
 char	*ft_strjoin(char const *s1, char const *s2)
@@ -32,7 +50,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	j = 0;
 	if (!s1 || !s2)
 		return (NULL);
-	str = (char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
+	str = (char *)malloc(sizeof(char)
+			* (ft_strlen(s1) + ft_strlen(s2)) + 1);
 	if (!str)
 		return (NULL);
 	while (s1[i] != '\0')
@@ -47,41 +66,4 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	}
 	str[i] = '\0';
 	return (str);
-}
-
-char	*ft_strchr(const char *s, int c)
-{
-	if (c == '\0')
-	{
-		while (*s != '\0')
-			s++;
-		return ((char *)s);
-	}
-	while (*s != '\0')
-	{
-		if (*s == c)
-			return ((char *)s);
-		s++;
-	}
-	return (0);
-}
-
-char	*ft_strdup(const char *s1)
-{
-	int		i;
-	int		j;
-	char	*new;
-
-	i = 0;
-	j = ft_strlen(s1);
-	new = (char *)malloc(sizeof(char) * (j + 1));
-	if (new == NULL)
-		return (NULL);
-	while (i < j)
-	{
-		*(new + i) = *(s1 + i);
-		i++;
-	}
-	*(new + i) = '\0';
-	return (new);
 }
