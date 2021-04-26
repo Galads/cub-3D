@@ -15,10 +15,7 @@
 int	key_hook_p(int keycode, t_game *img)
 {
 	if (keycode == 65307 || keycode == 53)
-	{
-//		ft_free_memory(img);
-		exit(26);
-	}
+		ft_print_error(img, "Good bye\n", 26);
 	if (keycode == 'd' || keycode == 2)
 		img->flags |= M_R;
 	if (keycode == 'a' || keycode == 0)

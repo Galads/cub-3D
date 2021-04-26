@@ -89,7 +89,7 @@ void	ft_write_body(t_game *img, unsigned char *color, int fd,
 void	ft_screen_shot(t_game *img)
 {
 	int				fd;
-	int padd_amount;
+	int				padd_amount;
 	int				file_size;
 	unsigned char	color[3];
 

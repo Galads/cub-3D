@@ -1,10 +1,7 @@
 #include "my_cube.h"
 
-void ft_print_error(t_game *img, char *str, int code)
+static	void	ft_print_sub_error(t_game *img, int *i)
 {
-	int i;
-
-	i = 0;
 	if (img->texture_n.relative_path)
 		free(img->texture_n.relative_path);
 	if (img->texture_s.relative_path)
@@ -19,13 +16,19 @@ void ft_print_error(t_game *img, char *str, int code)
 		free(img->sprite.sprite_order);
 	if (img->sprite.sprite_distance)
 		free(img->sprite.sprite_distance);
-	if (i < img->sprite.count)
-	{
-		free(img->sp[i++].relative_path);
-		free(img->sp);
-	}
+	while ((*i) < img->sprite.count)
+		free(img->sp[(*i)++].relative_path);
+	free(img->sp);
 	if (img->texture_e.img)
 		mlx_destroy_image(img->img.mlx, img->texture_e.img);
+}
+
+void	ft_print_error(t_game *img, char *str, int code)
+{
+	int	i;
+
+	i = 0;
+	ft_print_sub_error(img, &i);
 	if (img->texture_s.img)
 		mlx_destroy_image(img->img.mlx, img->texture_s.img);
 	if (img->texture_n.img)

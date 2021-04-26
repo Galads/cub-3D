@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   map_parser_utils.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: brice <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/04/26 15:28:53 by brice             #+#    #+#             */
+/*   Updated: 2021/04/26 15:28:54 by brice            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "reycasting/ft_reycasting.h"
 
@@ -10,15 +21,9 @@ void	check_around_02plr(t_game *opt, const size_t *str_sizes, size_t i,
 
 	map = (const char **)opt->world_map;
 	if (j == 0 || j == *(str_sizes + 1) - 1)
-	{
-		printf("Error: map parse\n");
-		exit(2);
-	}
+		ft_print_error(opt, "Error: map parse\n", 2);
 	if (j > *(str_sizes + 0) - 1 || j > *(str_sizes + 2) - 1)
-	{
-		printf("Error: map parse\n");
-		exit(2);
-	}
+		ft_print_error(opt, "Error: map parse\n", 2);
 	around_symbs[0] = *(*(map + i) + j - 1);
 	around_symbs[1] = *(*(map + i) + j + 1);
 	around_symbs[2] = *(*(map + i - 1) + j);
@@ -27,10 +32,7 @@ void	check_around_02plr(t_game *opt, const size_t *str_sizes, size_t i,
 	while (k < 4)
 	{
 		if (!ft_memchr("012NSWE", around_symbs[k], 7))
-		{
-			printf("Error: map parse\n");
-			exit(2);
-		}
+			ft_print_error(opt, "Error: map parse\n", 2);
 		k++;
 	}
 }

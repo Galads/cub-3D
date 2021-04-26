@@ -87,21 +87,11 @@ void	ft_basic_while(t_game *img)
 {
 	mlx_hook(img->img.win, 2, 1L << 0, &key_hook_p, img);
 	mlx_hook(img->img.win, 3, 1L << 1, &key_hook_r, img);
-//		ft_texture(&img->texture_n, img, img->texture_n.relative_path);
-//		ft_texture(&img->texture_e, img, img->texture_e.relative_path);
-//		ft_texture(&img->texture_s, img,img->texture_s.relative_path);
-//		ft_texture(&img->texture_w, img,img->texture_w.relative_path);
-//	ft_sprite(&img->sprite, img, img->sprite.relative_path);
-	ft_texture(&img->texture_n, img, "/Users/brice/Desktop/main_parser/"
-		"ft_parser/mac_os/textures/bluestone.xpm");
-	ft_texture(&img->texture_e, img, "/Users/brice/Desktop/main_parser/"
-		"ft_parser/mac_os/textures/eagle.xpm");
-	ft_texture(&img->texture_s, img, "/Users/brice/Desktop/main_parser/"
-		"ft_parser/mac_os/textures/redbrick.xpm");
-	ft_texture(&img->texture_w, img, "/Users/brice/Desktop/main_parser/"
-		"ft_parser/mac_os/textures/purplestone.xpm");
-	ft_sprite(&img->sprite, img, "/Users/brice/Desktop/main_parser/"
-		"ft_parser/mac_os/sprites/1_1.xpm");
+	ft_texture(&img->texture_n, img, img->texture_n.relative_path);
+	ft_texture(&img->texture_e, img, img->texture_e.relative_path);
+	ft_texture(&img->texture_s, img, img->texture_s.relative_path);
+	ft_texture(&img->texture_w, img, img->texture_w.relative_path);
+	ft_sprite(&img->sprite, img, img->sprite.relative_path);
 	mlx_loop_hook(img->img.mlx, &render_frame, img);
 	mlx_do_sync(img->img.mlx);
 	mlx_loop(img->img.mlx);
@@ -112,13 +102,12 @@ int	main(int argc, char **argv)
 	t_game	img;
 	char	*line;
 
-
 	if (argc == 1)
 		ft_print_error(&img, "no argument map", 1);
-	line = ft_strnstr(argv[1], ".cub", INT_MAX);
+	line = ft_strnstr(argv[1], ".cub", INT_MAX2);
 	if (!line)
 		ft_print_error(&img, "\"Error: no find file with expansion"
-					   "\\\".cub 1\\\"\\n\"", 1);
+			"\\\".cub 1\\\"\\n\"", 1);
 	if (*line && argc == 2)
 	{
 		img.flag_screen = 1;
@@ -127,7 +116,7 @@ int	main(int argc, char **argv)
 		ft_init_val(&img);
 		ft_basic_while(&img);
 	}
-	else if (*line && argc == 3 && !ft_strncmp(argv[2], "--save", INT_MAX))
+	else if (*line && argc == 3 && !ft_strncmp(argv[2], "--save", INT_MAX2))
 	{
 		img.flag_screen = 2;
 		ft_parser(argc, argv, &img);

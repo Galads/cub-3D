@@ -50,15 +50,17 @@ void	ft_fill_map(t_game *img, t_list **list_head)
 
 void	ft_parse_tail(t_game *img, char **line, const int *fd)
 {
-	t_list *list_head = NULL;
-	t_list *list = NULL;
+	t_list	*list_head;
+	t_list	*list;
 
+	list_head = NULL;
+	list = NULL;
 	while (img->i >= 0)
 	{
 		img->i = get_next_line(*fd, line);
 		ft_check_line(line, &list_head, &list, img);
 		if (img->i == 0)
-			break;
+			break ;
 	}
 	img->map_height = ft_lstsize(list_head);
 	list = list_head;
@@ -73,7 +75,7 @@ void	ft_parse_tail(t_game *img, char **line, const int *fd)
 
 int	ft_parser_open(t_game *img, char **argv)
 {
-	int fd;
+	int	fd;
 
 	fd = open(argv[1], O_RDONLY);
 	if (fd < 0)

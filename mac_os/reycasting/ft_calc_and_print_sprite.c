@@ -12,15 +12,33 @@
 
 #include "ft_reycasting.h"
 
-void	ft_print_sprite(t_game *img, int draw_end_x, double transform_y,
-						const double *z_buffer) //edit
+static void	ft_print_sprite_while(t_game *img, int *tex_x, int *tex_y)
 {
-	int				tex_x;
-	int				y;
-	int				d;
-	int				texY;
-	unsigned int	color_2;
+	while (img->y_s < img->sprite.draw_end_y)
+	{
+		img->d_s = (img->y_s) * 256 - img->img.height * 128
+			+ img->sprite.sprite_height * 128;
+		(*tex_y) = ((img->d_s * img->texture_n.width)
+				/ img->sprite.sprite_height) / 256;
+		img->color_2 = *(unsigned int *)(img->sprite.addr
+				+ ((*tex_y) * img->sprite.line_length + (*tex_x)
+					* (img->sprite.bits_per_pixel / 8)));
+		if ((img->color_2 & 0x00FFFFFF) != 0)
+			my_mlx_pixel_put(&img->img, img->sprite.stripe,
+				img->y_s, (int)img->color_2);
+		img->y_s++;
+	}
+}
 
+void	ft_print_sprite(t_game *img, int draw_end_x, double transform_y,
+					 const double *z_buffer)
+{
+	int	tex_x;
+	int	tex_y;
+
+	img->y_s = 0;
+	img->d_s = 0;
+	img->color_2 = 0;
 	while (img->sprite.stripe < draw_end_x)
 	{
 		tex_x = (int)(256 * (img->sprite.stripe - (-img->sprite.sprite_width
@@ -29,28 +47,15 @@ void	ft_print_sprite(t_game *img, int draw_end_x, double transform_y,
 		if (transform_y > 0 && img->sprite.stripe > 0 && img->sprite.stripe
 			< img->img.width && transform_y < z_buffer[img->sprite.stripe])
 		{
-			y = img->sprite.draw_start_y;
-			while (y < img->sprite.draw_end_y)
-			{
-				d = (y) * 256 - img->img.height * 128
-					+ img->sprite.sprite_height * 128;
-				texY = ((d * img->texture_n.width)
-						/ img->sprite.sprite_height) / 256;
-				color_2 = *(unsigned int *)(img->sprite.addr
-						+ (texY * img->sprite.line_length + tex_x
-							* (img->sprite.bits_per_pixel / 8)));
-				if ((color_2 & 0x00FFFFFF) != 0)
-					my_mlx_pixel_put(&img->img, img->sprite.stripe,
-						y, (int)color_2);
-				y++;
-			}
+			img->y_s = img->sprite.draw_start_y;
+			ft_print_sprite_while(img, &tex_x, &tex_y);
 		}
 		img->sprite.stripe++;
 	}
 }
 
 void	ft_calculate_fs(t_game *img, t_sprite *sprite,
-						const int *sprite_order, int *i)
+					 const int *sprite_order, int *i)
 {
 	img->sprite.sprite_x = sprite[sprite_order[(*i)]].x - img->rc.pos_x;
 	img->sprite.sprite_y = sprite[sprite_order[(*i)]].y - img->rc.pos_y;

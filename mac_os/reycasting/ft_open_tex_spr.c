@@ -14,7 +14,6 @@
 
 void	ft_texture(t_data *texture, t_game *img, char *str)
 {
-	free(texture->relative_path);
 	texture->relative_path = str;
 	texture->img = mlx_xpm_file_to_image(img->img.mlx,
 			texture->relative_path, &texture->width, &texture->height);
@@ -31,12 +30,10 @@ void	ft_texture(t_data *texture, t_game *img, char *str)
 		printf ("Error: no find addr %s\n", texture->addr);
 		exit(1);
 	}
-//	free(texture->relative_path);
 }
 
 void	ft_sprite(t_sprite *sprite, t_game *img, char *str)
 {
-	free(sprite->relative_path);
 	sprite->relative_path = str;
 	sprite->img = mlx_xpm_file_to_image(img->img.mlx,
 			sprite->relative_path, &sprite->width, &sprite->height);
@@ -48,5 +45,4 @@ void	ft_sprite(t_sprite *sprite, t_game *img, char *str)
 	sprite->addr = mlx_get_data_addr(sprite->img,
 			&sprite->bits_per_pixel, &sprite->line_length,
 			&sprite->endian);
-//	free(str);
 }
